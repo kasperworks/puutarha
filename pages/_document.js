@@ -12,7 +12,9 @@ export default class MyDocument extends Document {
   render() {
     return (
       <Html lang="fi-FI">
-        <Head />
+        <Head>
+          <link href="/fonts/style.css" rel="stylesheet" />
+        </Head>
         <body>
           <Main />
           <NextScript />

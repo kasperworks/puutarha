@@ -17,9 +17,18 @@ const GlobalStyle = createGlobalStyle`
       --purple: #9752FF;
     }
 
+    #__next {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
     html {
       height: 100%;
       box-sizing: border-box;
+      --scrollbarBG: #8CA3AD;
+      --thumbBG: #2E3541;
+      overflow: hidden;
     }
 
     *,
@@ -33,8 +42,25 @@ const GlobalStyle = createGlobalStyle`
       background-color: var(--background);
       color: var(--white);
       line-height: 1.5;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif,
+      font-family: Lato, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif,
         "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        scrollbar-width: thin;
+      scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+      overflow-y: auto;
+    }
+
+    body::-webkit-scrollbar {
+      width: 14px;
+    }
+
+    body::-webkit-scrollbar-track {
+      background: var(--scrollbarBG);
+    }
+
+    body::-webkit-scrollbar-thumb {
+      background-color: var(--thumbBG) ;
+      border-radius: 2px;
+      border: 2px solid var(--scrollbarBG);
     }
 
     main {
@@ -74,6 +100,16 @@ const GlobalStyle = createGlobalStyle`
     dl,
     dd {
       margin: 0;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: 'Josefin Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     }
 
     ul[class],
