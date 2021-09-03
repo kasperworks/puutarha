@@ -13,3 +13,7 @@ export const NavBar = styled.div`
   width: 40%;
   justify-content: space-between;
 `;
+
+export const BlogPostDisplay = styled.div`
+  margin: 20px 0;
+`;

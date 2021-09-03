@@ -1,13 +1,13 @@
 ---
 title: Code post
+publishedAt: '2021-09-03'
+summary: 'Syksy tulee'
+image: 'https://images.unsplash.com/photo-1561983818-e339e248ac5c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1494&q=80'
 ---
 
 ```jsx:blog/code-post.mdx
-import { LightAsync as SyntaxHighlighter } from "react-syntax-highlighter";
-import obsidian from "react-syntax-highlighter/dist/esm/styles/hljs/obsidian";
-
-// Other theme options: Github Dark Dimmed, Monokai Sublime
-// Atom One Dark Reasonable, Sunburst
+import Document, { Html, Head, NextScript, Main } from 'next/document';
+import { ServerStyleSheet } from 'styled-components';
 
 const Emphasis = styled.em`
   background-color: #235353;
@@ -15,22 +15,15 @@ const Emphasis = styled.em`
   padding: 0 2px;
 `;
 
-const Header = styled.h1`
-  font-family: "Josefin Sans";
-`;
-
-const Subhead = styled.h3`
-  font-family: "Josefin Sans";
-  color: #fbfbfb;
-`;
-
-// lang props to CodeBlock to pass SyntaxHighlighter
-
-<CodeBlock class="testi">
-  <SyntaxHighlighter language="javascript" style={obsidian}>
-    {codeString}
-  </SyntaxHighlighter>
-</CodeBlock>
+const Post = ({ code, frontmatter }) => {
+  const Component = React.useMemo(() => getMDXComponent(code), [code]);
+  return (
+    <Container>
+      <h1>{frontmatter.title}</h1>
+      <Component components={{ a: CustomLink }} />
+    </Container>
+  );
+};
 
 ```
 
