@@ -11,6 +11,7 @@ export default function BlogList({ posts }) {
       </p>
       <ul>
         {posts.map((post, index) => (
+          // eslint-disable-next-line react/no-array-index-key
           <li key={index}>
             <Link href={`/blog/${post.slug}`}>{post.frontmatter.title}</Link>
           </li>

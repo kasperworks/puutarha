@@ -7,8 +7,8 @@ export default function About() {
         <h1>About Me</h1>
         <div>
           <p>
-            Hi! I'm Kasper, a journalist with a long-standing interest in technology. I
-            wrote about financial markets and related topics for nearly a decade before
+            Hi! I&apos;m Kasper, a journalist with a long-standing interest in technology.
+            I wrote about financial markets and related topics for nearly a decade before
             pivoting to programming.
           </p>
           <p>
@@ -18,9 +18,9 @@ export default function About() {
             design flyers.
           </p>
           <p>
-            These days I'm more likely to be building an interactive data visualization or
-            tinkering with a cloud-service script at Yle, Finland’s public broadcasting
-            company.
+            These days I&apos;m more likely to be building an interactive data
+            visualization or tinkering with a cloud-service script at Yle, Finland’s
+            public broadcasting company.
           </p>
         </div>
         <h2>Muuta</h2>
