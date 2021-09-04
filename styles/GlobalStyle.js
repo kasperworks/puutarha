@@ -4,7 +4,8 @@ const GlobalStyle = createGlobalStyle`
     :root {
       --black: #0E1111;
       --white: #FBFBFB;
-      --background: #2E3541;
+      --dark: #2E3541;
+      --background: #222426;
       --codeblock: #252B35;
       --darkgreen: #235353;
       --green: #93c763;
@@ -69,7 +70,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
     pre {
-      background-color: var(--codeblock);
+      background-color: var(--dark);
       padding: 8px;
       border-radius: 4px;
       box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.044);
