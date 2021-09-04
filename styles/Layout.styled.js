@@ -25,15 +25,16 @@ export const CenterSection = styled.div`
 
 export const NavBar = styled.div`
   display: flex;
-  width: 25%;
+  width: 100%;
   min-width: 250px;
   margin-bottom: 1.5rem;
-  justify-content: space-between;
+  justify-content: flex-end;
   font-size: 1.5rem;
   margin: 1rem 0;
   a {
     color: var(--green);
     text-decoration: none;
+    margin: 0 1rem;
     font-family: 'Josefin Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica,
       Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   }
@@ -64,9 +65,9 @@ export const AboutTextBlock = styled.div`
 
 export const IndexTextBlock = styled.div`
   margin: 1.4rem 0;
+  font-size: 1.1rem;
   li {
     list-style-type: square;
-    font-size: 1.2rem;
     margin: 0.5rem 0;
     &:hover {
       color: var(--green);
@@ -75,6 +76,10 @@ export const IndexTextBlock = styled.div`
   a {
     text-decoration: none;
   }
+`;
+
+export const IntroText = styled.div`
+  font-size: 1.5rem;
 `;
 
 export const Footer = styled.div`

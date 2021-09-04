@@ -142,6 +142,7 @@ const GlobalStyle = createGlobalStyle`
 
     h1 {
       margin: 2.5rem 0;
+      font-size: 2.5rem;
       color: var(--grey);
     }
 

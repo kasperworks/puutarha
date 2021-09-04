@@ -6,12 +6,21 @@ import * as s from '../styles/Layout.styled';
 export default function BlogList({ posts }) {
   return (
     <Container>
-      <h1>Hei vaan kaikille</h1>
+      <h1>kasper.works</h1>
       <s.IndexTextBlock>
-        <p>Tämä on digitaalinen puutarha</p>
+        <s.IntroText>
+          <p>Hi! I&apos;m Kasper, a journalist and a programmer.</p>
+        </s.IntroText>
+      </s.IndexTextBlock>
+
+      <s.IndexTextBlock>
+        <p>
+          This is my digital garden. You&apos;ll find some thoughts and scattered notes,
+          mostly about coding.
+        </p>
       </s.IndexTextBlock>
       <h3>
-        Täs on linkkejä testiposteihin <code>mdx-bundler</code>in rakentamana.
+        Here are a few links, these ones built by <code>mdx-bundler</code>.
       </h3>
       <s.IndexTextBlock>
         <ul>

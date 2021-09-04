@@ -51,7 +51,6 @@ export default function Container(props) {
               <a>Home</a>
             </NextLink>
           </s.NavBar>
-          <hr />
           <main id="skip">{children}</main>
         </s.CenterSection>
       </s.SiteBorderStyles>

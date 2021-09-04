@@ -8,7 +8,6 @@ export default function About() {
         <h1>About Me</h1>
         <s.AboutTextBlock>
           <p>
-            Hi! I&apos;m Kasper, a journalist with a long-standing interest in technology.
             I wrote about financial markets and related topics for nearly a decade before
             pivoting to programming.
           </p>
