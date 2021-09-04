@@ -13,14 +13,23 @@ export const SiteBorderStyles = styled.div`
 `;
 
 export const CenterSection = styled.div`
-  padding: 15px;
-  width: 75%;
+  padding: 10px;
+  width: 90%;
+  min-width: 300px;
 `;
 
 export const NavBar = styled.div`
   display: flex;
   width: 40%;
+  min-width: 250px;
+  margin-bottom: 1.5rem;
   justify-content: space-between;
+  a {
+    color: var(--green);
+    &:hover {
+      color: var(--brightgreen);
+    }
+  }
 `;
 
 export const BlogPostDisplay = styled.div`

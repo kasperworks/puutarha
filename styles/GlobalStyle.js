@@ -5,8 +5,8 @@ const GlobalStyle = createGlobalStyle`
       --black: #0E1111;
       --white: #FBFBFB;
       --dark: #2E3541;
-      --background: #222426;
-      --codeblock: #252B35;
+      --background: #252B35;
+      --codeblock: #222426;
       --darkgreen: #235353;
       --green: #93c763;
       --brightgreen: #78FF93;
@@ -74,6 +74,7 @@ const GlobalStyle = createGlobalStyle`
       padding: 8px;
       border-radius: 4px;
       box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.044);
+      overflow: auto;
     }
 
     code {
@@ -125,7 +126,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
     a {
-      color: var(--accent);
+      color: var(--lightgrey);
     }
 
     html:focus-within {
