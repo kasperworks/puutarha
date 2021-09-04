@@ -3,6 +3,9 @@ import BlogPost from '../components/BlogPost';
 import { getAllPosts } from '../lib/mdx';
 
 export default function Blog({ posts }) {
+  const postsByDate = posts.sort(
+    (a, b) => new Date(b.frontmatter.publishedAt) - new Date(a.frontmatter.publishedAt),
+  );
   /* const [searchValue, setSearchValue] = useState(''); */
   /* const filteredBlogPosts = posts
     .sort((a, b) => Number(new Date(b.publishedAt)) - Number(new Date(a.publishedAt)))
@@ -24,14 +27,28 @@ export default function Blog({ posts }) {
           />
         </div> */}
         <>
-          <h2>Kovimmat hitit</h2>
+          <h4>Kaikki postaukset</h4>
+          {postsByDate.map((item) => {
+            const { title, publishedAt, summary } = item.frontmatter;
+            const { slug } = item;
+            return (
+              <BlogPost
+                title={title}
+                publishedAt={publishedAt}
+                summary={summary}
+                slug={slug}
+                key={slug}
+              />
+            );
+          })}
+          {/* <h2>Kovimmat hitit</h2>
           <BlogPost
             title="Kaikki koodista"
             summary="Tsiigaa näitä highlighteja"
             slug="code-post"
           />
           <BlogPost title="Eka posti" summary="Ensimmäinen postaus" slug="first-post" />
-          <BlogPost title="Toka posti" summary="Tsekkaapa tää!" slug="second-post" />
+          <BlogPost title="Toka posti" summary="Tsekkaapa tää!" slug="second-post" /> */}
         </>
         {/* <h3>All Posts</h3>
         {!filteredBlogPosts.length && <p>No posts found.</p>}

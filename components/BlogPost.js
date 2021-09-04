@@ -1,17 +1,18 @@
 import Link from 'next/link';
 import * as s from '../styles/Layout.styled';
 
-const BlogPost = ({ title, summary, slug }) => (
-  <Link href={`/blog/${slug}`}>
-    <a>
-      <s.BlogPostDisplay>
+const BlogPost = ({ title, publishedAt, summary, slug }) => (
+  <s.BlogPostDisplay>
+    <Link href={`/blog/${slug}`}>
+      <a>
         <div>
           <h4>{title}</h4>
+          <small>{publishedAt}</small>
         </div>
         <p>{summary}</p>
-      </s.BlogPostDisplay>
-    </a>
-  </Link>
+      </a>
+    </Link>
+  </s.BlogPostDisplay>
 );
 
 export default BlogPost;

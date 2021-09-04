@@ -2,19 +2,20 @@ import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
     :root {
+      // in use
       --black: #0E1111;
       --white: #FBFBFB;
-      --dark: #2E3541;
+      --grey: #8CA3AD;
       --background: #252B35;
-      --codeblock: #222426;
+      --codeblock: #2E3541;
       --darkgreen: #235353;
       --green: #93c763;
+      --accent: #FFF96B;
       --brightgreen: #78FF93;
-      --accent: #EE1E3C;
-      --darkred: #BA1830;
-      --grey: #8CA3AD;
+
+      // unused
       --lightgrey: #EBEEF1;
-      --yellow: #FFF96B;
+      --brightred: #d5102e;
       --purple: #9752FF;
     }
 
@@ -44,6 +45,7 @@ const GlobalStyle = createGlobalStyle`
       background-color: var(--background);
       color: var(--white);
       line-height: 1.5;
+      font-size: 1rem;
       font-family: Lato, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif,
         "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
         scrollbar-width: thin;
@@ -70,8 +72,8 @@ const GlobalStyle = createGlobalStyle`
     }
 
     pre {
-      background-color: var(--dark);
-      padding: 8px;
+      background-color: var(--codeblock);
+      padding: 10px;
       border-radius: 4px;
       box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.044);
       overflow: auto;
@@ -79,6 +81,29 @@ const GlobalStyle = createGlobalStyle`
 
     code {
       font-family: source-code-pro, Menlo, Consolas, monospace;
+    }
+
+    strong {
+      font-weight: 700;
+      font-size: 1.7rem;
+      background-color: var(--darkgreen);
+      font-style: normal;
+      padding: 0 0.5rem;
+      margin: 0 -0.3rem 0 -0.25rem;
+      border-radius: 0.5rem;
+      border-bottom-left-radius: 0.25rem;
+      box-decoration-break: clone;
+    }
+
+    em {
+      background-color: var(--darkgreen);
+      font-style: normal;
+      padding: 0 0.5rem;
+      margin: 0 -0.3rem 0 -0.25rem;
+      border-radius: 0.5rem;
+      border-bottom-left-radius: 0.25rem;
+      box-decoration-break: clone;
+      
     }
 
     input,
@@ -115,6 +140,11 @@ const GlobalStyle = createGlobalStyle`
         "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     }
 
+    h1 {
+      margin: 2.5rem 0;
+      color: var(--grey);
+    }
+
     ul[class],
     ol[class] {
       list-style: none;
@@ -123,6 +153,7 @@ const GlobalStyle = createGlobalStyle`
 
     a:not([class]) {
       text-decoration-skip-ink: auto;
+      text-decoration-style: dotted;
     }
 
     a {
@@ -137,16 +168,10 @@ const GlobalStyle = createGlobalStyle`
       scroll-behavior: auto;
     }
 
-    .flow {
-        --flow-space: 1em;
+    .skip-nav {
+      transform: translateY(-50px);
     }
 
-    .flow > * + * {
-        margin-top: 1em;
-        margin-top: var(--flow-space);
-    }
-
-    
     .token.comment,
     .token.prolog,
     .token.doctype,
