@@ -39,8 +39,8 @@ export const NavBar = styled.div`
   }
   em {
     color: var(--accent);
-    font-size: 1.05rem;
-
+    font-size: 1.15rem;
+    padding: 4px 10px;
     font-family: 'Josefin Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica,
       Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
     @media (max-width: 370px) {
@@ -74,9 +74,11 @@ export const BlogPostDisplay = styled.div`
   a {
     text-decoration: none;
   }
-
   box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.15);
-  padding: 5px;
+  padding: 5px 10px 12px 10px;
+  &:hover {
+    box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.45);
+  }
 `;
 
 export const AboutTextBlock = styled.div`
@@ -87,13 +89,7 @@ export const AboutTextBlock = styled.div`
 export const IndexTextBlock = styled.div`
   margin: 1.4rem 0;
   font-size: 1rem;
-  li {
-    list-style-type: square;
-    margin: 0.5rem 0;
-    &:hover {
-      color: var(--green);
-    }
-  }
+
   a {
     text-decoration: none;
   }
@@ -101,18 +97,33 @@ export const IndexTextBlock = styled.div`
 
 export const SingleBlogTextBlock = styled.div`
   margin: 0 0 1rem 0;
-  em {
+  small {
     font-size: 0.8rem;
+    background-color: var(--darkgreen);
+    font-style: normal;
+    padding: 1px 10px;
+    margin: 0 -0.3rem 0rem 0.1rem;
+    border-radius: 0.6rem;
+    border-bottom-left-radius: 0.25rem;
+    box-decoration-break: clone;
   }
 `;
 
 export const SingleBlogTextHeaderBlock = styled.div`
   background-color: var(--codeblock);
-  margin-bottom: 50px;
+  margin-bottom: 10px;
   padding: 5px;
   border-radius: 4px;
   box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.044);
   font-size: 1.1rem;
+`;
+
+export const ImageCredit = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 0 20px 0;
+  font-size: 0.75rem;
+  color: var(--grey);
 `;
 
 export const IntroText = styled.div`
@@ -122,6 +133,22 @@ export const IntroText = styled.div`
 export const Footer = styled.div`
   display: flex;
   justify-content: center;
+  align-items: baseline;
   color: var(--grey);
-  margin-bottom: 1rem;
+  margin: 0 1rem 1rem 1rem;
+  small {
+    display: block;
+  }
+`;
+
+export const BackUpStairsWrapper = styled.div`
+  position: relative;
+`;
+
+export const BackUpStairsButton = styled.button`
+  position: absolute;
+  left: 50%;
+  background-color: var(--darkgreen);
+  width: 100px;
+  height: 50px;
 `;

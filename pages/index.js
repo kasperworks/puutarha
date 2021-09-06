@@ -31,17 +31,17 @@ export default function BlogList({ posts }) {
           The purpose of this site is to share some stuff I&apos;ve picked up and ease the
           learning curve for others in a similar situation. If you&apos;re brand new to
           web development, you&apos;ll find a collection of resources and starting advice
-          <em>
-            <Link href="/blog/starter-pack">here.</Link>
-          </em>
+          <Link href="/blog/starter-pack">
+            <em>here.</em>
+          </Link>
         </p>
       </s.IndexTextBlock>
       <s.IndexTextBlock>
         <p>
           If you&apos;d like to read about the technology behind this site, see{' '}
-          <em>
-            <Link href="/blog/how-i-built-this-site">here.</Link>
-          </em>
+          <Link href="/blog/how-i-built-this-site">
+            <em>here.</em>
+          </Link>
         </p>
       </s.IndexTextBlock>
       <s.IndexTextBlock>
@@ -50,12 +50,12 @@ export default function BlogList({ posts }) {
           knowledge of programming. I succeeded in getting employed in a professional
           programming role in 11 months, leveraging my journalist background and hobby
           projects. If that sounds like a fascinating read to you, have a look{' '}
-          <em>
-            <Link href="/blog/new-coder-at-35">here.</Link>
-          </em>
+          <Link href="/blog/new-coder-at-35">
+            <em>here.</em>
+          </Link>
         </p>
       </s.IndexTextBlock>
-      <h3>Here are three of the most recent posts</h3>
+      <h3>Here are three of my recent posts:</h3>
       <s.IndexTextBlock>
         <ul>
           {postsByDate.map((post) => (

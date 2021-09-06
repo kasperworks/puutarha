@@ -20,13 +20,23 @@ const Post = ({ code, frontmatter }) => {
     <Container>
       <h1>{frontmatter.title}</h1>
       <s.SingleBlogTextBlock>
-        <em>Published: {frontmatter.publishedAt}</em>
+        <small>Published: {frontmatter.publishedAt}</small>
       </s.SingleBlogTextBlock>
 
       <s.SingleBlogTextHeaderBlock>
         <p>{frontmatter.summary}</p>
       </s.SingleBlogTextHeaderBlock>
-      <Image src={frontmatter.image} width={MAX_IMAGE_WIDTH} height={MAX_IMAGE_WIDTH} />
+      {frontmatter.image && (
+        <Image
+          src={frontmatter.image}
+          width={MAX_IMAGE_WIDTH}
+          height={MAX_IMAGE_WIDTH / 1.5}
+        />
+      )}
+      {frontmatter.imageCredit && (
+        <s.ImageCredit>{frontmatter.imageCredit}</s.ImageCredit>
+      )}
+
       <Component components={{ a: CustomLink }} />
     </Container>
   );

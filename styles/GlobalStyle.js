@@ -86,11 +86,33 @@ const GlobalStyle = createGlobalStyle`
     em {
       background-color: var(--darkgreen);
       font-style: normal;
-      padding: 0 0.7rem;
+      padding: 1px 10px;
       margin: 0 -0.3rem 0rem 0.1rem;
       border-radius: 0.6rem;
       border-bottom-left-radius: 0.25rem;
       box-decoration-break: clone;
+    }
+
+    em:hover {
+      background-color: var(--green);
+      color: var(--codeblock);
+      cursor: pointer;
+    }
+
+    li {
+      list-style-type: square;
+    }
+    
+    li:hover {
+      color: var(--green);
+    }
+
+    li > a {
+      text-decoration: none;
+    }
+
+    li > a:hover {
+      color: var(--green);
     }
 
     input,
@@ -138,6 +160,7 @@ const GlobalStyle = createGlobalStyle`
 
     a {
       color: var(--lightgrey);
+      
     }
 
     html:focus-within {

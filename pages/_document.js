@@ -29,7 +29,7 @@ export default class MyDocument extends Document {
 
   render() {
     return (
-      <Html lang="fi-FI">
+      <Html lang="en">
         <Head>
           <link href="/fonts/style.css" rel="stylesheet" />
         </Head>

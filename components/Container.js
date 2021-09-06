@@ -1,8 +1,11 @@
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import NextLink from 'next/link';
+/* import dynamic from 'next/dynamic'; */
 import * as s from '../styles/Layout.styled';
 
+/* const DynamicScrollButton = dynamic(() => import('../lib/ScrollToTop'), { ssr: false });
+ */
 export default function Container(props) {
   const { children, ...customMeta } = props;
   const router = useRouter();
@@ -14,6 +17,8 @@ export default function Container(props) {
     type: 'website',
     ...customMeta,
   };
+
+  const year = new Date().getFullYear();
 
   return (
     <>
@@ -66,9 +71,18 @@ export default function Container(props) {
           <main id="skip">{children}</main>
         </s.CenterSection>
       </s.SiteBorderStyles>
+
       <s.Footer>
-        <p>Tänne tulee jotain tekstiä.</p>
+        <small>
+          <abbr
+            title="This site and all its content are licensed under a Creative Commons Attribution-NonCommercial 4.0 International License."
+            style={{ cursor: 'help' }}>
+            CC BY-NC 4.0
+          </abbr>{' '}
+          <time>{year}</time> Kasper Viita
+        </small>
       </s.Footer>
+      {/* <DynamicScrollButton /> */}
     </>
   );
 }
