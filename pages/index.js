@@ -3,12 +3,12 @@ import Container from '../components/Container';
 import { getAllPosts } from '../lib/mdx';
 import * as s from '../styles/Layout.styled';
 
-export default function BlogList({ posts }) {
-  const postsByDate = posts
+export default function Introduction() {
+  /*   const postsByDate = posts
     .sort(
       (a, b) => new Date(b.frontmatter.publishedAt) - new Date(a.frontmatter.publishedAt),
     )
-    .slice(0, 3);
+    .slice(0, 3); */
 
   return (
     <Container>
