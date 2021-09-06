@@ -93,27 +93,26 @@ const GlobalStyle = createGlobalStyle`
       box-decoration-break: clone;
     }
 
+
+    li {
+      list-style-type: square;
+    }
+    
+
+    em > a {
+      text-decoration: none;
+    }
+
     em:hover {
       background-color: var(--green);
       color: var(--codeblock);
       cursor: pointer;
     }
 
-    li {
-      list-style-type: square;
-    }
-    
-    li:hover {
-      color: var(--green);
+    em:hover > a {
+      color: var(--codeblock);
     }
 
-    li > a {
-      text-decoration: none;
-    }
-
-    li > a:hover {
-      color: var(--green);
-    }
 
     input,
     button,

@@ -89,7 +89,11 @@ export const AboutTextBlock = styled.div`
 export const IndexTextBlock = styled.div`
   margin: 1.4rem 0;
   font-size: 1rem;
-
+  em:hover {
+    background-color: var(--green);
+    color: var(--codeblock);
+    cursor: pointer;
+  }
   a {
     text-decoration: none;
   }
