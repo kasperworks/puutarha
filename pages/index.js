@@ -21,27 +21,34 @@ export default function BlogList({ posts }) {
 
       <s.IndexTextBlock>
         <p>
-          This is my hub, my digital garden. You&apos;ll find some thoughts and scattered
-          notes, largely about my journey to master the skills of a web application
-          engineer.
+          This is my hub, my digital garden. You&apos;ll find some scattered notes here,
+          largely about my efforts to master the skills of a software engineer. Learning
+          to code, that is.
         </p>
       </s.IndexTextBlock>
       <s.IndexTextBlock>
         <p>
-          This site is built with Next.js, MDX and React. If you&apos;d like to read about
-          that, see{' '}
+          The purpose of this site is to share some stuff I&apos;ve picked up and ease the
+          learning curve for others in a similar situation. If you&apos;re brand new to
+          web development, you&apos;ll find a collection of resources and starting advice
           <em>
-            <Link href="/blog/how-i-built-this-site">here</Link>
+            <Link href="/blog/starter-pack">here.</Link>
           </em>
-          .
+        </p>
+      </s.IndexTextBlock>
+      <s.IndexTextBlock>
+        <p>
+          If you&apos;d like to read about the technology behind this site, see{' '}
+          <em>
+            <Link href="/blog/how-i-built-this-site">here.</Link>
+          </em>
         </p>
       </s.IndexTextBlock>
       <h3>Here are three of the most recent posts</h3>
       <s.IndexTextBlock>
         <ul>
-          {postsByDate.map((post, index) => (
-            // eslint-disable-next-line react/no-array-index-key
-            <li key={index}>
+          {postsByDate.map((post) => (
+            <li key={post.slug}>
               <Link href={`/blog/${post.slug}`}>{post.frontmatter.title}</Link>
             </li>
           ))}

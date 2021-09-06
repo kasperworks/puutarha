@@ -99,11 +99,10 @@ const GlobalStyle = createGlobalStyle`
       background-color: var(--darkgreen);
       font-style: normal;
       padding: 0 0.5rem;
-      margin: 0 -0.3rem 0 -0.25rem;
-      border-radius: 0.5rem;
+      margin: 0 -0.3rem 0 0.1rem;
+      border-radius: 0.6rem;
       border-bottom-left-radius: 0.25rem;
       box-decoration-break: clone;
-      
     }
 
     input,
@@ -130,20 +129,12 @@ const GlobalStyle = createGlobalStyle`
       margin: 0;
     }
 
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      font-family: 'Josefin Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif,
-        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    }
-
     h1 {
       margin: 2.5rem 0;
       font-size: 2.5rem;
       color: var(--grey);
+      font-family: 'Josefin Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     }
 
     ul[class],

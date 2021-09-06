@@ -13,9 +13,9 @@ export const SiteBorderStyles = styled.div`
 `;
 
 export const CenterSection = styled.div`
-  padding: 10px;
-  width: 65%;
-  min-width: 300px;
+  padding: 15px;
+  width: 100%;
+  max-width: 780px;
   .skip-nav {
     color: var(--codeblock);
     float: right;
@@ -26,15 +26,22 @@ export const CenterSection = styled.div`
 export const NavBar = styled.div`
   display: flex;
   width: 100%;
-  min-width: 250px;
-  margin-bottom: 1.5rem;
-  justify-content: flex-end;
-  font-size: 1.5rem;
+  min-width: 300px;
+  margin-bottom: 1rem;
+  justify-content: space-between;
+  font-size: 0.9rem;
   margin: 1rem 0;
+  align-items: baseline;
   a {
     color: var(--green);
     text-decoration: none;
     margin: 0 1rem;
+    font-family: 'Josefin Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica,
+      Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  }
+  em {
+    color: var(--accent);
+    font-size: 1.1rem;
     font-family: 'Josefin Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica,
       Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   }
@@ -65,7 +72,7 @@ export const AboutTextBlock = styled.div`
 
 export const IndexTextBlock = styled.div`
   margin: 1.4rem 0;
-  font-size: 1.1rem;
+  font-size: 1rem;
   li {
     list-style-type: square;
     margin: 0.5rem 0;

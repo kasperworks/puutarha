@@ -20,7 +20,8 @@ export default function Container(props) {
       <s.SiteBorderStyles>
         <Head>
           <title>{meta.title}</title>
-          <meta name="robots" content="follow, index" />
+          {/* <meta name="robots" content="follow, index" /> */}
+          <meta name="robots" content="noindex" />
           <meta content={meta.description} name="description" />
           <meta property="og:url" content={`https://kasper.works${router.asPath}`} />
           <link rel="canonical" href={`https://kasper.works${router.asPath}`} />
@@ -41,16 +42,23 @@ export default function Container(props) {
             Skip to content
           </a>
           <s.NavBar>
-            <NextLink href="/blog">
-              <a>Blog</a>
-            </NextLink>
-            <NextLink href="/about">
-              <a>About</a>
-            </NextLink>
-            <NextLink href="/">
-              <a>Home</a>
-            </NextLink>
+            <div>
+              <NextLink href="/">
+                <a>
+                  <em>kasper.works</em>
+                </a>
+              </NextLink>
+            </div>
+            <div>
+              <NextLink href="/blog">
+                <a>Notes</a>
+              </NextLink>
+              <NextLink href="/about">
+                <a>About</a>
+              </NextLink>
+            </div>
           </s.NavBar>
+          <hr />
           <main id="skip">{children}</main>
         </s.CenterSection>
       </s.SiteBorderStyles>
