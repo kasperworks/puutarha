@@ -27,10 +27,6 @@ export default function About() {
             public broadcasting company.
           </p>
         </s.AboutTextBlock>
-        <h2>Muuta</h2>
-        <s.AboutTextBlock>
-          <p>Eipä muuta just nyt.</p>
-        </s.AboutTextBlock>
       </div>
     </Container>
   );

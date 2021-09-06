@@ -38,14 +38,6 @@ export default function BlogList({ posts }) {
       </s.IndexTextBlock>
       <s.IndexTextBlock>
         <p>
-          If you&apos;d like to read about the technology behind this site, see{' '}
-          <Link href="/blog/how-i-built-this-site">
-            <em>here.</em>
-          </Link>
-        </p>
-      </s.IndexTextBlock>
-      <s.IndexTextBlock>
-        <p>
           I made a start to my newest career path at 35 years old, with very limited
           knowledge of programming. I succeeded in getting employed in a professional
           programming role in 11 months, leveraging my journalist background and hobby
@@ -55,16 +47,27 @@ export default function BlogList({ posts }) {
           </Link>
         </p>
       </s.IndexTextBlock>
-      <h3>Here are three of my recent posts:</h3>
+      <s.IndexTextBlock>
+        <p>
+          If you&apos;d like to read about the technology behind this site, see{' '}
+          <Link href="/blog/how-i-built-this-site">
+            <em>here.</em>
+          </Link>
+        </p>
+      </s.IndexTextBlock>
+
+      {/*     <h3>Here are three of my recent posts:</h3>
       <s.IndexTextBlock>
         <ul>
           {postsByDate.map((post) => (
             <li key={post.slug}>
-              <Link href={`/blog/${post.slug}`}>{post.frontmatter.title}</Link>
+              <Link href={`/blog/${post.slug}`}>
+                <em>{post.frontmatter.title}</em>
+              </Link>
             </li>
           ))}
         </ul>
-      </s.IndexTextBlock>
+      </s.IndexTextBlock> */}
     </Container>
   );
 }

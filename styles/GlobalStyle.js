@@ -95,7 +95,8 @@ const GlobalStyle = createGlobalStyle`
 
 
     li {
-      list-style-type: square;
+      list-style: square;
+      font-size: 1.1rem;
     }
     
 
