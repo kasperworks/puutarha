@@ -42,21 +42,25 @@ export default function Container(props) {
             Skip to content
           </a>
           <s.NavBar>
-            <div>
+            <s.NavSection>
               <NextLink href="/">
                 <a>
                   <em>kasper.works</em>
                 </a>
               </NextLink>
-            </div>
-            <div>
+            </s.NavSection>
+            <s.NavEnd>
               <NextLink href="/blog">
-                <a>Notes</a>
+                <a>
+                  <em>Notes</em>
+                </a>
               </NextLink>
               <NextLink href="/about">
-                <a>About</a>
+                <a>
+                  <em>About</em>
+                </a>
               </NextLink>
-            </div>
+            </s.NavEnd>
           </s.NavBar>
           <hr />
           <main id="skip">{children}</main>

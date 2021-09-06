@@ -23,7 +23,6 @@ const GlobalStyle = createGlobalStyle`
       display: flex;
       flex-direction: column;
       min-height: 100vh;
-      background-color: var(--background);
     }
 
     html {
@@ -83,23 +82,12 @@ const GlobalStyle = createGlobalStyle`
       font-family: source-code-pro, Menlo, Consolas, monospace;
     }
 
-    strong {
-      font-weight: 700;
-      font-size: 1.7rem;
-      background-color: var(--darkgreen);
-      font-style: normal;
-      padding: 0 0.5rem;
-      margin: 0 -0.3rem 0 -0.25rem;
-      border-radius: 0.5rem;
-      border-bottom-left-radius: 0.25rem;
-      box-decoration-break: clone;
-    }
 
     em {
       background-color: var(--darkgreen);
       font-style: normal;
-      padding: 0 0.5rem;
-      margin: 0 -0.3rem 0 0.1rem;
+      padding: 0 0.7rem;
+      margin: 0 -0.3rem 0rem 0.1rem;
       border-radius: 0.6rem;
       border-bottom-left-radius: 0.25rem;
       box-decoration-break: clone;
@@ -191,7 +179,7 @@ const GlobalStyle = createGlobalStyle`
     .token.char,
     .token.builtin,
     .token.inserted {
-      color: var(--brightgreen);
+      color: var(--green);
     }
 
     .token.operator,

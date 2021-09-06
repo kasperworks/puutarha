@@ -29,22 +29,36 @@ export const NavBar = styled.div`
   min-width: 300px;
   margin-bottom: 1rem;
   justify-content: space-between;
-  font-size: 0.9rem;
-  margin: 1rem 0;
   align-items: baseline;
   a {
     color: var(--green);
     text-decoration: none;
-    margin: 0 1rem;
+    margin: 0 1rem 0 0;
     font-family: 'Josefin Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica,
       Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   }
   em {
     color: var(--accent);
-    font-size: 1.1rem;
+    font-size: 1.05rem;
+
     font-family: 'Josefin Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica,
       Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    @media (max-width: 370px) {
+      font-size: 0.9rem;
+      margin-right: 5px;
+    }
   }
+`;
+
+export const NavSection = styled.div`
+  display: flex;
+  flex-basis: 50%;
+`;
+
+export const NavEnd = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  gap: 5px;
 `;
 
 export const BlogPostDisplay = styled.div`
@@ -83,6 +97,22 @@ export const IndexTextBlock = styled.div`
   a {
     text-decoration: none;
   }
+`;
+
+export const SingleBlogTextBlock = styled.div`
+  margin: 0 0 1rem 0;
+  em {
+    font-size: 0.8rem;
+  }
+`;
+
+export const SingleBlogTextHeaderBlock = styled.div`
+  background-color: var(--codeblock);
+  margin-bottom: 50px;
+  padding: 5px;
+  border-radius: 4px;
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.044);
+  font-size: 1.1rem;
 `;
 
 export const IntroText = styled.div`

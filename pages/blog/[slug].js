@@ -1,8 +1,10 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { getMDXComponent } from 'mdx-bundler/client';
 import { getAllPosts, getSinglePost } from '../../lib/mdx';
 import Container from '../../components/Container';
+import * as s from '../../styles/Layout.styled';
 
 const CustomLink = ({ as, href, ...otherProps }) => (
   <Link as={as} href={href}>
@@ -10,11 +12,21 @@ const CustomLink = ({ as, href, ...otherProps }) => (
   </Link>
 );
 
+const MAX_IMAGE_WIDTH = 780;
+
 const Post = ({ code, frontmatter }) => {
   const Component = React.useMemo(() => getMDXComponent(code), [code]);
   return (
     <Container>
       <h1>{frontmatter.title}</h1>
+      <s.SingleBlogTextBlock>
+        <em>Published: {frontmatter.publishedAt}</em>
+      </s.SingleBlogTextBlock>
+
+      <s.SingleBlogTextHeaderBlock>
+        <p>{frontmatter.summary}</p>
+      </s.SingleBlogTextHeaderBlock>
+      <Image src={frontmatter.image} width={MAX_IMAGE_WIDTH} height={MAX_IMAGE_WIDTH} />
       <Component components={{ a: CustomLink }} />
     </Container>
   );
