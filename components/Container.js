@@ -57,12 +57,12 @@ export default function Container(props) {
             <s.NavEnd>
               <NextLink href="/blog">
                 <a>
-                  <em>Notes</em>
+                  <em>notes</em>
                 </a>
               </NextLink>
               <NextLink href="/about">
                 <a>
-                  <em>About</em>
+                  <em>about</em>
                 </a>
               </NextLink>
             </s.NavEnd>

@@ -44,7 +44,7 @@ const GlobalStyle = createGlobalStyle`
       background-color: var(--background);
       color: var(--white);
       line-height: 1.5;
-      font-size: 1rem;
+      font-size: 125%;
       font-family: Lato, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif,
         "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
         scrollbar-width: thin;
@@ -86,17 +86,15 @@ const GlobalStyle = createGlobalStyle`
     em {
       background-color: var(--darkgreen);
       font-style: normal;
-      padding: 1px 10px;
-      margin: 0 -0.3rem 0rem 0.1rem;
-      border-radius: 0.6rem;
-      border-bottom-left-radius: 0.25rem;
-      box-decoration-break: clone;
+      background: url('/static/brush-stroke-banner.svg');
+      background-repeat: no-repeat;
+      background-size: 100% 110%;
+      cursor: pointer;
     }
 
 
     li {
       list-style: square;
-      font-size: 1.1rem;
     }
     
 
@@ -104,15 +102,18 @@ const GlobalStyle = createGlobalStyle`
       text-decoration: none;
     }
 
-    em:hover {
+/*     em:hover {
+      background: url('static/brush-stroke-banner.svg');
+      background-repeat: no-repeat;
+      background-size: 100% 95%;
       background-color: var(--green);
       color: var(--codeblock);
       cursor: pointer;
-    }
+    } */
 
-    em:hover > a {
+/*     em:hover > a {
       color: var(--codeblock);
-    }
+    } */
 
 
     input,
