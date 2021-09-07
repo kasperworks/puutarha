@@ -10,6 +10,16 @@ export const SiteBorderStyles = styled.div`
   padding: 5px;
   box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.45);
   min-height: 100vh;
+  @media (hover: hover) {
+    em:hover {
+      color: var(--accent);
+    }
+  }
+  @media (hover: none) {
+    em:active {
+      color: var(--accent);
+    }
+  }
 `;
 
 export const CenterSection = styled.div`
@@ -32,13 +42,12 @@ export const NavBar = styled.div`
   justify-content: space-between;
   align-items: baseline;
   a {
-    color: var(--green);
     text-decoration: none;
     font-family: 'Josefin Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica,
       Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   }
   em {
-    color: var(--accent);
+    color: var(--white);
     padding: 4px 10px;
     font-family: 'Josefin Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica,
       Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
@@ -52,6 +61,15 @@ export const NavSection = styled.div`
   display: flex;
   flex-basis: 40%;
   margin-right: 1rem;
+  div {
+    background-color: var(--darkgreen);
+    font-style: normal;
+    background: url('/static/brush-stroke-banner.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 110%;
+    cursor: pointer;
+    padding: 25px 0;
+  }
 `;
 
 export const NavEnd = styled.div`
@@ -59,6 +77,15 @@ export const NavEnd = styled.div`
   justify-content: flex-end;
   gap: 10px;
   flex-basis: 60%;
+  div {
+    background-color: var(--darkgreen);
+    font-style: normal;
+    background: url('/static/brush-stroke-banner.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 110%;
+    cursor: pointer;
+    padding: 25px 0;
+  }
   @media (max-width: 350px) {
     justify-content: flex-start;
   }
@@ -94,13 +121,16 @@ export const IndexTextBlock = styled.div`
 
 export const SingleBlogTextBlock = styled.div`
   margin: 0 0 1rem 0;
-  small {
-    font-size: 0.8rem;
+  div {
     background-color: var(--darkgreen);
     background: url('/static/brush-stroke-banner.svg');
     background-repeat: no-repeat;
-    background-size: 100% 110%;
-    padding: 15px 0;
+    background-size: 85% 105%;
+    padding: 25px;
+    width: 220px;
+  }
+  small {
+    font-size: 0.8rem;
   }
 `;
 
@@ -121,7 +151,7 @@ export const ImageCredit = styled.div`
 `;
 
 export const IntroText = styled.div`
-  font-size: 1.7rem;
+  font-size: 1.6rem;
 `;
 
 export const Footer = styled.div`

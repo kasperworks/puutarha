@@ -48,23 +48,29 @@ export default function Container(props) {
           </a>
           <s.NavBar>
             <s.NavSection>
-              <NextLink href="/">
-                <a>
-                  <em>kasper.works</em>
-                </a>
-              </NextLink>
+              <div>
+                <NextLink href="/">
+                  <a>
+                    <em>kasper.works</em>
+                  </a>
+                </NextLink>
+              </div>
             </s.NavSection>
             <s.NavEnd>
-              <NextLink href="/blog">
-                <a>
-                  <em>notes</em>
-                </a>
-              </NextLink>
-              <NextLink href="/about">
-                <a>
-                  <em>about</em>
-                </a>
-              </NextLink>
+              <div>
+                <NextLink href="/blog">
+                  <a>
+                    <em>notes</em>
+                  </a>
+                </NextLink>
+              </div>
+              <div>
+                <NextLink href="/about">
+                  <a>
+                    <em>about</em>
+                  </a>
+                </NextLink>
+              </div>
             </s.NavEnd>
           </s.NavBar>
           <hr />

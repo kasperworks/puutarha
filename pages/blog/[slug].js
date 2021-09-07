@@ -20,7 +20,9 @@ const Post = ({ code, frontmatter }) => {
     <Container>
       <h1>{frontmatter.title}</h1>
       <s.SingleBlogTextBlock>
-        <small>Published: {frontmatter.publishedAt}</small>
+        <div>
+          <small>Published: {frontmatter.publishedAt}</small>
+        </div>
       </s.SingleBlogTextBlock>
       <s.SingleBlogTextHeaderBlock>
         <p>{frontmatter.summary}</p>

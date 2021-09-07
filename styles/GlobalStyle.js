@@ -84,13 +84,17 @@ const GlobalStyle = createGlobalStyle`
 
 
     em {
-      background-color: var(--darkgreen);
       font-style: normal;
       background: url('/static/brush-stroke-banner.svg');
       background-repeat: no-repeat;
-      background-size: 100% 110%;
+      background-size: 90% 110%;
       cursor: pointer;
-      padding: 12px;
+      padding: 20px 12px 20px 3px;
+
+    }
+
+    li > em {
+      background-size: 100% 115%;
     }
 
 
@@ -102,20 +106,6 @@ const GlobalStyle = createGlobalStyle`
     em > a {
       text-decoration: none;
     }
-
-/*     em:hover {
-      background: url('static/brush-stroke-banner.svg');
-      background-repeat: no-repeat;
-      background-size: 100% 95%;
-      background-color: var(--green);
-      color: var(--codeblock);
-      cursor: pointer;
-    } */
-
-/*     em:hover > a {
-      color: var(--codeblock);
-    } */
-
 
     input,
     button,
@@ -142,9 +132,9 @@ const GlobalStyle = createGlobalStyle`
     }
 
     h1 {
-      margin: 2.5rem 0;
+      margin: 2rem 0 1rem 0; 
       font-size: 2.5rem;
-      color: var(--grey);
+      color: var(--green);
       font-family: 'Josefin Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif,
         "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     }
