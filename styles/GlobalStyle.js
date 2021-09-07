@@ -96,7 +96,7 @@ const GlobalStyle = createGlobalStyle`
       background-repeat: no-repeat;
       background-size: 100% 120%;
       cursor: pointer;
-      padding: 25px 5px 20px 0;
+      padding: 15px 10px 15px 3px;
     }
 
     li {

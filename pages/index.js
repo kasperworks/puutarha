@@ -26,9 +26,10 @@ export default function Introduction() {
       </s.TextBlock>
       <s.TextBlock>
         <p>
-          The purpose of this site is to share some stuff I&apos;ve picked up and ease the
-          learning curve for others in a similar situation. If you&apos;re brand new to
-          web development, you&apos;ll find a collection of resources and starting advice{' '}
+          I&apos;ve benefited enormously from generously distributed resources and
+          open-source software that helped me land my first programming job, and would
+          like to contribute in turn. If you are new to web development or coding in
+          general, you&apos;ll find a collection of resources and advice{' '}
           <Link href="/blog/starter-pack">
             <em>here.</em>
           </Link>

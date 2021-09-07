@@ -72,7 +72,7 @@ export const NavSection = styled.div`
     font-style: normal;
     background: url('/static/brush-stroke-banner.svg');
     background-repeat: no-repeat;
-    background-size: 95% 110%;
+    background-size: 100% 115%;
     cursor: pointer;
     padding: 25px 0;
   }
@@ -82,16 +82,7 @@ export const NavEnd = styled.div`
   display: flex;
   justify-content: flex-end;
   flex-basis: 50%;
-  gap: 1.5rem;
-  div {
-    background-color: var(--darkgreen);
-    font-style: normal;
-    background: url('/static/brush-stroke-banner.svg');
-    background-repeat: no-repeat;
-    background-size: 95% 110%;
-    cursor: pointer;
-    padding: 25px 0;
-  }
+  gap: 1.2rem;
   @media (max-width: 370px) {
     justify-content: flex-start;
   }
@@ -136,8 +127,8 @@ export const SingleBlogTextBlock = styled.div`
     background-color: var(--darkgreen);
     background: url('/static/brush-stroke-banner.svg');
     background-repeat: no-repeat;
-    background-size: 80% 115%;
-    padding: 15px 3px;
+    background-size: 85% 115%;
+    padding: 20px 3px;
     width: 210px;
   }
   small {
