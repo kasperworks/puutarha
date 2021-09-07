@@ -6,9 +6,7 @@ const BlogPost = ({ title, publishedAt, summary, slug }) => (
     <Link href={`/blog/${slug}`}>
       <a>
         <div>
-          <s.BlogPostHeaderWrapper>
-            <h4>{title}</h4>
-          </s.BlogPostHeaderWrapper>
+          <h4>{title}</h4>
           <small>{publishedAt}</small>
         </div>
         <p>{summary}</p>

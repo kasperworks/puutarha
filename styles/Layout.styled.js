@@ -61,6 +61,7 @@ export const NavSection = styled.div`
   display: flex;
   flex-basis: 40%;
   margin-right: 1rem;
+  margin-bottom: -15px;
   div {
     background-color: var(--darkgreen);
     font-style: normal;
@@ -68,27 +69,15 @@ export const NavSection = styled.div`
     background-repeat: no-repeat;
     background-size: 95% 110%;
     cursor: pointer;
-    padding: 22px 0;
+    padding: 20px 0;
   }
 `;
 
 export const NavEnd = styled.div`
   display: flex;
   justify-content: flex-end;
-  gap: 10px;
+  gap: 2rem;
   flex-basis: 60%;
-  div {
-    background-color: var(--darkgreen);
-    font-style: normal;
-    background: url('/static/brush-stroke-banner.svg');
-    background-repeat: no-repeat;
-    background-size: 100% 105%;
-    cursor: pointer;
-    padding: 22px 0;
-  }
-  @media (max-width: 350px) {
-    justify-content: flex-start;
-  }
 `;
 
 export const BlogPostDisplay = styled.div`
@@ -118,15 +107,6 @@ export const BlogPostDisplay = styled.div`
       }
     }
   }
-`;
-
-export const BlogPostHeaderWrapper = styled.div`
-  background: url('/static/brush-stroke-banner.svg');
-  background-repeat: no-repeat;
-  background-size: 104% 120%;
-  width: fit-content;
-  cursor: pointer;
-  padding: 20px 0 15px 0;
 `;
 
 export const AboutTextBlock = styled.div`
