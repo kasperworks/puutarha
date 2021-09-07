@@ -74,7 +74,7 @@ const GlobalStyle = createGlobalStyle`
       background-color: var(--codeblock);
       padding: 10px;
       border-radius: 4px;
-      box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.044);
+      box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.15);
       overflow: auto;
     }
 
@@ -84,6 +84,9 @@ const GlobalStyle = createGlobalStyle`
       @media (max-width: 780px) {
         font-size: 1rem;
       }
+      @media (max-width: 500px) {
+        font-size: 0.9rem;
+      }
     }
 
 
@@ -91,7 +94,7 @@ const GlobalStyle = createGlobalStyle`
       font-style: normal;
       background: url('/static/brush-stroke-banner.svg');
       background-repeat: no-repeat;
-      background-size: 100% 110%;
+      background-size: 100% 120%;
       cursor: pointer;
       padding: 25px 5px 20px 0;
     }
@@ -130,8 +133,9 @@ const GlobalStyle = createGlobalStyle`
     }
 
     h1 {
-      margin: 2rem 0 0.25rem 0; 
-      font-size: 2.5rem;
+      margin: 0.9375em 0 0 0; 
+      font-size: 2.25rem;
+      line-height: 1.33em;
       color: var(--accent);
       text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.05), 0px -5px 35px rgba(255, 255, 255, 0.15);
       font-family: 'Josefin Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif,

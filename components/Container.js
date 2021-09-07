@@ -50,25 +50,19 @@ export default function Container(props) {
             <s.NavSection>
               <div>
                 <NextLink href="/">
-                  <a>
-                    <em>kasper.works</em>
-                  </a>
+                  <a>kasper.works</a>
                 </NextLink>
               </div>
             </s.NavSection>
             <s.NavEnd>
               <div>
                 <NextLink href="/blog">
-                  <a>
-                    <em>Notes</em>
-                  </a>
+                  <a>Notes</a>
                 </NextLink>
               </div>
               <div>
                 <NextLink href="/about">
-                  <a>
-                    <em>About</em>
-                  </a>
+                  <a>About</a>
                 </NextLink>
               </div>
             </s.NavEnd>

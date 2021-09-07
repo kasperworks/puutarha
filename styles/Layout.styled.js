@@ -1,10 +1,12 @@
 import styled from 'styled-components';
 
 export const SiteBorderStyles = styled.div`
+  background-color: #252b35;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='88' height='24' viewBox='0 0 88 24'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='autumn' fill='%23235353' fill-opacity='0.18'%3E%3Cpath d='M10 0l30 15 2 1V2.18A10 10 0 0 0 41.76 0H39.7a8 8 0 0 1 .3 2.18v10.58L14.47 0H10zm31.76 24a10 10 0 0 0-5.29-6.76L4 1 2 0v13.82a10 10 0 0 0 5.53 8.94L10 24h4.47l-6.05-3.02A8 8 0 0 1 4 13.82V3.24l31.58 15.78A8 8 0 0 1 39.7 24h2.06zM78 24l2.47-1.24A10 10 0 0 0 86 13.82V0l-2 1-32.47 16.24A10 10 0 0 0 46.24 24h2.06a8 8 0 0 1 4.12-4.98L84 3.24v10.58a8 8 0 0 1-4.42 7.16L73.53 24H78zm0-24L48 15l-2 1V2.18A10 10 0 0 1 46.24 0h2.06a8 8 0 0 0-.3 2.18v10.58L73.53 0H78z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 1200px;
+  max-width: 1232px;
   width: 100%;
   margin: 0 auto 2rem auto;
   padding: 5px;
@@ -25,7 +27,7 @@ export const SiteBorderStyles = styled.div`
 `;
 
 export const CenterSection = styled.div`
-  padding: 15px;
+  padding: 0 15px;
   width: 100%;
   max-width: 780px;
   .skip-nav {
@@ -39,31 +41,32 @@ export const NavBar = styled.div`
   display: flex;
   width: 100%;
   min-width: 300px;
-  margin-bottom: 1rem;
+  margin: -20px 1rem -20px 0;
   font-size: 1.4rem;
-  justify-content: space-between;
   align-items: baseline;
   a {
     text-decoration: none;
+    @media (hover: hover) {
+      &:hover {
+        color: var(--accent);
+      }
+    }
+    @media (hover: none) {
+      &:active {
+        color: var(--accent);
+      }
+    }
     font-family: 'Josefin Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica,
       Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   }
-  em {
-    color: var(--white);
-    padding: 4px 10px;
-    font-family: 'Josefin Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica,
-      Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-    @media (max-width: 370px) {
-      font-size: 1.1rem;
-    }
+  @media (max-width: 370px) {
+    font-size: 1.1rem;
   }
 `;
 
 export const NavSection = styled.div`
   display: flex;
-  flex-basis: 40%;
-  margin-right: 1rem;
-  margin-bottom: -15px;
+  flex-basis: 50%;
   div {
     background-color: var(--darkgreen);
     font-style: normal;
@@ -78,8 +81,8 @@ export const NavSection = styled.div`
 export const NavEnd = styled.div`
   display: flex;
   justify-content: flex-end;
-  gap: 2rem;
-  flex-basis: 60%;
+  flex-basis: 50%;
+  gap: 1.5rem;
   div {
     background-color: var(--darkgreen);
     font-style: normal;
@@ -88,6 +91,9 @@ export const NavEnd = styled.div`
     background-size: 95% 110%;
     cursor: pointer;
     padding: 25px 0;
+  }
+  @media (max-width: 370px) {
+    justify-content: flex-start;
   }
 `;
 
@@ -135,7 +141,7 @@ export const SingleBlogTextBlock = styled.div`
     width: 210px;
   }
   small {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
   }
 `;
 
