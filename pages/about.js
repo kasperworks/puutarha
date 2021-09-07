@@ -6,27 +6,27 @@ export default function About() {
     <Container title="About – Kasper Viita">
       <div>
         <h1>About Me</h1>
-        <s.AboutTextBlock>
+        <s.TextBlock>
           <p>
             I wrote about financial markets and related topics for nearly a decade before
             pivoting to programming.
           </p>
-        </s.AboutTextBlock>
-        <s.AboutTextBlock>
+        </s.TextBlock>
+        <s.TextBlock>
           <p>
             In the past, you might have caught me on Bloomberg TV or radio, talking about
             the latest earnings season, an industry trend or an acquisition announced
             earlier that morning. Before that, I used to DJ, write record reviews and
             design flyers.
           </p>
-        </s.AboutTextBlock>
-        <s.AboutTextBlock>
+        </s.TextBlock>
+        <s.TextBlock>
           <p>
             These days I&apos;m more likely to be building an interactive data
             visualization or tinkering with a cloud-service script at Yle, Finland’s
             public broadcasting company.
           </p>
-        </s.AboutTextBlock>
+        </s.TextBlock>
       </div>
     </Container>
   );

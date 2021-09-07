@@ -13,20 +13,18 @@ export default function Introduction() {
   return (
     <Container>
       <h1>Kasper Viita</h1>
-      <s.IndexTextBlock>
-        <s.IntroText>
-          <p>Hi! I&apos;m Kasper, a journalist and a programmer.</p>
-        </s.IntroText>
-      </s.IndexTextBlock>
+      <s.TextBlock>
+        <p>Hi! I&apos;m Kasper, a journalist and a programmer.</p>
+      </s.TextBlock>
 
-      <s.IndexTextBlock>
+      <s.TextBlock>
         <p>
           This is my hub, my digital garden. You&apos;ll find some scattered notes here,
           largely about my efforts to master the skills of a software engineer. Learning
           to code, that is.
         </p>
-      </s.IndexTextBlock>
-      <s.IndexTextBlock>
+      </s.TextBlock>
+      <s.TextBlock>
         <p>
           The purpose of this site is to share some stuff I&apos;ve picked up and ease the
           learning curve for others in a similar situation. If you&apos;re brand new to
@@ -35,8 +33,8 @@ export default function Introduction() {
             <em>here.</em>
           </Link>
         </p>
-      </s.IndexTextBlock>
-      <s.IndexTextBlock>
+      </s.TextBlock>
+      <s.TextBlock>
         <p>
           I made a start to my newest career path at 35 years old, with very limited
           knowledge of programming. I succeeded in getting employed in a professional
@@ -46,15 +44,15 @@ export default function Introduction() {
             <em>here.</em>
           </Link>
         </p>
-      </s.IndexTextBlock>
-      <s.IndexTextBlock>
+      </s.TextBlock>
+      <s.TextBlock>
         <p>
           If you&apos;d like to read about the technology behind this site, see{' '}
           <Link href="/blog/how-i-built-this-site">
             <em>here.</em>
           </Link>
         </p>
-      </s.IndexTextBlock>
+      </s.TextBlock>
 
       {/*     <h3>Here are three of my recent posts:</h3>
       <s.IndexTextBlock>

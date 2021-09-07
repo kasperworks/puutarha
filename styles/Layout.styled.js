@@ -11,12 +11,14 @@ export const SiteBorderStyles = styled.div`
   box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.45);
   min-height: 100vh;
   @media (hover: hover) {
-    em:hover {
+    em:hover,
+    em > a:hover {
       color: var(--accent);
     }
   }
   @media (hover: none) {
-    em:active {
+    em:active,
+    em > a:active {
       color: var(--accent);
     }
   }
@@ -69,7 +71,7 @@ export const NavSection = styled.div`
     background-repeat: no-repeat;
     background-size: 95% 110%;
     cursor: pointer;
-    padding: 20px 0;
+    padding: 25px 0;
   }
 `;
 
@@ -78,6 +80,15 @@ export const NavEnd = styled.div`
   justify-content: flex-end;
   gap: 2rem;
   flex-basis: 60%;
+  div {
+    background-color: var(--darkgreen);
+    font-style: normal;
+    background: url('/static/brush-stroke-banner.svg');
+    background-repeat: no-repeat;
+    background-size: 95% 110%;
+    cursor: pointer;
+    padding: 25px 0;
+  }
 `;
 
 export const BlogPostDisplay = styled.div`
@@ -109,11 +120,7 @@ export const BlogPostDisplay = styled.div`
   }
 `;
 
-export const AboutTextBlock = styled.div`
-  margin: 1.4rem 0;
-`;
-
-export const IndexTextBlock = styled.div`
+export const TextBlock = styled.div`
   margin: 1.4rem 0;
 `;
 
@@ -124,8 +131,8 @@ export const SingleBlogTextBlock = styled.div`
     background: url('/static/brush-stroke-banner.svg');
     background-repeat: no-repeat;
     background-size: 80% 115%;
-    padding: 15px 5px;
-    width: 180px;
+    padding: 15px 3px;
+    width: 210px;
   }
   small {
     font-size: 0.8rem;

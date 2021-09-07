@@ -91,16 +91,10 @@ const GlobalStyle = createGlobalStyle`
       font-style: normal;
       background: url('/static/brush-stroke-banner.svg');
       background-repeat: no-repeat;
-      background-size: 90% 110%;
+      background-size: 100% 110%;
       cursor: pointer;
-      padding: 20px 12px 20px 3px;
-
+      padding: 25px 5px 20px 0;
     }
-
-    li > em {
-      background-size: 100% 115%;
-    }
-
 
     li {
       list-style: square;
@@ -136,9 +130,9 @@ const GlobalStyle = createGlobalStyle`
     }
 
     h1 {
-      margin: 2rem 0 1rem 0; 
+      margin: 2rem 0 0.25rem 0; 
       font-size: 2.5rem;
-      color: var(--green);
+      color: var(--accent);
       text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.05), 0px -5px 35px rgba(255, 255, 255, 0.15);
       font-family: 'Josefin Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif,
         "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
