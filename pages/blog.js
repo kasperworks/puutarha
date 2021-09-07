@@ -16,8 +16,8 @@ export default function Blog({ posts }) {
   return (
     <Container title="Blog – Kasper Viita" description="Mietteitä siitä sun tästä">
       <div>
-        <h1>Blog</h1>
-        <p>{`Tänne tulee kirjoituksia, tähän mennessä ${posts.length} kappaletta.`}</p>
+        <h1>Notes</h1>
+        <p>{`I've written ${posts.length} public notes thus far, you'll find them all here.`}</p>
         {/* <div>
           <input
             aria-label="Search articles"
@@ -27,7 +27,6 @@ export default function Blog({ posts }) {
           />
         </div> */}
         <>
-          <h4>Kaikki postaukset</h4>
           {postsByDate.map((item) => {
             const { title, publishedAt, summary } = item.frontmatter;
             const { slug } = item;

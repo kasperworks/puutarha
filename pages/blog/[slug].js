@@ -18,15 +18,13 @@ const Post = ({ code, frontmatter }) => {
   const Component = React.useMemo(() => getMDXComponent(code), [code]);
   return (
     <Container>
-      <h1>{frontmatter.title}</h1>
       <s.SingleBlogTextBlock>
+        <h1>{frontmatter.title}</h1>
         <div>
           <small>Published: {frontmatter.publishedAt}</small>
         </div>
-      </s.SingleBlogTextBlock>
-      <s.SingleBlogTextHeaderBlock>
         <p>{frontmatter.summary}</p>
-      </s.SingleBlogTextHeaderBlock>
+      </s.SingleBlogTextBlock>
       {frontmatter.image && (
         <Image
           src={frontmatter.image}

@@ -80,6 +80,10 @@ const GlobalStyle = createGlobalStyle`
 
     code {
       font-family: source-code-pro, Menlo, Consolas, monospace;
+      font-size: 1.15rem;
+      @media (max-width: 780px) {
+        font-size: 1rem;
+      }
     }
 
 
@@ -135,6 +139,7 @@ const GlobalStyle = createGlobalStyle`
       margin: 2rem 0 1rem 0; 
       font-size: 2.5rem;
       color: var(--green);
+      text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.05), 0px -5px 35px rgba(255, 255, 255, 0.15);
       font-family: 'Josefin Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif,
         "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     }

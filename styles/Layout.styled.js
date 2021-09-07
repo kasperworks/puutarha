@@ -66,9 +66,9 @@ export const NavSection = styled.div`
     font-style: normal;
     background: url('/static/brush-stroke-banner.svg');
     background-repeat: no-repeat;
-    background-size: 100% 110%;
+    background-size: 95% 110%;
     cursor: pointer;
-    padding: 25px 0;
+    padding: 22px 0;
   }
 `;
 
@@ -82,9 +82,9 @@ export const NavEnd = styled.div`
     font-style: normal;
     background: url('/static/brush-stroke-banner.svg');
     background-repeat: no-repeat;
-    background-size: 100% 110%;
+    background-size: 100% 105%;
     cursor: pointer;
-    padding: 25px 0;
+    padding: 22px 0;
   }
   @media (max-width: 350px) {
     justify-content: flex-start;
@@ -92,23 +92,41 @@ export const NavEnd = styled.div`
 `;
 
 export const BlogPostDisplay = styled.div`
-  margin: 20px 0;
-  background-color: var(--codeblock);
-  font-style: normal;
   border-radius: 0.5rem;
-  border-bottom-left-radius: 0.25rem;
-  box-decoration-break: clone;
+  margin: 15px 0;
   h4 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
+    text-shadow: 2px 6px 6px rgba(0, 0, 0, 0.1), 0px -5px 35px rgba(255, 255, 255, 0.12);
+  }
+  small {
+    color: var(--grey);
   }
   a {
     text-decoration: none;
   }
-  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.15);
-  padding: 5px 10px 12px 10px;
-  &:hover {
-    box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.45);
+  @media (hover: hover) {
+    &:hover {
+      h4 {
+        color: var(--accent);
+      }
+    }
   }
+  @media (hover: none) {
+    &:active {
+      h4 {
+        color: var(--accent);
+      }
+    }
+  }
+`;
+
+export const BlogPostHeaderWrapper = styled.div`
+  background: url('/static/brush-stroke-banner.svg');
+  background-repeat: no-repeat;
+  background-size: 104% 120%;
+  width: fit-content;
+  cursor: pointer;
+  padding: 20px 0 15px 0;
 `;
 
 export const AboutTextBlock = styled.div`
@@ -125,9 +143,9 @@ export const SingleBlogTextBlock = styled.div`
     background-color: var(--darkgreen);
     background: url('/static/brush-stroke-banner.svg');
     background-repeat: no-repeat;
-    background-size: 85% 105%;
-    padding: 25px;
-    width: 220px;
+    background-size: 80% 115%;
+    padding: 15px 5px;
+    width: 180px;
   }
   small {
     font-size: 0.8rem;

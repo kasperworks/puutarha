@@ -60,14 +60,14 @@ export default function Container(props) {
               <div>
                 <NextLink href="/blog">
                   <a>
-                    <em>notes</em>
+                    <em>Notes</em>
                   </a>
                 </NextLink>
               </div>
               <div>
                 <NextLink href="/about">
                   <a>
-                    <em>about</em>
+                    <em>About</em>
                   </a>
                 </NextLink>
               </div>
