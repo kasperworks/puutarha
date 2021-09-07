@@ -41,7 +41,7 @@ export default function Introduction() {
           I made a start to my newest career path at 35 years old, with very limited
           knowledge of programming. I succeeded in getting employed in a professional
           programming role in 11 months, leveraging my journalist background and hobby
-          projects. If that sounds like a fascinating read to you, have a look{' '}
+          projects. If that sounds like a fascinating read to you, have a look
           <Link href="/blog/new-coder-at-35">
             <em>here.</em>
           </Link>
@@ -49,7 +49,7 @@ export default function Introduction() {
       </s.IndexTextBlock>
       <s.IndexTextBlock>
         <p>
-          If you&apos;d like to read about the technology behind this site, see{' '}
+          If you&apos;d like to read about the technology behind this site, see
           <Link href="/blog/how-i-built-this-site">
             <em>here.</em>
           </Link>

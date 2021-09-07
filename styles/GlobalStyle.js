@@ -90,6 +90,7 @@ const GlobalStyle = createGlobalStyle`
       background-repeat: no-repeat;
       background-size: 100% 110%;
       cursor: pointer;
+      padding: 12px;
     }
 
 
@@ -161,7 +162,6 @@ const GlobalStyle = createGlobalStyle`
 
     a {
       color: var(--lightgrey);
-      
     }
 
     html:focus-within {

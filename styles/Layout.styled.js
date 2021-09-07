@@ -90,9 +90,6 @@ export const AboutTextBlock = styled.div`
 
 export const IndexTextBlock = styled.div`
   margin: 1.4rem 0;
-  a {
-    text-decoration: none;
-  }
 `;
 
 export const SingleBlogTextBlock = styled.div`
@@ -103,6 +100,7 @@ export const SingleBlogTextBlock = styled.div`
     background: url('/static/brush-stroke-banner.svg');
     background-repeat: no-repeat;
     background-size: 100% 110%;
+    padding: 15px 0;
   }
 `;
 
