@@ -97,6 +97,7 @@ const GlobalStyle = createGlobalStyle`
       background-size: 100% 120%;
       cursor: pointer;
       padding: 15px 10px 15px 3px;
+      margin: -15px -10px -15px -3px;
     }
 
     li {

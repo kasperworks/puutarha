@@ -127,16 +127,16 @@ export const SingleBlogTextBlock = styled.div`
     background-color: var(--darkgreen);
     background: url('/static/brush-stroke-banner.svg');
     background-repeat: no-repeat;
-    background-size: 90% 115%;
+    background-size: 100% 110%;
     padding: 20px 0px;
     width: 210px;
     // Positioning the brush stroke, fixing margins
-    margin-left: -15px;
+    margin-left: -25px;
     margin-bottom: -5px;
   }
   small {
     font-size: 0.85rem;
-    margin-left: 15px;
+    margin-left: 25px;
   }
 `;
 
@@ -158,6 +158,10 @@ export const ImageCredit = styled.div`
 
 export const IntroText = styled.div`
   font-size: 1.6rem;
+`;
+
+export const HeaderEmoji = styled.div`
+  filter: sepia(45%) hue-rotate(340deg);
 `;
 
 export const Footer = styled.div`

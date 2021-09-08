@@ -12,9 +12,18 @@ export default function Introduction() {
 
   return (
     <Container>
-      <h1>Kasper Viita</h1>
+      <h1>
+        <s.HeaderEmoji>👋</s.HeaderEmoji>
+      </h1>
+
       <s.TextBlock>
-        <p>Hi! I&apos;m Kasper, a journalist and a programmer.</p>
+        <p>
+          Hi! I&apos;m{' '}
+          <Link href="/about">
+            <em>Kasper Viita</em>
+          </Link>
+          , a journalist and a programmer.
+        </p>
       </s.TextBlock>
 
       <s.TextBlock>
@@ -29,7 +38,7 @@ export default function Introduction() {
           I&apos;ve benefited enormously from generously distributed resources and
           open-source software that helped me land my first programming job, and would
           like to contribute in turn. If you are new to web development or coding in
-          general, you&apos;ll find a collection of resources and advice{' '}
+          general, I&apos;ve written down a few things that worked for me{' '}
           <Link href="/blog/starter-pack">
             <em>here.</em>
           </Link>
@@ -37,11 +46,10 @@ export default function Introduction() {
       </s.TextBlock>
       <s.TextBlock>
         <p>
-          I made a career switch after nearly a decade in financial journalism, during
-          which I had acquired a rudimentary knowledge of Python to handle large datasets.
-          After 11 months of determined self-study, I took up a professional programming
-          role, one that leveraged my journalist background and hobby projects. If that
-          sounds like a fascinating read to you, have a look{' '}
+          I made a career switch after nearly a decade in financial journalism. After 11
+          months of determined self-study, I took up a professional programming role,
+          leveraging my journalism background and hobby projects. If that sounds like a
+          fascinating read to you, have a look{' '}
           <Link href="/blog/new-coder-at-35">
             <em>here.</em>
           </Link>
