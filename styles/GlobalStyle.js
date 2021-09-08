@@ -80,12 +80,12 @@ const GlobalStyle = createGlobalStyle`
 
     code {
       font-family: source-code-pro, Menlo, Consolas, monospace;
-      font-size: 1.15rem;
-      @media (max-width: 780px) {
-        font-size: 1rem;
-      }
-      @media (max-width: 500px) {
+      font-size: 1rem;
+      @media (max-width: 700px) {
         font-size: 0.9rem;
+      }
+      @media (max-width: 400px) {
+        font-size: 0.7rem;
       }
     }
 
@@ -169,6 +169,10 @@ const GlobalStyle = createGlobalStyle`
 
     .skip-nav {
       transform: translateY(-50px);
+    }
+
+    .rehype-code-title {
+      font-size: 0.9rem;
     }
 
     .token.comment,

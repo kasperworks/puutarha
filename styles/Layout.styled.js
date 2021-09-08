@@ -126,8 +126,8 @@ export const SingleBlogTextBlock = styled.div`
   em {
     font-size: 0.8rem;
     cursor: default;
-    padding: 0 17px 1px 15px;
-    margin: 0 -17px -1px -15px;
+    padding: 3px 17px 1px 10px;
+    margin: 3px -17px -1px -10px;
     pointer-events: none;
   }
   div {
