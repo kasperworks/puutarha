@@ -21,7 +21,7 @@ const Post = ({ code, frontmatter }) => {
       <s.SingleBlogTextBlock>
         <h1>{frontmatter.title}</h1>
         <div>
-          <small>Published: {frontmatter.publishedAt}</small>
+          <em>Published: {frontmatter.publishedAt}</em>
         </div>
         <p>{frontmatter.summary}</p>
       </s.SingleBlogTextBlock>

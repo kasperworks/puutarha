@@ -97,8 +97,8 @@ const GlobalStyle = createGlobalStyle`
       background-repeat: no-repeat;
       background-position: center;   
       cursor: pointer;
-      padding: 0 4px 15px 0;
-      margin: 0 -4px -15px 0;
+      padding: 4px 4px 15px 0;
+      margin: -4px -4px -15px 0;
     }
 
     li {

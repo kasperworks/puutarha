@@ -38,8 +38,9 @@ export default function Introduction() {
           leveraging my journalism background and hobby projects. If that sounds like a
           fascinating read to you, have a look{' '}
           <Link href="/blog/new-coder-at-35">
-            <em>here.</em>
+            <em>here</em>
           </Link>
+          .
         </p>
       </s.TextBlock>
       <s.TextBlock>
@@ -59,8 +60,9 @@ export default function Introduction() {
         <p>
           If you&apos;re interested in the technology behind this site, see{' '}
           <Link href="/blog/how-i-built-this-site">
-            <em>here.</em>
-          </Link>{' '}
+            <em>here</em>
+          </Link>
+          .
         </p>
       </s.TextBlock>
       <s.TextBlock>

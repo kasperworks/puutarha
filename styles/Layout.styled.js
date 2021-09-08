@@ -123,20 +123,12 @@ export const TextBlock = styled.div`
 
 export const SingleBlogTextBlock = styled.div`
   margin: 0 0 1rem 0;
-  div {
-    background-color: var(--darkgreen);
-    background: url('/static/brush-stroke-banner.svg');
-    background-repeat: no-repeat;
-    background-size: 100% 110%;
-    padding: 20px 0px;
-    width: 210px;
-    // Positioning the brush stroke, fixing margins
-    margin-left: -25px;
-    margin-bottom: -5px;
-  }
-  small {
-    font-size: 0.85rem;
-    margin-left: 25px;
+  em {
+    font-size: 0.8rem;
+    cursor: default;
+    padding: 2px 12px 5px 0;
+    margin: -2px -12px -5px 0;
+    pointer-events: none;
   }
 `;
 
@@ -163,7 +155,8 @@ export const IntroText = styled.div`
 export const HeaderEmoji = styled.h1`
   filter: sepia(45%) hue-rotate(340deg);
   text-shadow: 1px 1px 3px var(--black);
-  pointer: grab;
+  cursor: grab;
+  width: 20%;
 `;
 
 export const Footer = styled.div`
