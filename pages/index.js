@@ -4,24 +4,12 @@ import { getAllPosts } from '../lib/mdx';
 import * as s from '../styles/Layout.styled';
 
 export default function Introduction() {
-  /*   const postsByDate = posts
-    .sort(
-      (a, b) => new Date(b.frontmatter.publishedAt) - new Date(a.frontmatter.publishedAt),
-    )
-    .slice(0, 3); */
-
   return (
     <Container>
       <s.HeaderEmoji>👋</s.HeaderEmoji>
 
       <s.TextBlock>
-        <p>
-          Hi! I&apos;m{' '}
-          <Link href="/about">
-            <em>Kasper Viita</em>
-          </Link>
-          , a journalist and a programmer.
-        </p>
+        <p>Hi! I&apos;m Kasper Viita, a journalist and a programmer.</p>
       </s.TextBlock>
 
       <s.TextBlock>
@@ -33,10 +21,10 @@ export default function Introduction() {
       </s.TextBlock>
       <s.TextBlock>
         <p>
-          I made a career switch after nearly a decade in financial journalism. After 11
-          months of determined self-study, I took up a professional programming role,
-          leveraging my journalism background and hobby projects. If that sounds like a
-          fascinating read to you, have a look{' '}
+          I switched careers in 2021, mid-pandemic, after nearly a decade in financial
+          journalism. Following 11 months of determined self-study, I crossed over to a
+          professional programming role, changing employers and countries in the process.
+          I wrote about that{' '}
           <Link href="/blog/new-coder-at-35">
             <em>here</em>
           </Link>
@@ -45,14 +33,13 @@ export default function Introduction() {
       </s.TextBlock>
       <s.TextBlock>
         <p>
-          I&apos;ve benefited enormously from the wealth of free resources and open-source
-          software that helped me land my first programming job, and would like to
-          contribute in turn. If you are new to web development or coding in general,
-          I&apos;ve written down a few{' '}
+          I&apos;ve benefited greatly from a wealth of free resources and open-source
+          software, and would like to contribute in turn. If you are new to web
+          development or coding in general, I&apos;ve curated a{' '}
           <Link href="/blog/starter-pack">
-            <em>pointers</em>
+            <em>starter pack</em>
           </Link>{' '}
-          that worked for me.
+          of assets based on what worked for me. It comes with a few pointers.
         </p>
       </s.TextBlock>
 
@@ -71,19 +58,6 @@ export default function Introduction() {
           Otherwise, have a look around and let me know if you found something useful!
         </p>
       </s.TextBlock>
-
-      {/*     <h3>Here are three of my recent posts:</h3>
-      <s.IndexTextBlock>
-        <ul>
-          {postsByDate.map((post) => (
-            <li key={post.slug}>
-              <Link href={`/blog/${post.slug}`}>
-                <em>{post.frontmatter.title}</em>
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </s.IndexTextBlock> */}
     </Container>
   );
 }

@@ -14,7 +14,7 @@ export default function Blog({ posts }) {
       frontMatter.title.toLowerCase().includes(searchValue.toLowerCase()),
     ); */
   return (
-    <Container title="Blog – Kasper Viita" description="Mietteitä siitä sun tästä">
+    <Container title="Blog / Kasper Viita" description="Assorted notes">
       <div>
         <h1>Notes</h1>
         <s.TextBlock>

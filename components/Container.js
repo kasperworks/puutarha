@@ -10,7 +10,7 @@ export default function Container(props) {
   const { children, ...customMeta } = props;
   const router = useRouter();
   const meta = {
-    title: 'Kasper Viita – a journalist and a programmer.',
+    title: 'kasper.works / Kasper Viita',
     description: `Numbers, words & JS.`,
     image:
       'https://images.unsplash.com/photo-1561983818-e339e248ac5c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1494&q=80',

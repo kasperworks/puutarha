@@ -3,7 +3,7 @@ import * as s from '../styles/Layout.styled';
 
 export default function About() {
   return (
-    <Container title="About – Kasper Viita">
+    <Container title="About / Kasper Viita">
       <div>
         <h1>About Me</h1>
         <s.TextBlock>

@@ -17,9 +17,11 @@ const MAX_IMAGE_WIDTH = 780;
 const Post = ({ code, frontmatter }) => {
   const Component = React.useMemo(() => getMDXComponent(code), [code]);
   return (
-    <Container>
+    <Container title={`${frontmatter.title} / Kasper Viita`}>
       <s.SingleBlogTextBlock>
         <h1>{frontmatter.title}</h1>
+      </s.SingleBlogTextBlock>
+      <s.SingleBlogTextBlock>
         <div>
           <em>Published: {frontmatter.publishedAt}</em>
         </div>

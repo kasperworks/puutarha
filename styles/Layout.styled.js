@@ -122,22 +122,17 @@ export const TextBlock = styled.div`
 `;
 
 export const SingleBlogTextBlock = styled.div`
-  margin: 0 0 1rem 0;
+  margin: 0 0 20px 0;
   em {
     font-size: 0.8rem;
     cursor: default;
-    padding: 2px 12px 5px 0;
-    margin: -2px -12px -5px 0;
+    padding: 0 17px 1px 15px;
+    margin: 0 -17px -1px -15px;
     pointer-events: none;
   }
-`;
-
-export const SingleBlogTextHeaderBlock = styled.div`
-  background-color: var(--codeblock);
-  margin-bottom: 10px;
-  padding: 5px;
-  border-radius: 4px;
-  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.044);
+  div {
+    margin-bottom: 10px;
+  }
 `;
 
 export const ImageCredit = styled.div`
