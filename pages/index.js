@@ -37,10 +37,11 @@ export default function Introduction() {
       </s.TextBlock>
       <s.TextBlock>
         <p>
-          I made a start to my newest career path at 35 years old, with very limited
-          knowledge of programming. I succeeded in getting employed in a professional
-          programming role in 11 months, leveraging my journalist background and hobby
-          projects. If that sounds like a fascinating read to you, have a look{' '}
+          I made a career switch after nearly a decade in financial journalism, during
+          which I had acquired a rudimentary knowledge of Python to handle large datasets.
+          After 11 months of determined self-study, I took up a professional programming
+          role, one that leveraged my journalist background and hobby projects. If that
+          sounds like a fascinating read to you, have a look{' '}
           <Link href="/blog/new-coder-at-35">
             <em>here.</em>
           </Link>

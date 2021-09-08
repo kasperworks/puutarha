@@ -127,12 +127,16 @@ export const SingleBlogTextBlock = styled.div`
     background-color: var(--darkgreen);
     background: url('/static/brush-stroke-banner.svg');
     background-repeat: no-repeat;
-    background-size: 85% 115%;
-    padding: 20px 3px;
+    background-size: 90% 115%;
+    padding: 20px 0px;
     width: 210px;
+    // Positioning the brush stroke, fixing margins
+    margin-left: -15px;
+    margin-bottom: -5px;
   }
   small {
     font-size: 0.85rem;
+    margin-left: 15px;
   }
 `;
 
