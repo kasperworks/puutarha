@@ -160,8 +160,10 @@ export const IntroText = styled.div`
   font-size: 1.6rem;
 `;
 
-export const HeaderEmoji = styled.div`
+export const HeaderEmoji = styled.h1`
   filter: sepia(45%) hue-rotate(340deg);
+  text-shadow: 1px 1px 3px var(--black);
+  pointer: grab;
 `;
 
 export const Footer = styled.div`

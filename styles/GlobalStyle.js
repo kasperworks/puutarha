@@ -93,11 +93,12 @@ const GlobalStyle = createGlobalStyle`
     em {
       font-style: normal;
       background: url('/static/brush-stroke-banner.svg');
+      background-size: cover;
       background-repeat: no-repeat;
-      background-size: 100% 120%;
+      background-position: center;   
       cursor: pointer;
-      padding: 15px 10px 15px 3px;
-      margin: -15px -10px -15px -3px;
+      padding: 0 4px 15px 0;
+      margin: 0 -4px -15px 0;
     }
 
     li {

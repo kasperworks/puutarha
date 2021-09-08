@@ -12,9 +12,7 @@ export default function Introduction() {
 
   return (
     <Container>
-      <h1>
-        <s.HeaderEmoji>👋</s.HeaderEmoji>
-      </h1>
+      <s.HeaderEmoji>👋</s.HeaderEmoji>
 
       <s.TextBlock>
         <p>
@@ -35,17 +33,6 @@ export default function Introduction() {
       </s.TextBlock>
       <s.TextBlock>
         <p>
-          I&apos;ve benefited enormously from generously distributed resources and
-          open-source software that helped me land my first programming job, and would
-          like to contribute in turn. If you are new to web development or coding in
-          general, I&apos;ve written down a few things that worked for me{' '}
-          <Link href="/blog/starter-pack">
-            <em>here.</em>
-          </Link>
-        </p>
-      </s.TextBlock>
-      <s.TextBlock>
-        <p>
           I made a career switch after nearly a decade in financial journalism. After 11
           months of determined self-study, I took up a professional programming role,
           leveraging my journalism background and hobby projects. If that sounds like a
@@ -57,10 +44,29 @@ export default function Introduction() {
       </s.TextBlock>
       <s.TextBlock>
         <p>
-          If you&apos;d like to read about the technology behind this site, see{' '}
+          I&apos;ve benefited enormously from the wealth of free resources and open-source
+          software that helped me land my first programming job, and would like to
+          contribute in turn. If you are new to web development or coding in general,
+          I&apos;ve written down a few{' '}
+          <Link href="/blog/starter-pack">
+            <em>pointers</em>
+          </Link>{' '}
+          that worked for me.
+        </p>
+      </s.TextBlock>
+
+      <s.TextBlock>
+        <p>
+          If you&apos;re interested in the technology behind this site, see{' '}
           <Link href="/blog/how-i-built-this-site">
             <em>here.</em>
-          </Link>
+          </Link>{' '}
+        </p>
+      </s.TextBlock>
+      <s.TextBlock>
+        <p>
+          {' '}
+          Otherwise, have a look around and let me know if you found something useful!
         </p>
       </s.TextBlock>
 
