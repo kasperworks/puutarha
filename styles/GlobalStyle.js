@@ -106,8 +106,9 @@ const GlobalStyle = createGlobalStyle`
     }
     
 
-    em > a {
-      text-decoration: none;
+    strong {
+      font-weight: 700;
+      color: var(--accent);
     }
 
     input,
@@ -157,6 +158,10 @@ const GlobalStyle = createGlobalStyle`
 
     a {
       color: var(--lightgrey);
+    }
+
+    .internal-link {
+      text-decoration: none;
     }
 
     html:focus-within {

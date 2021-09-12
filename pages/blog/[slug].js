@@ -6,11 +6,28 @@ import { getAllPosts, getSinglePost } from '../../lib/mdx';
 import Container from '../../components/Container';
 import * as s from '../../styles/Layout.styled';
 
-const CustomLink = ({ as, href, ...otherProps }) => (
-  <Link as={as} href={href}>
-    <a {...otherProps} />
-  </Link>
-);
+const CustomLink = ({ children, href }) => {
+  if (href.startsWith('/')) {
+    return (
+      <Link href={href}>
+        <a className="internal-link">
+          <em>{children}</em>
+        </a>
+      </Link>
+    );
+  }
+  const onPage = href.startsWith('#');
+
+  return (
+    // eslint-disable-next-line react/jsx-no-target-blank
+    <a
+      href={href}
+      target={onPage ? null : '_blank'}
+      rel={onPage ? null : 'noopener noreferrer'}>
+      {children}
+    </a>
+  );
+};
 
 const MAX_IMAGE_WIDTH = 780;
 
@@ -37,8 +54,9 @@ const Post = ({ code, frontmatter }) => {
       {frontmatter.imageCredit && (
         <s.ImageCredit>{frontmatter.imageCredit}</s.ImageCredit>
       )}
-
-      <Component components={{ a: CustomLink }} />
+      <s.MainBlogTextBlock>
+        <Component components={{ a: CustomLink }} />
+      </s.MainBlogTextBlock>
     </Container>
   );
 };

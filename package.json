@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@silvenon/remark-smartypants": "^1.0.0",
     "date-fns": "^2.23.0",
     "gray-matter": "^4.0.3",
     "mdx-bundler": "^6.0.1",

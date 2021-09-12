@@ -22,13 +22,14 @@ export default function Introduction() {
       <s.TextBlock>
         <p>
           I switched careers in 2021, mid-pandemic, after nearly a decade in financial
-          journalism. Following 11 months of determined self-study, I crossed over to a
-          professional programming role, changing employers and countries in the process.
-          I wrote about that{' '}
-          <Link href="/blog/new-coder-at-35">
-            <em>here</em>
-          </Link>
-          .
+          journalism. Following 11 months of determined self-study, I{' '}
+          <Link href="/blog/crossing-over-to-tech">
+            <a className="internal-link">
+              <em>crossed over</em>
+            </a>
+          </Link>{' '}
+          to a professional programming role, changing employers and countries in the
+          process.
         </p>
       </s.TextBlock>
       <s.TextBlock>
@@ -37,7 +38,9 @@ export default function Introduction() {
           software, and would like to contribute in turn. If you are new to web
           development or coding in general, I&apos;ve curated a{' '}
           <Link href="/blog/starter-pack">
-            <em>starter pack</em>
+            <a className="internal-link">
+              <em>starter pack</em>
+            </a>
           </Link>{' '}
           of assets based on what worked for me. It comes with a few pointers.
         </p>
@@ -45,11 +48,13 @@ export default function Introduction() {
 
       <s.TextBlock>
         <p>
-          If you&apos;re interested in the technology behind this site, see{' '}
+          For those more further along the path, I wrote an overview of the{' '}
           <Link href="/blog/how-i-built-this-site">
-            <em>here</em>
-          </Link>
-          .
+            <a className="internal-link">
+              <em>technology</em>
+            </a>
+          </Link>{' '}
+          behind this site.
         </p>
       </s.TextBlock>
       <s.TextBlock>
