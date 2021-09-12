@@ -143,6 +143,7 @@ const GlobalStyle = createGlobalStyle`
         "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     }
 
+
     ul[class],
     ol[class] {
       list-style: none;

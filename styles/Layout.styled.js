@@ -134,6 +134,13 @@ export const MainBlogTextBlock = styled.div`
   a > em {
     text-decoration: none;
   }
+  h3 {
+    display: inline-block;
+    background-color: var(--codeblock);
+    border-radius: 4px;
+    padding: 5px;
+    margin: -5px;
+  }
 `;
 
 export const ImageCredit = styled.div`
