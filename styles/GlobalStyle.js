@@ -28,8 +28,6 @@ const GlobalStyle = createGlobalStyle`
     html {
       height: 100%;
       box-sizing: border-box;
-      --scrollbarBG: #8CA3AD;
-      --thumbBG: #2E3541;
       overflow: hidden;
     }
 
@@ -48,7 +46,7 @@ const GlobalStyle = createGlobalStyle`
       font-family: Lato, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif,
         "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
         scrollbar-width: thin;
-      scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+      scrollbar-color: var(--darkgreen) var(--codeblock);
       overflow-y: auto;
     }
 
@@ -57,13 +55,13 @@ const GlobalStyle = createGlobalStyle`
     }
 
     body::-webkit-scrollbar-track {
-      background: var(--scrollbarBG);
+      background: var(--codeblock);
     }
 
     body::-webkit-scrollbar-thumb {
-      background-color: var(--thumbBG) ;
+      background-color: var(--darkgreen) ;
       border-radius: 2px;
-      border: 2px solid var(--scrollbarBG);
+      border: 2px solid var(--codeblock);
     }
 
     main {

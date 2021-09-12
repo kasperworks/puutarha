@@ -27,6 +27,7 @@ export default function Container(props) {
           <title>{meta.title}</title>
           {/* <meta name="robots" content="follow, index" /> */}
           <meta name="robots" content="noindex" />
+          <meta name="theme-color" content="#235353" />
           <meta content={meta.description} name="description" />
           <meta property="og:url" content={`https://kasper.works${router.asPath}`} />
           <link rel="canonical" href={`https://kasper.works${router.asPath}`} />
