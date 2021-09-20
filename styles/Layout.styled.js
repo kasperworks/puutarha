@@ -134,13 +134,6 @@ export const MainBlogTextBlock = styled.div`
   a > em {
     text-decoration: none;
   }
-  h3 {
-    display: inline-block;
-    background-color: var(--codeblock);
-    border-radius: 4px;
-    padding: 5px;
-    margin: -5px;
-  }
 `;
 
 export const ImageCredit = styled.div`
@@ -173,14 +166,10 @@ export const Footer = styled.div`
   }
 `;
 
-export const BackUpStairsWrapper = styled.div`
-  position: relative;
-`;
-
 export const BackUpStairsButton = styled.button`
-  position: absolute;
-  left: 50%;
+  position: fixed;
+  right: 27px;
+  bottom: 17px;
+  border: none;
   background-color: var(--darkgreen);
-  width: 100px;
-  height: 50px;
 `;

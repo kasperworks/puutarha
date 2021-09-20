@@ -35,30 +35,35 @@ export default class MyDocument extends Document {
             rel="preload"
             href="/fonts/josefin-sans-v17-latin-regular.woff2"
             as="font"
+            type="font/woff2"
             crossOrigin="anonymous"
           />
           <link
             rel="preload"
             href="/fonts/josefin-sans-v17-latin-700.woff2"
             as="font"
+            type="font/woff2"
             crossOrigin="anonymous"
           />
           <link
             rel="preload"
             href="/fonts/lato-v20-latin-regular.woff2"
             as="font"
+            type="font/woff2"
             crossOrigin="anonymous"
           />
           <link
             rel="preload"
             href="/fonts/lato-v20-latin-italic.woff2"
             as="font"
+            type="font/woff2"
             crossOrigin="anonymous"
           />
           <link
             rel="preload"
             href="/fonts/lato-v20-latin-700.woff2"
             as="font"
+            type="font/woff2"
             crossOrigin="anonymous"
           />
           <link href="/fonts/style.css" rel="stylesheet" />

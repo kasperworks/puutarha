@@ -1,11 +1,8 @@
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import NextLink from 'next/link';
-/* import dynamic from 'next/dynamic'; */
 import * as s from '../styles/Layout.styled';
 
-/* const DynamicScrollButton = dynamic(() => import('../lib/ScrollToTop'), { ssr: false });
- */
 export default function Container(props) {
   const { children, ...customMeta } = props;
   const router = useRouter();
@@ -84,7 +81,6 @@ export default function Container(props) {
           <time>{year}</time> Kasper Viita
         </small>
       </s.Footer>
-      {/* <DynamicScrollButton /> */}
     </>
   );
 }
