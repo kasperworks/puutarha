@@ -139,10 +139,23 @@ export const Tags = styled.div`
   display: flex;
   font-size: 1rem;
   gap: 10px;
+  margin-bottom: 10px;
+`;
+
+export const PostFooter = styled.div`
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: var(--codeblock);
+  a {
+    margin: -5px 5px;
+  }
 `;
 
 export const SingleTag = styled.span`
   background-color: var(--codeblock);
+  padding: 0 5px;
 `;
 
 export const MainBlogTextBlock = styled.div`
@@ -155,6 +168,9 @@ export const MainBlogTextBlock = styled.div`
   }
   a > em {
     text-decoration: none;
+  }
+  small {
+    color: var(--grey);
   }
 `;
 

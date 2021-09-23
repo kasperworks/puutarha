@@ -87,6 +87,10 @@ const GlobalStyle = createGlobalStyle`
       }
     }
 
+    abbr {
+      text-decoration-style: double;
+    }
+
 
     em {
       font-style: normal;

@@ -48,7 +48,7 @@ export default function Introduction() {
 
       <s.TextBlock>
         <p>
-          For those more further along the path, I wrote an overview of the{' '}
+          For those further along the path, I wrote an overview of the{' '}
           <Link href="/blog/how-i-built-this-site">
             <a className="internal-link">
               <em>technology</em>

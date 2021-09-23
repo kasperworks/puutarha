@@ -64,6 +64,11 @@ const Post = ({ code, frontmatter }) => {
         {frontmatter.tags &&
           frontmatter.tags.map((item) => <s.SingleTag>{item}</s.SingleTag>)}
       </s.Tags>
+      <s.PostFooter>
+        <Link href="/blog">
+          <a>More stuff like this</a>
+        </Link>
+      </s.PostFooter>
     </Container>
   );
 };

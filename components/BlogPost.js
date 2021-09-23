@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import * as s from '../styles/Layout.styled';
 
-const BlogPost = ({ title, publishedAt, summary, slug }) => (
+const BlogPost = ({ title, publishedAt, summary, slug, tags }) => (
   <s.BlogPostDisplay>
     <Link href={`/blog/${slug}`}>
       <a>
