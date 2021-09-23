@@ -156,7 +156,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
     a {
-      color: var(--lightgrey);
+      color: var(--white);
     }
 
     .internal-link {

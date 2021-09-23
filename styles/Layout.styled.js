@@ -127,9 +127,31 @@ export const SingleBlogTextBlock = styled.div`
   }
 `;
 
+export const SummaryTextBlock = styled.div`
+  background-color: var(--codeblock);
+  display: inline-block;
+  padding: 10px;
+  margin: 0 -10px;
+  font-size: 1.35rem;
+`;
+
+export const Tags = styled.div`
+  display: flex;
+  font-size: 1rem;
+  gap: 10px;
+`;
+
+export const SingleTag = styled.span`
+  background-color: var(--codeblock);
+`;
+
 export const MainBlogTextBlock = styled.div`
   p {
     margin: 20px 0;
+  }
+
+  a {
+    font-weight: 700;
   }
   a > em {
     text-decoration: none;

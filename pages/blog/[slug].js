@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
+/* import Image from 'next/image'; */
 import { getMDXComponent } from 'mdx-bundler/client';
 import { getAllPosts, getSinglePost } from '../../lib/mdx';
 import Container from '../../components/Container';
@@ -29,8 +29,8 @@ const CustomLink = ({ children, href }) => {
   );
 };
 
-const MAX_IMAGE_WIDTH = 780;
-
+/* const MAX_IMAGE_WIDTH = 780;
+ */
 const Post = ({ code, frontmatter }) => {
   const Component = React.useMemo(() => getMDXComponent(code), [code]);
   return (
@@ -42,9 +42,11 @@ const Post = ({ code, frontmatter }) => {
         <div>
           <em>Published: {frontmatter.publishedAt}</em>
         </div>
-        <p>{frontmatter.summary}</p>
+        <s.SummaryTextBlock>
+          <p>{frontmatter.summary}</p>
+        </s.SummaryTextBlock>
       </s.SingleBlogTextBlock>
-      {frontmatter.image && (
+      {/* {frontmatter.image && (
         <Image
           src={frontmatter.image}
           width={MAX_IMAGE_WIDTH}
@@ -53,10 +55,15 @@ const Post = ({ code, frontmatter }) => {
       )}
       {frontmatter.imageCredit && (
         <s.ImageCredit>{frontmatter.imageCredit}</s.ImageCredit>
-      )}
+      )} */}
       <s.MainBlogTextBlock>
         <Component components={{ a: CustomLink }} />
       </s.MainBlogTextBlock>
+      <s.Tags>
+        Topics:
+        {frontmatter.tags &&
+          frontmatter.tags.map((item) => <s.SingleTag>{item}</s.SingleTag>)}
+      </s.Tags>
     </Container>
   );
 };
