@@ -71,6 +71,10 @@ export const NavBar = styled.nav`
   }
 `;
 
+export const TextBlock = styled.div`
+  margin: 1.4rem 0;
+`;
+
 export const BlogPostDisplay = styled.div`
   border-radius: 0.5rem;
   margin: 15px 0;
@@ -97,18 +101,6 @@ export const BlogPostDisplay = styled.div`
         color: var(--accent);
       }
     }
-  }
-`;
-
-export const TextBlock = styled.div`
-  margin: 1.4rem 0;
-  em {
-    text-decoration: none;
-  }
-
-  li {
-    color: var(--purple);
-    list-style: none;
   }
 `;
 
@@ -183,13 +175,6 @@ export const ImageCredit = styled.div`
 
 export const IntroText = styled.div`
   font-size: 1.6rem;
-`;
-
-export const HeaderEmoji = styled.h1`
-  filter: sepia(45%) hue-rotate(340deg);
-  text-shadow: 1px 1px 3px var(--black);
-  cursor: grab;
-  width: 20%;
 `;
 
 export const Footer = styled.div`
