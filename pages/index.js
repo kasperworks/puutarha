@@ -14,16 +14,16 @@ export default function Introduction() {
 
       <s.TextBlock>
         <p>
-          This is my hub, my digital garden. You&apos;ll find some scattered notes here,
-          largely about my efforts to master the skills of a software engineer. Learning
-          to code, that is.
+          This is my hub, my digital garden and workshop. You&apos;ll find some scattered
+          notes here, largely about my efforts to master the skills of a software
+          engineer. Learning to code, that is.
         </p>
       </s.TextBlock>
       <s.TextBlock>
         <p>
           I switched careers in 2021, mid-pandemic, after nearly a decade in financial
-          journalism. Following 11 months of determined self-study, I{' '}
-          <Link href="/blog/crossing-over-to-tech">
+          journalism. Following about a year of determined self-study, I{' '}
+          <Link href="/blog/switching-lanes">
             <a className="internal-link">
               <em>crossed over</em>
             </a>
@@ -58,10 +58,18 @@ export default function Introduction() {
         </p>
       </s.TextBlock>
       <s.TextBlock>
-        <p>
-          {' '}
-          Otherwise, have a look around and let me know if you found something useful!
-        </p>
+        <p>Have a look around, any tools or thoughts you may find are yours to keep.</p>
+      </s.TextBlock>
+      <s.TextBlock>
+        A disclaimer:
+        <ul>
+          <li>Do I contradict myself?</li>
+          <li>Very well then I contradict myself</li>
+          <li>(I am large, I contain multitudes.) </li>
+          <li>
+            <small>Walt Whitman, 1855</small>
+          </li>
+        </ul>
       </s.TextBlock>
     </Container>
   );

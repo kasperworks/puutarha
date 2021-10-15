@@ -62,7 +62,9 @@ const Post = ({ code, frontmatter }) => {
       <s.Tags>
         Topics:
         {frontmatter.tags &&
-          frontmatter.tags.map((item) => <s.SingleTag>{item}</s.SingleTag>)}
+          frontmatter.tags.map((item) => (
+            <s.SingleTag key={`tag-${item}`}>{item}</s.SingleTag>
+          ))}
       </s.Tags>
       <s.PostFooter>
         <Link href="/blog">

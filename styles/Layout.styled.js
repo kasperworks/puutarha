@@ -37,10 +37,10 @@ export const CenterSection = styled.div`
   }
 `;
 
-export const NavBar = styled.div`
+export const NavBar = styled.nav`
   display: flex;
   width: 100%;
-  min-width: 300px;
+  min-width: 250px;
   font-size: 1.4rem;
   align-items: baseline;
   a {
@@ -60,20 +60,14 @@ export const NavBar = styled.div`
   @media (max-width: 370px) {
     font-size: 1.1rem;
   }
-`;
-
-export const NavSection = styled.div`
-  display: flex;
-  flex-basis: 50%;
-`;
-
-export const NavEnd = styled.div`
-  display: flex;
-  justify-content: flex-end;
-  flex-basis: 50%;
-  gap: 1.2rem;
-  @media (max-width: 370px) {
+  div {
+    flex-basis: 50%;
+    display: flex;
     justify-content: flex-start;
+    gap: 20px;
+  }
+  div:nth-child(2) {
+    justify-content: flex-end;
   }
 `;
 
@@ -110,6 +104,11 @@ export const TextBlock = styled.div`
   margin: 1.4rem 0;
   em {
     text-decoration: none;
+  }
+
+  li {
+    color: var(--purple);
+    list-style: none;
   }
 `;
 

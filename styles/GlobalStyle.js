@@ -2,7 +2,6 @@ import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
     :root {
-      // in use
       --black: #0E1111;
       --white: #FBFBFB;
       --grey: #8CA3AD;
@@ -12,11 +11,10 @@ const GlobalStyle = createGlobalStyle`
       --green: #93c763;
       --accent: #FFF96B;
       --brightgreen: #78FF93;
+      --purple: #9752FF;
 
-      // unused
       --lightgrey: #EBEEF1;
       --brightred: #d5102e;
-      --purple: #9752FF;
     }
 
     #__next {
@@ -161,6 +159,10 @@ const GlobalStyle = createGlobalStyle`
 
     a {
       color: var(--white);
+    }
+
+    small {
+      font-size: 0.8rem;
     }
 
     .internal-link {
