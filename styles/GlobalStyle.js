@@ -11,7 +11,7 @@ const GlobalStyle = createGlobalStyle`
       --green: #93c763;
       --accent: #FFF96B;
       --brightgreen: #78FF93;
-      --purple: #9752FF;
+      --purple: #8745EA;
 
       --lightgrey: #EBEEF1;
       --brightred: #d5102e;
