@@ -9,6 +9,7 @@ export default function Container(props) {
   const meta = {
     title: 'kasper.works / Kasper Viita',
     description: `Numbers, words & JS.`,
+    // TODO Image here!
     image:
       'https://images.unsplash.com/photo-1561983818-e339e248ac5c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1494&q=80',
     type: 'website',
@@ -47,21 +48,15 @@ export default function Container(props) {
           <s.NavBar>
             <div>
               <NextLink href="/">
-                <a className="internal-link">
-                  <em>kasperworks</em>
-                </a>
+                <a className="internal-link">Kasper Viita</a>
               </NextLink>
             </div>
             <div>
               <NextLink href="/blog">
-                <a className="internal-link">
-                  <em>Notes</em>
-                </a>
+                <a className="internal-link">Notes</a>
               </NextLink>
               <NextLink href="/about">
-                <a className="internal-link">
-                  <em>About</em>
-                </a>
+                <a className="internal-link">About</a>
               </NextLink>
             </div>
           </s.NavBar>

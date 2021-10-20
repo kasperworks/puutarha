@@ -1,4 +1,7 @@
 {
+  "github": {
+    "silent": true
+  },
   "headers": [
     {
       "source": "/fonts/josefin-sans-v17-latin-700.woff2",

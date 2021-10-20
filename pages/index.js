@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Container from '../components/Container';
+import IndexDisclaimer from '../components/IndexDisclaimer';
 import { getAllPosts } from '../lib/mdx';
 import * as s from '../styles/Index.styled';
 
@@ -9,7 +10,7 @@ export default function Introduction() {
       <s.HeaderEmoji>👋</s.HeaderEmoji>
 
       <s.IndexTextBlock>
-        <p>Hi! I&apos;m Kasper Viita, a journalist and a programmer.</p>
+        <p>Hi! I&apos;m Kasper, a journalist and a programmer.</p>
       </s.IndexTextBlock>
 
       <s.IndexTextBlock>
@@ -58,21 +59,10 @@ export default function Introduction() {
         </p>
       </s.IndexTextBlock>
       <s.IndexTextBlock>
-        <p>Have a look around, any tools or thoughts you may find are yours to keep.</p>
+        <p>Have a look around, any tools or thoughts you find are yours to keep.</p>
       </s.IndexTextBlock>
-      <s.DisclaimerWrapper>
-        <s.IndexTextBlock>
-          <s.DisclaimerHeader>A disclaimer</s.DisclaimerHeader>
-          <ul>
-            <li>Do I contradict myself?</li>
-            <li>Very well then I contradict myself</li>
-            <li>(I am large, I contain multitudes.) </li>
-            <li>
-              <small>- Walt Whitman, 1855</small>
-            </li>
-          </ul>
-        </s.IndexTextBlock>
-      </s.DisclaimerWrapper>
+
+      <IndexDisclaimer />
     </Container>
   );
 }
