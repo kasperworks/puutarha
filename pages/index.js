@@ -46,18 +46,6 @@ export default function Introduction() {
           of assets based on what worked for me. It comes with a few pointers.
         </p>
       </s.IndexTextBlock>
-
-      <s.IndexTextBlock>
-        <p>
-          For those further along the path, I wrote an overview of the{' '}
-          <Link href="/blog/how-i-built-this-site">
-            <a className="internal-link">
-              <em>technology</em>
-            </a>
-          </Link>{' '}
-          behind this site.
-        </p>
-      </s.IndexTextBlock>
       <s.IndexTextBlock>
         <p>Have a look around, any tools or thoughts you find are yours to keep.</p>
       </s.IndexTextBlock>

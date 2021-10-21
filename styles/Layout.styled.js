@@ -130,7 +130,7 @@ export const Tags = styled.div`
   display: flex;
   font-size: 1rem;
   gap: 10px;
-  margin-bottom: 10px;
+  margin-top: 40px;
 `;
 
 export const PostFooter = styled.div`

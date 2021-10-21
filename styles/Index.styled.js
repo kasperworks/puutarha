@@ -14,9 +14,16 @@ export const IndexTextBlock = styled(TextBlock)`
   }
 `;
 
+export const DisclaimerContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+`;
+
 export const DisclaimerWrapper = styled(TextBlock)`
-  display: ${({ show }) => (show ? 'block' : 'none')};
-  background-color: rgba(255, 255, 255, 0.01);
+  display: ${({ show }) => (show ? 'flex' : 'none')};
+  background-color: rgba(255, 255, 255, 0.02);
   border-radius: 4px;
   padding: 5px;
   ul {
@@ -35,6 +42,6 @@ export const DisclaimerHeader = styled.h4`
   color: var(--grey);
   cursor: pointer;
   width: max-content;
-  margin-top: 60px;
+  margin: 60px 0 20px;
   font-size: 1rem;
 `;
