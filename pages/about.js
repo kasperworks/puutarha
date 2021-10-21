@@ -8,7 +8,7 @@ export default function About() {
         <h1>About Me</h1>
         <s.TextBlock>
           <p>
-            I wrote about financial markets and related topics for nearly a decade before
+            I wrote about financial markets and related topics for nine years before
             pivoting to programming.
           </p>
         </s.TextBlock>
