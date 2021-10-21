@@ -92,11 +92,11 @@ const GlobalStyle = createGlobalStyle`
 
 
     em {
-      font-style: normal;
       background: url('/static/brush-stroke-banner.svg');
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;   
+      font-style: normal;
       cursor: pointer;
       padding: 4px 4px 15px 0;
       margin: -4px -4px -15px 0;

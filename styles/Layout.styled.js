@@ -134,13 +134,15 @@ export const Tags = styled.div`
 `;
 
 export const PostFooter = styled.div`
-  display: flex;
-  justify-content: space-evenly;
   padding: 10px;
-  margin-bottom: 20px;
+  margin: 50px 0 30px;
   background-color: var(--codeblock);
+
   a {
-    margin: -5px 5px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-decoration: none;
   }
 `;
 
