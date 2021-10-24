@@ -21,13 +21,12 @@ const GlobalStyle = createGlobalStyle`
     #__next {
       display: flex;
       flex-direction: column;
-      min-height: 100vh;
     }
 
     html {
       height: 100%;
       box-sizing: border-box;
-      overflow: hidden;
+      scroll-behavior: smooth;
     }
 
     *,
@@ -37,7 +36,6 @@ const GlobalStyle = createGlobalStyle`
     }
 
     body {
-      height: 100vh;
       background-color: var(--background);
       color: var(--white);
       line-height: 1.5;
@@ -46,7 +44,6 @@ const GlobalStyle = createGlobalStyle`
         "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
         scrollbar-width: thin;
       scrollbar-color: var(--darkgreen) var(--codeblock);
-      overflow-y: auto;
     }
 
     body::-webkit-scrollbar {
@@ -105,7 +102,6 @@ const GlobalStyle = createGlobalStyle`
     li {
       list-style: square;
     }
-    
 
     strong {
       font-weight: 700;
@@ -168,10 +164,6 @@ const GlobalStyle = createGlobalStyle`
 
     .internal-link {
       text-decoration: none;
-    }
-
-    html:focus-within {
-      scroll-behavior: smooth;
     }
 
     @media screen and (prefers-reduced-motion: reduce) {

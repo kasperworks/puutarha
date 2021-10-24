@@ -30,7 +30,7 @@ export const DisclaimerWrapper = styled(TextBlock)`
     padding-left: 0;
   }
   li {
-    color: var(--purple);
+    color: var(--green);
     list-style: none;
     padding: 0 30px;
   }

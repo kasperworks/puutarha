@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { getMDXComponent } from 'mdx-bundler/client';
 import { getAllPosts, getSinglePost } from '../../lib/mdx';
 import Container from '../../components/Container';
-import * as s from '../../styles/Layout.styled';
+import * as s from '../../styles/Slug.styled';
 
 const CustomLink = ({ children, href }) => {
   if (href.startsWith('/')) {
