@@ -52,6 +52,9 @@ export default function Container(props) {
               </NextLink>
             </div>
             <div>
+              <NextLink href="/works">
+                <a className="internal-link">Works</a>
+              </NextLink>
               <NextLink href="/blog">
                 <a className="internal-link">Notes</a>
               </NextLink>

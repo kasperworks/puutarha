@@ -17,8 +17,8 @@ export const SingleBlogTextBlock = styled.div`
 export const SummaryTextBlock = styled.div`
   background-color: var(--codeblock);
   display: inline-block;
-  padding: 10px;
-  margin: 0 -10px;
+  padding: 20px;
+  margin: 0 -20px;
   font-size: 1.35rem;
   border-radius: 4px;
 `;

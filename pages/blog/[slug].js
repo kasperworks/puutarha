@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import Link from 'next/link';
 /* import Image from 'next/image'; */
 import { getMDXComponent } from 'mdx-bundler/client';
@@ -33,11 +33,13 @@ const CustomLink = ({ children, href }) => {
  */
 const Post = ({ code, frontmatter }) => {
   const Component = React.useMemo(() => getMDXComponent(code), [code]);
+
   return (
     <Container title={`${frontmatter.title} / Kasper Viita`}>
       <s.SingleBlogTextBlock>
         <h1>{frontmatter.title}</h1>
       </s.SingleBlogTextBlock>
+
       <s.SingleBlogTextBlock>
         <div>
           <em>Published: {frontmatter.publishedAt}</em>
@@ -46,16 +48,6 @@ const Post = ({ code, frontmatter }) => {
           <p>{frontmatter.summary}</p>
         </s.SummaryTextBlock>
       </s.SingleBlogTextBlock>
-      {/* {frontmatter.image && (
-        <Image
-          src={frontmatter.image}
-          width={MAX_IMAGE_WIDTH}
-          height={MAX_IMAGE_WIDTH / 1.5}
-        />
-      )}
-      {frontmatter.imageCredit && (
-        <s.ImageCredit>{frontmatter.imageCredit}</s.ImageCredit>
-      )} */}
       <s.MainBlogTextBlock>
         <Component components={{ a: CustomLink }} />
       </s.MainBlogTextBlock>

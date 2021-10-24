@@ -166,6 +166,19 @@ const GlobalStyle = createGlobalStyle`
       text-decoration: none;
     }
 
+    .wide-image {
+      border-radius: 4px;
+    }
+
+    .audio-player {
+      animation: fadeIn 3s ease-in-out;
+    }
+    
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+
     @media screen and (prefers-reduced-motion: reduce) {
       scroll-behavior: auto;
     }

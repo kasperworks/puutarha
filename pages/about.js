@@ -1,3 +1,6 @@
+import Image from 'next/image';
+import TVPic from '../public/static/images/KVBBGTV_small.png';
+import GHYle from '../public/static/images/github_yle.png';
 import Container from '../components/Container';
 import * as s from '../styles/Layout.styled';
 
@@ -20,6 +23,7 @@ export default function About() {
             design flyers.
           </p>
         </s.TextBlock>
+        <Image alt="Kasper on TV" src={TVPic} className="wide-image" placeholder="blur" />
         <s.TextBlock>
           <p>
             These days I&apos;m more likely to be building an interactive data
@@ -27,6 +31,12 @@ export default function About() {
             public broadcasting company.
           </p>
         </s.TextBlock>
+        <Image
+          alt="GitHub screenshot after joining Yle"
+          src={GHYle}
+          className="wide-image"
+          placeholder="blur"
+        />
       </div>
     </Container>
   );

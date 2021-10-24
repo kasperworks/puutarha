@@ -15,7 +15,7 @@ export default function Blog({ posts }) {
           <p>{`I've written ${posts.length} public notes thus far, you'll find them all here.`}</p>
         </s.TextBlock>
         <s.TextBlock>
-          {postsByDate.map((item) => {
+          {postsByDate.map((item, index) => {
             const { title, publishedAt, summary } = item.frontmatter;
             const { slug } = item;
             return (
@@ -25,6 +25,8 @@ export default function Blog({ posts }) {
                 summary={summary}
                 slug={slug}
                 key={slug}
+                index={index}
+                amountOfPosts={posts.length}
               />
             );
           })}
