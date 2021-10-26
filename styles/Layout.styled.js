@@ -135,6 +135,8 @@ export const BackUpStairsButton = styled.button`
   background-color: var(--darkgreen);
 `;
 
-export const ImageContainer = styled.div`
-  border-radius: 4px;
+export const WideImageContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
 `;

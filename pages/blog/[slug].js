@@ -41,9 +41,10 @@ const Post = ({ code, frontmatter }) => {
       </s.SingleBlogTextBlock>
 
       <s.SingleBlogTextBlock>
-        <div>
+        <s.DateBlock>
           <em>Published: {frontmatter.publishedAt}</em>
-        </div>
+          {frontmatter.lastUpdated && <em>Updated: {frontmatter.lastUpdated}</em>}
+        </s.DateBlock>
         <s.SummaryTextBlock>
           <p>{frontmatter.summary}</p>
         </s.SummaryTextBlock>

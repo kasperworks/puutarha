@@ -14,6 +14,15 @@ export const SingleBlogTextBlock = styled.div`
   }
 `;
 
+export const DateBlock = styled.div`
+  em {
+    margin-right: 5px;
+    :nth-child(2) {
+      color: var(--green);
+    }
+  }
+`;
+
 export const SummaryTextBlock = styled.div`
   background-color: var(--codeblock);
   display: inline-block;
