@@ -26,7 +26,18 @@ const GlobalStyle = createGlobalStyle`
     html {
       height: 100%;
       box-sizing: border-box;
+    }
+
+    // Keep search-on-page jump instant, otherwise scroll smoothly
+
+    html:focus-within {
       scroll-behavior: smooth;
+    }
+
+    // No messing with scroll behavior if reader prefers to control it
+
+    @media screen and (prefers-reduced-motion: reduce) {
+      scroll-behavior: auto;
     }
 
     *,
@@ -142,6 +153,11 @@ const GlobalStyle = createGlobalStyle`
         "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     }
 
+    h3 {
+      font-size: 1.3em;
+      margin: 1em 0;
+    }
+
 
     ul[class],
     ol[class] {
@@ -178,10 +194,6 @@ const GlobalStyle = createGlobalStyle`
         from { opacity: 0; }
         to { opacity: 1; }
       }
-
-    @media screen and (prefers-reduced-motion: reduce) {
-      scroll-behavior: auto;
-    }
 
     .skip-nav {
       transform: translateY(-50px);
