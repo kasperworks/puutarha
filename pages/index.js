@@ -16,8 +16,20 @@ export default function Introduction() {
       <s.IndexTextBlock>
         <p>
           This is my hub, my digital garden and workshop. You&apos;ll find some scattered
-          notes here, largely about my efforts to master the skills of a software
-          engineer. Learning to code, that is.
+          notes here, loosely related to my efforts to master the skills of a software
+          engineer. These include{' '}
+          <Link href="/blog/the-brain-is-a-magpie">
+            <a className="internal-link">
+              <em>clumsy metaphors</em>
+            </a>
+          </Link>{' '}
+          and anecdotes, code snippets,{' '}
+          <Link href="/blog/resources">
+            <a className="internal-link">
+              <em>link dumps</em>
+            </a>
+          </Link>
+          .
         </p>
       </s.IndexTextBlock>
       <s.IndexTextBlock>
