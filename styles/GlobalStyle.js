@@ -212,11 +212,12 @@ const GlobalStyle = createGlobalStyle`
       position: fixed;
       opacity: 0.985;
       margin-top: 25px;
+    
     }
 
     .bm-menu {
       background: var(--codeblock);
-      padding: 1.5em 1.8em;
+      padding: 1.5em 0;
       font-size: 1.15em;
     }
 
@@ -229,11 +230,6 @@ const GlobalStyle = createGlobalStyle`
 
     .bm-item {
       color: var(--codeblock);
-    }
-
-    // A hacky fix of burger overlay positioning
-    .bm-overlay {
-      margin: -70px -20px;
     }
 
     // Code block styling

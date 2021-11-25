@@ -15,6 +15,7 @@ const BurgerMenu = () => {
     <Menu
       onStateChange={checkMenu}
       right
+      noOverlay
       width="100%"
       customBurgerIcon={isMenuOpen ? <Cross /> : <Burger />}
       customCrossIcon={false}>
