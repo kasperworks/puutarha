@@ -199,6 +199,45 @@ const GlobalStyle = createGlobalStyle`
       transform: translateY(-50px);
     }
 
+    // Burger menu styling
+
+    .bm-burger-button {
+      position: absolute;
+      right: 25px;
+      top: 25px;
+    }
+
+    .bm-menu-wrap {
+      background: var(--codeblock);
+      position: fixed;
+      opacity: 0.985;
+      margin-top: 25px;
+    }
+
+    .bm-menu {
+      background: var(--codeblock);
+      padding: 1.5em 1.8em;
+      font-size: 1.15em;
+    }
+
+    .bm-item-list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1em;
+    }
+
+    .bm-item {
+      color: var(--codeblock);
+    }
+
+    // A hacky fix of burger overlay positioning
+    .bm-overlay {
+      margin: -70px -20px;
+    }
+
+    // Code block styling
+
     .rehype-code-title {
       font-size: 0.9rem;
     }

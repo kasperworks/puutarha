@@ -19,6 +19,7 @@
     "react/jsx-filename-extension": "off",
     "jsx-a11y/anchor-is-valid": "off",
     "import/no-extraneous-dependencies": "off",
-    "jsx-a11y/anchor-has-content": "off"
+    "jsx-a11y/anchor-has-content": "off",
+    "no-nested-ternary": "off"
   }
 }

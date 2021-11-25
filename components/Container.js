@@ -3,6 +3,9 @@ import { useRouter } from 'next/router';
 import NextLink from 'next/link';
 import * as s from '../styles/Layout.styled';
 
+import useWindowSize from '../lib/useWindowSize';
+import BurgerMenu from './BurgerMenu';
+
 export default function Container(props) {
   const { children, ...customMeta } = props;
   const router = useRouter();
@@ -11,12 +14,14 @@ export default function Container(props) {
     description: `Numbers, words & JS.`,
     // TODO Image here!
     image:
-      'https://images.unsplash.com/photo-1561983818-e339e248ac5c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1494&q=80',
+      'https://images.unsplash.com/photo-1522885147691-06d859633fb8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
     type: 'website',
     ...customMeta,
   };
 
   const year = new Date().getFullYear();
+
+  const { width } = useWindowSize();
 
   return (
     <>
@@ -45,24 +50,48 @@ export default function Container(props) {
           <a href="#skip" className="skip-nav">
             Skip to content
           </a>
-          <s.NavBar>
-            <div>
-              <NextLink href="/">
-                <a className="internal-link">Kasper Viita</a>
-              </NextLink>
-            </div>
-            <div>
-              <NextLink href="/works">
-                <a className="internal-link">Works</a>
-              </NextLink>
-              <NextLink href="/blog">
-                <a className="internal-link">Notes</a>
-              </NextLink>
-              <NextLink href="/about">
-                <a className="internal-link">About</a>
-              </NextLink>
-            </div>
-          </s.NavBar>
+
+          {width < 500 ? (
+            <s.NavBar>
+              <div>
+                <NextLink href="/">
+                  <a className="internal-link">Kasper Viita</a>
+                </NextLink>
+              </div>
+              <BurgerMenu />
+            </s.NavBar>
+          ) : width > 500 ? (
+            <s.NavBar>
+              <div>
+                <NextLink href="/">
+                  <a className="internal-link">Kasper Viita</a>
+                </NextLink>
+              </div>
+              <div>
+                <NextLink href="/blog">
+                  <a className="internal-link">Notes</a>
+                </NextLink>
+                <NextLink href="/works">
+                  <a className="internal-link">Works</a>
+                </NextLink>
+                <NextLink href="/about">
+                  <a className="internal-link">About</a>
+                </NextLink>
+              </div>
+            </s.NavBar>
+          ) : (
+            {
+              /* The below is to prevent SSR flash when window width isn't present yet  */
+            }(
+              <s.NavBar>
+                <div>
+                  <NextLink href="/">
+                    <a className="internal-link">Kasper Viita</a>
+                  </NextLink>
+                </div>
+              </s.NavBar>,
+            )
+          )}
           <main id="skip">{children}</main>
         </s.CenterSection>
       </s.SiteBorderStyles>

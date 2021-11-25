@@ -17,19 +17,7 @@ export default function Introduction() {
         <p>
           This is my hub, my digital garden and workshop. You&apos;ll find some scattered
           notes here, loosely related to my efforts to master the skills of a software
-          engineer. These include{' '}
-          <Link href="/blog/the-brain-is-a-magpie">
-            <a className="internal-link">
-              <em>clumsy metaphors</em>
-            </a>
-          </Link>{' '}
-          and anecdotes, code snippets,{' '}
-          <Link href="/blog/resources">
-            <a className="internal-link">
-              <em>link dumps</em>
-            </a>
-          </Link>
-          .
+          engineer.
         </p>
       </s.IndexTextBlock>
       <s.IndexTextBlock>
@@ -42,7 +30,19 @@ export default function Introduction() {
             </a>
           </Link>{' '}
           to a professional programming role, changing employers and countries in the
-          process.
+          process. Other things you&apos;ll find include clumsy metaphors
+          {/* <Link href="/blog/the-brain-is-a-magpie">
+            <a className="internal-link">
+              <em>metaphors</em>
+            </a>
+          </Link> */}
+          , anecdotes, code snippets and{' '}
+          <Link href="/blog/resources">
+            <a className="internal-link">
+              <em>link dumps</em>
+            </a>
+          </Link>
+          .
         </p>
       </s.IndexTextBlock>
       <s.IndexTextBlock>
