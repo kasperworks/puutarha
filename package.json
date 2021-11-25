@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@artsy/fresnel": "^3.1.0",
     "@silvenon/remark-smartypants": "^1.0.0",
     "date-fns": "^2.23.0",
     "gray-matter": "^4.0.3",
@@ -21,7 +22,7 @@
     "styled-components": "^5.3.3"
   },
   "devDependencies": {
-    "babel-plugin-styled-components": "^1.13.2",
+    "babel-plugin-styled-components": "^2.0.1",
     "esbuild": "^0.12.25",
     "eslint": "^7.32.0",
     "eslint-config-airbnb": "^18.2.1",

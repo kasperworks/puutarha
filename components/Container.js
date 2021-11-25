@@ -1,10 +1,9 @@
 import Head from 'next/head';
 import { useRouter } from 'next/router';
-import NextLink from 'next/link';
 import * as s from '../styles/Layout.styled';
-
-import useWindowSize from '../lib/useWindowSize';
-import BurgerMenu from './BurgerMenu';
+import { Media, MediaContextProvider } from '../lib/media';
+import MobileNav from './MobileNav';
+import DesktopNav from './DesktopNav';
 
 export default function Container(props) {
   const { children, ...customMeta } = props;
@@ -20,8 +19,6 @@ export default function Container(props) {
   };
 
   const year = new Date().getFullYear();
-
-  const { width } = useWindowSize();
 
   return (
     <>
@@ -50,48 +47,14 @@ export default function Container(props) {
           <a href="#skip" className="skip-nav">
             Skip to content
           </a>
-
-          {width < 500 ? (
-            <s.NavBar>
-              <div>
-                <NextLink href="/">
-                  <a className="internal-link">Kasper Viita</a>
-                </NextLink>
-              </div>
-              <BurgerMenu />
-            </s.NavBar>
-          ) : width > 500 ? (
-            <s.NavBar>
-              <div>
-                <NextLink href="/">
-                  <a className="internal-link">Kasper Viita</a>
-                </NextLink>
-              </div>
-              <div>
-                <NextLink href="/blog">
-                  <a className="internal-link">Notes</a>
-                </NextLink>
-                <NextLink href="/works">
-                  <a className="internal-link">Works</a>
-                </NextLink>
-                <NextLink href="/about">
-                  <a className="internal-link">About</a>
-                </NextLink>
-              </div>
-            </s.NavBar>
-          ) : (
-            {
-              /* The below is to prevent SSR flash when window width isn't present yet  */
-            }(
-              <s.NavBar>
-                <div>
-                  <NextLink href="/">
-                    <a className="internal-link">Kasper Viita</a>
-                  </NextLink>
-                </div>
-              </s.NavBar>,
-            )
-          )}
+          <MediaContextProvider>
+            <Media at="sm">
+              <MobileNav />
+            </Media>
+            <Media greaterThanOrEqual="md">
+              <DesktopNav />
+            </Media>
+          </MediaContextProvider>
           <main id="skip">{children}</main>
         </s.CenterSection>
       </s.SiteBorderStyles>

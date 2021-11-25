@@ -1,5 +1,6 @@
 import Document, { Html, Head, NextScript, Main } from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
+import { mediaStyles } from '../lib/media';
 
 export default class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -67,6 +68,8 @@ export default class MyDocument extends Document {
             crossOrigin="anonymous"
           />
           <link href="/fonts/style.css" rel="stylesheet" />
+          {/* eslint-disable-next-line react/no-danger */}
+          <style type="text/css" dangerouslySetInnerHTML={{ __html: mediaStyles }} />
         </Head>
         <body>
           <Main />
