@@ -6,6 +6,7 @@ export const HeaderEmoji = styled.h1`
   text-shadow: 1px 1px 3px var(--black);
   cursor: grab;
   width: 20%;
+  font-weight: 400;
 `;
 
 export const IndexTextBlock = styled(TextBlock)`

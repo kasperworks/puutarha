@@ -212,7 +212,6 @@ const GlobalStyle = createGlobalStyle`
       position: fixed;
       opacity: 0.985;
       margin-top: 25px;
-    
     }
 
     .bm-menu {
