@@ -1,15 +1,30 @@
 import Image from 'next/image';
+import { motion } from 'framer-motion';
+
 import TVPic from '../public/static/images/KVBBGTV_small.png';
 import GHYle from '../public/static/images/github_yle.png';
 import ClubSnare from '../public/static/images/club_snare_medium.jpg';
 import Container from '../components/Container';
 import * as s from '../styles/Layout.styled';
 
+const headerVariants = {
+  hidden: {
+    opacity: 0,
+    y: '-100vh',
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+  },
+};
+
 export default function About() {
   return (
     <Container title="About / Kasper Viita">
       <div>
-        <h1>About Me</h1>
+        <motion.h1 variants={headerVariants} initial="hidden" animate="visible">
+          About Me
+        </motion.h1>
         <s.TextBlock>
           <p>
             I wrote about financial markets and related topics for nine years before

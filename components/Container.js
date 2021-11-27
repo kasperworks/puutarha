@@ -1,9 +1,23 @@
 import Head from 'next/head';
 import { useRouter } from 'next/router';
+import { motion } from 'framer-motion';
+
 import * as s from '../styles/Layout.styled';
 import { Media, MediaContextProvider } from '../lib/media';
 import MobileNav from './MobileNav';
 import DesktopNav from './DesktopNav';
+
+const mainVariants = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: {
+      duration: 0.7,
+    },
+  },
+};
 
 export default function Container(props) {
   const { children, ...customMeta } = props;
@@ -55,7 +69,13 @@ export default function Container(props) {
               <DesktopNav />
             </Media>
           </MediaContextProvider>
-          <main id="skip">{children}</main>
+          <motion.main
+            variants={mainVariants}
+            initial="hidden"
+            animate="visible"
+            id="skip">
+            {children}
+          </motion.main>
         </s.CenterSection>
       </s.SiteBorderStyles>
 

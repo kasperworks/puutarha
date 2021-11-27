@@ -1,10 +1,22 @@
 import * as React from 'react';
 import Link from 'next/link';
-/* import Image from 'next/image'; */
+import { motion } from 'framer-motion';
+
 import { getMDXComponent } from 'mdx-bundler/client';
 import { getAllPosts, getSinglePost } from '../../lib/mdx';
 import Container from '../../components/Container';
 import * as s from '../../styles/Slug.styled';
+
+const headerVariants = {
+  hidden: {
+    opacity: 0,
+    x: '100vw',
+  },
+  visible: {
+    opacity: 1,
+    x: 0,
+  },
+};
 
 const CustomLink = ({ children, href }) => {
   if (href.startsWith('/')) {
@@ -37,7 +49,9 @@ const Post = ({ code, frontmatter }) => {
   return (
     <Container title={`${frontmatter.title} / Kasper Viita`}>
       <s.SingleBlogTextBlock>
-        <h1>{frontmatter.title}</h1>
+        <motion.h1 variants={headerVariants} initial="hidden" animate="visible">
+          {frontmatter.title}
+        </motion.h1>
       </s.SingleBlogTextBlock>
 
       <s.SingleBlogTextBlock>

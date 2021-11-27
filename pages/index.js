@@ -4,10 +4,25 @@ import IndexDisclaimer from '../components/IndexDisclaimer';
 import { getAllPosts } from '../lib/mdx';
 import * as s from '../styles/Index.styled';
 
+const headerVariants = {
+  hidden: {
+    opacity: 0,
+    x: -2,
+    y: -2,
+  },
+  visible: {
+    opacity: 1,
+    x: [-5, 2, -2, 1, -1, 0],
+    y: -1,
+  },
+};
+
 export default function Introduction() {
   return (
     <Container>
-      <s.HeaderEmoji>👋</s.HeaderEmoji>
+      <s.HeaderEmoji variants={headerVariants} initial="hidden" animate="visible">
+        👋
+      </s.HeaderEmoji>
 
       <s.IndexTextBlock>
         <p>Hi! I&apos;m Kasper, a journalist and a programmer.</p>
@@ -30,13 +45,13 @@ export default function Introduction() {
             </a>
           </Link>{' '}
           to a professional programming role, changing employers and countries in the
-          process. Other things you&apos;ll find include clumsy metaphors
+          process. Then I decided to start sharing clumsy metaphors
           {/* <Link href="/blog/the-brain-is-a-magpie">
             <a className="internal-link">
               <em>metaphors</em>
             </a>
           </Link> */}
-          , anecdotes, code snippets and{' '}
+          , code snippets and{' '}
           <Link href="/blog/resources">
             <a className="internal-link">
               <em>link dumps</em>
@@ -61,8 +76,6 @@ export default function Introduction() {
       <s.IndexTextBlock>
         <p>Have a look around, any tools or thoughts you find are yours to keep.</p>
       </s.IndexTextBlock>
-
-      <IndexDisclaimer />
     </Container>
   );
 }

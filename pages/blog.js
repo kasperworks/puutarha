@@ -1,7 +1,21 @@
+import Link from 'next/link';
+import { motion } from 'framer-motion';
+
 import Container from '../components/Container';
 import BlogPost from '../components/BlogPost';
 import { getAllPosts } from '../lib/mdx';
 import * as s from '../styles/Layout.styled';
+
+const headerVariants = {
+  hidden: {
+    opacity: 0,
+    y: '100vh',
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+  },
+};
 
 export default function Blog({ posts }) {
   const postsByDate = posts.sort(
@@ -10,9 +24,20 @@ export default function Blog({ posts }) {
   return (
     <Container title="Blog / Kasper Viita" description="Assorted notes">
       <div>
-        <h1>Notes</h1>
+        <motion.h1 variants={headerVariants} initial="hidden" animate="visible">
+          Notes
+        </motion.h1>
         <s.TextBlock>
-          <p>{`I've written ${posts.length} public notes thus far, you'll find them all here.`}</p>
+          <p>
+            {`I've written ${posts.length} public notes thus far, you'll find them all here. `}
+            If you&apos;re looking to read one thing, I would recommend{' '}
+            <Link href="/blog/switching-lanes">
+              <a className="internal-link">
+                <em>this one</em>
+              </a>
+            </Link>
+            .
+          </p>
         </s.TextBlock>
         <s.TextBlock>
           {postsByDate.map((item, index) => {
