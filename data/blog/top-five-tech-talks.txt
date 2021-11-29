@@ -1,8 +1,8 @@
 ---
-title: My Top Five Tech Talks
+title: Top Five Tech Talks
 publishedAt: '2021-11-01'
 lastUpdated: ''
-summary: "Some profound things about technology, uttered on stage to many people. A ranking that's in flux and susceptible to change at any given moment. All worth your while."
+summary: "Some important public presentations about technology. A ranking that's in flux and susceptible to change at any given moment."
 tags: ['career', 'technical', 'go', 'js']
 ---
 

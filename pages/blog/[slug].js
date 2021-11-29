@@ -10,11 +10,27 @@ import * as s from '../../styles/Slug.styled';
 const headerVariants = {
   hidden: {
     opacity: 0,
-    x: '100vw',
+    y: -50,
   },
   visible: {
     opacity: 1,
-    x: 0,
+    y: -1,
+    transition: {
+      type: 'tween',
+      duration: 0.5,
+    },
+  },
+};
+
+const mainVariants = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: {
+      duration: 0.7,
+    },
   },
 };
 
@@ -63,7 +79,7 @@ const Post = ({ code, frontmatter }) => {
           <p>{frontmatter.summary}</p>
         </s.SummaryTextBlock>
       </s.SingleBlogTextBlock>
-      <s.MainBlogTextBlock>
+      <s.MainBlogTextBlock variants={mainVariants} initial="hidden" animate="visible">
         <Component components={{ a: CustomLink }} />
       </s.MainBlogTextBlock>
       <s.Tags>

@@ -1,26 +1,37 @@
 import Link from 'next/link';
 import Container from '../components/Container';
-import IndexDisclaimer from '../components/IndexDisclaimer';
 import { getAllPosts } from '../lib/mdx';
 import * as s from '../styles/Index.styled';
 
 const headerVariants = {
   hidden: {
     opacity: 0,
-    x: -2,
+    x: -5,
     y: -2,
+    rotate: -10,
   },
   visible: {
     opacity: 1,
     x: [-5, 2, -2, 1, -1, 0],
     y: -1,
+    rotate: [-2, 2, -2, 1, -1, 0],
+    transition: {
+      ease: 'linear',
+    },
+  },
+  tap: {
+    scale: 1.4,
   },
 };
 
 export default function Introduction() {
   return (
     <Container>
-      <s.HeaderEmoji variants={headerVariants} initial="hidden" animate="visible">
+      <s.HeaderEmoji
+        variants={headerVariants}
+        whileTap="tap"
+        initial="hidden"
+        animate="visible">
         👋
       </s.HeaderEmoji>
 
@@ -45,19 +56,7 @@ export default function Introduction() {
             </a>
           </Link>{' '}
           to a professional programming role, changing employers and countries in the
-          process. Then I decided to start sharing clumsy metaphors
-          {/* <Link href="/blog/the-brain-is-a-magpie">
-            <a className="internal-link">
-              <em>metaphors</em>
-            </a>
-          </Link> */}
-          , code snippets and{' '}
-          <Link href="/blog/resources">
-            <a className="internal-link">
-              <em>link dumps</em>
-            </a>
-          </Link>
-          .
+          process.
         </p>
       </s.IndexTextBlock>
       <s.IndexTextBlock>

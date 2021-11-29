@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
 export const SingleBlogTextBlock = styled.div`
   margin: 0 0 20px 0;
@@ -57,20 +58,9 @@ export const SingleTag = styled.span`
   padding: 0 5px;
 `;
 
-export const MainBlogTextBlock = styled.div`
+export const MainBlogTextBlock = styled(motion.div)`
   p {
     margin: 20px 0;
-  }
-
-  blockquote {
-    border-left-color: var(--accent);
-    border-left-width: 6px;
-    border-left-style: solid;
-    padding: 8px 8px 8px 14px;
-    background-color: var(--codeblock);
-    p {
-      margin: 0;
-    }
   }
 
   a {

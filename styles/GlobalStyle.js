@@ -186,9 +186,17 @@ const GlobalStyle = createGlobalStyle`
       border-radius: 4px;
     }
 
-    .audio-player {
-      animation: fadeIn 3s ease-in-out;
+    blockquote {
+    border-left-color: var(--accent);
+    border-left-width: 6px;
+    border-left-style: solid;
+    padding: 8px 8px 8px 14px;
+    background-color: var(--codeblock);
+      p {
+        margin: 0;
+      }
     }
+
     
     @keyframes fadeIn {
         from { opacity: 0; }

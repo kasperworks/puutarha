@@ -9,11 +9,15 @@ import * as s from '../styles/Layout.styled';
 const headerVariants = {
   hidden: {
     opacity: 0,
-    y: '100vh',
+    rotate: 7,
   },
   visible: {
     opacity: 1,
-    y: 0,
+    rotate: 0,
+    transition: {
+      type: 'tween',
+      duration: 0.5,
+    },
   },
 };
 

@@ -1,4 +1,5 @@
 import * as React from 'react';
+import Link from 'next/link';
 import { motion } from 'framer-motion';
 import Container from '../components/Container';
 import * as s from '../styles/Layout.styled';
@@ -6,11 +7,15 @@ import * as s from '../styles/Layout.styled';
 const headerVariants = {
   hidden: {
     opacity: 0,
-    x: '-100vw',
+    rotate: 7,
   },
   visible: {
     opacity: 1,
-    x: 0,
+    rotate: 0,
+    transition: {
+      type: 'tween',
+      duration: 0.5,
+    },
   },
 };
 
@@ -22,7 +27,19 @@ export default function Works() {
           Works
         </motion.h1>
         <s.TextBlock>
-          <p>Moi! Tähän tulee duuneja.</p>
+          <strong>🚧Under construction🚧</strong>
+        </s.TextBlock>
+        <s.TextBlock>
+          <blockquote>
+            If you&apos;re curious about the implementation of this site, have a look at
+            the{' '}
+            <Link href="https://github.com/kasperworks/puutarha">
+              <a target="_blank" rel="noopener noreferrer">
+                repo
+              </a>
+            </Link>
+            . The key tools are React, Next.js, MDX, Styled Components and Framer Motion.
+          </blockquote>
         </s.TextBlock>
       </div>
     </Container>
