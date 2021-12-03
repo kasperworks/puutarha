@@ -108,40 +108,15 @@ tags: ['resources', 'depository']
 - Look into Nest.js
 - Look into dynamic programming and matrix manipulation
 
-## My stuff
-
-- [GitHub repos](https://github.com/neliraituri?tab=repositories)
-- [neliraituri.github.io](https://neliraituri.github.io)
-
 ## Other stuff
 
-- [DevDocs](https://devdocs.io/)
-  [Advanced CSS & Sass](https://www.udemy.com/course/advanced-css-and-sass/learn/lecture/)\* [Atomic Design](https://atomicdesign.bradfrost.com/chapter-1/)
-- [This Is Responsive](https://bradfrost.github.io/this-is-responsive/index.html)
-- [State of JS](https://stateofjs.com/)
 - [Stack Overflow survey](https://insights.stackoverflow.com/survey/2019)
 - [Language trends / Stack Overflow](https://insights.stackoverflow.com/trends?tags=scala%2Cgo%2Celixir%2Crust)
 - [Redmonk survey](https://redmonk.com/sogrady/2020/02/28/language-rankings-1-20/)
-- [OSSU](https://github.com/ossu/computer-science)
 - [Teach Yourself CS](https://teachyourselfcs.com/)
 - [HackerRank](https://www.hackerrank.com/)
-- [Helsingin yliopisto](https://courses.helsinki.fi/fi/avoin-yliopisto/opinnot/tietojenk%C3%A4sittelytiede)
 - [Thoughtworks languages and frameworks radar](https://www.thoughtworks.com/radar/languages-and-frameworks)
-- [David Walsh blog](https://davidwalsh.name/)
 - [CSS Tricks](https://css-tricks.com/)
-- [Kent C Dodds blog](https://kentcdodds.com/blog/)
-- [Alligator.io](https://alligator.io/)
-- [System Design Primer](https://github.com/donnemartin/system-design-primer/blob/master/README.md)
-
-## Git, Shell, Design Patterns
-
-- [Testing with Jest](https://www.valentinog.com/blog/jest/)
-- [Udemy Full Stack](https://www.udemy.com/course/node-with-react-fullstack-web-development/learn/lecture/)
-- [Codrops Three.js tutorials](https://tympanus.net/codrops/category/tutorials/)
-- [Learning JavaScript Design Patterns](https://addyosmani.com/resources/essentialjsdesignpatterns/book/)
-- [More Design Patterns](https://refactoring.guru/design-patterns)
-- [GitHub's Git Handbook,](https://guides.github.com/introduction/git-handbook/) [branching tutorial](https://learngitbranching.js.org/) [and Atlassian docs](https://www.atlassian.com/git)
-- [PowerShell resources](http://ramblingcookiemonster.github.io/Pages/PowerShellResources/index.html) [and official documentation](https://docs.microsoft.com/en-gb/powershell/)
 
 ## Fundamentals
 
@@ -163,7 +138,7 @@ tags: ['resources', 'depository']
 - [Mathematics for Computer Science, MIT](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-spring-2015/)
 - [Clean Code concepts adapted for Javascript](https://github.com/ryanmcdermott/clean-code-javascript)
 
-## Long-term goals
+## Long-term goals of things to learn, set out in April 2020
 
 - MEVN/MERN stack + TypeScript
 - Database ting: GraphQL, MongoDB, [SQL](https://sqlbolt.com/), MariaDB
@@ -176,32 +151,28 @@ tags: ['resources', 'depository']
 - Deployment skills
 - [Johnny-Five robotics projects](http://johnny-five.io/)
 
-[Harvard CS50](https://www.edx.org/course/cs50s-introduction-to-computer-science) [Helsinki Python MOOC](https://python-k20.mooc.fi/)
+### Tools of the trade, focus areas and things to explore. Written down in December 2021:
 
-Foundations
+User interfaces: React, Next.js, SolidJS, Remix
 
-Projects: roadmap
+Bundling tools: Vite.js, Webpack
 
-[Azure basics](https://docs.microsoft.com/en-us/learn/paths/azure-fundamentals/) [Tableau basics](https://www.tableau.com/learn/training/elearning) [Intro to Node.js](https://nodejs.dev/learn/) [Modern JavaScript Bootcamp](https://www.udemy.com/course/javascript-beginners-complete-tutorial/learn/lecture) [Node Microsoft Learn](https://docs.microsoft.com/en-gb/learn/paths/build-javascript-applications-nodejs/) [JavaScript 30](https://javascript30.com/)
+Hosting: AWS, Vercel, Netlify, Cloudflare
 
-But How Do It Know? book [Set Theory](https://www.youtube.com/playlist?list=PL5KkMZvBpo5AH_5GpxMiryJT6Dkj32H6N)
+Serverless API: Serverless Stack (SST), AWS CDK
 
-Advanced Beginner
+Databases: DynamoDB, FaunaDB, REST, GraphQL
 
-Projects: online resume, blog draft on Gridsome/Netlify
+3D visuals: Three.js, react-three-fiber, Blender
 
-[Beginner's Guide to React](https://egghead.io/courses/the-beginner-s-guide-to-react) [Master Gatsby](https://mastergatsby.com/) [D3 Masterclass](https://www.newline.co/courses/fullstack-d3-masterclass/making-your-first-chart)
+Data wrangling: Python, pandas
 
-[Data Structures & Algorithms](https://www.udemy.com/course/coding-interview-bootcamp-algorithms-and-data-structure/learn/) [Helsinki Databases](https://courses.helsinki.fi/fi/aytkt10004/136509070)
+3D visuals: Three.js, react-three-fiber, Blender
 
-Novice
+Data visualization: D3, Visx
 
-Projects: football UI with database, revised roadmap
+Command line: bash/zsh, jq, zx
 
-[TinyHouse](https://www.newline.co/courses/tinyhouse-react-masterclass/lesson_0.1-tinyhouse-welcome) [Advanced React & GraphQL](https://advancedreact.com/) [Fullstack React w/ TypeScript](https://www.newline.co/fullstack-react-with-typescript) [The Missing Semester](https://missing.csail.mit.edu/)
+Languages to explore: TypeScript/JSDoc, Go
 
-[SICP JavaScript](https://source-academy.github.io/sicp/) [Linear Algebra](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab) [Computer Networking](https://www.youtube.com/watch?v=TwnsN6iLWy8&list=PLEAYkSg4uSQ2dr0XO_Nwa5OcdEcaaELSG&index=4) [Operating Systems: Three Easy Pieces](http://pages.cs.wisc.edu/~remzi/OSTEP/)
-
-Competent
-
-Projects: football graphics, summer house portal, stock portal"
+Fundamentals: networking, data structures, interpreters
