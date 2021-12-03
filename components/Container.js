@@ -27,9 +27,7 @@ export default function Container(props) {
   const meta = {
     title: 'kasper.works / Kasper Viita',
     description: `Numbers, words & JS.`,
-    // TODO Image here!
-    image:
-      'https://images.unsplash.com/photo-1522885147691-06d859633fb8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
+    image: '/static/images/sokoshotlankatolta_xs.jpg',
     type: 'website',
     ...customMeta,
   };
@@ -41,8 +39,8 @@ export default function Container(props) {
       <s.SiteBorderStyles>
         <Head>
           <title>{meta.title}</title>
-          {/* <meta name="robots" content="follow, index" /> */}
-          <meta name="robots" content="noindex" />
+          <meta name="robots" content="follow, index" />
+          {/* <meta name="robots" content="noindex" /> */}
           <meta name="theme-color" content="#235353" />
           <meta content={meta.description} name="description" />
           <meta property="og:url" content={`https://kasper.works${router.asPath}`} />

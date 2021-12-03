@@ -41,7 +41,7 @@ export default function Introduction() {
 
       <s.IndexTextBlock>
         <p>
-          This is my digital garden, a workshop with an open door. You&apos;ll find some
+          This is a workshop with an open door. My digital garden. You&apos;ll find some
           scattered notes and links here, loosely related to my efforts to master the
           skills of a software engineer.
         </p>

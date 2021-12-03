@@ -1,8 +1,8 @@
 module.exports = {
   reactStrictMode: true,
-  images: {
+  /* images: {
     domains: ['images.unsplash.com'],
-  },
+  }, */
   experimental: {
     // Enables the styled-components SWC transform
     styledComponents: true,
