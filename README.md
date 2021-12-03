@@ -1,5 +1,5 @@
 # Puutarha
 
-Tähän tulee puutarha
+This is my personal site, [kasper.works](https://kasper.works).
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Built with Next.js, MDX, Styled Components, Framer Motion and a few other libraries. This is also my first real project on Next.js, thus it's almost certainly not a showcase of best practices. It is functional and it looks good. Most importantly, it offers me a platform to write on.
