@@ -4,10 +4,10 @@ import Container from '../components/Container';
 export default function NotFound() {
   return (
     <Container title="404 / Kasper Viita">
-      <h1>420 – Ei pysty</h1>
-      <p>Kipunoiva pöllö.</p>
+      <h1>404</h1>
+      <p>Nope, nothing here!</p>
       <Link href="/">
-        <a>Palaa kotiin</a>
+        <a>Go to front page</a>
       </Link>
     </Container>
   );
