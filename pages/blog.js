@@ -33,7 +33,7 @@ export default function Blog({ posts }) {
         </motion.h1>
         <s.TextBlock>
           <p>
-            {`I've written ${posts.length} public notes thus far, you'll find them all here. `}
+            {`I've written ${posts.length} public notes thus far. `}
             If you&apos;re looking to read one thing, I would recommend{' '}
             <Link href="/blog/switching-lanes">
               <a className="internal-link">

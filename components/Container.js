@@ -14,7 +14,9 @@ const mainVariants = {
   visible: {
     opacity: 1,
     transition: {
-      duration: 0.7,
+      duration: 0.3,
+      // Quintic ease-out for page transitions
+      ease: [0.22, 1, 0.36, 1],
     },
   },
 };
@@ -70,6 +72,8 @@ export default function Container(props) {
             </Media>
           </MediaContextProvider>
           <motion.main
+            // Key from path needed for transitioning between blog posts using [slug]
+            key={router.asPath}
             variants={mainVariants}
             initial="hidden"
             animate="visible"

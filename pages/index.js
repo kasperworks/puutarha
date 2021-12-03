@@ -41,9 +41,9 @@ export default function Introduction() {
 
       <s.IndexTextBlock>
         <p>
-          This is my hub, my digital garden and workshop. You&apos;ll find some scattered
-          notes here, loosely related to my efforts to master the skills of a software
-          engineer.
+          This is my digital garden, a workshop with an open door. You&apos;ll find some
+          scattered notes and links here, loosely related to my efforts to master the
+          skills of a software engineer.
         </p>
       </s.IndexTextBlock>
       <s.IndexTextBlock>
@@ -73,7 +73,10 @@ export default function Introduction() {
         </p>
       </s.IndexTextBlock>
       <s.IndexTextBlock>
-        <p>Have a look around, any tools or thoughts you find are yours to keep.</p>
+        <p>
+          Have a look around, any tools or useful thoughts you come across are yours to
+          keep.
+        </p>
       </s.IndexTextBlock>
     </Container>
   );
