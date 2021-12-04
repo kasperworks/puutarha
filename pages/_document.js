@@ -4,6 +4,7 @@ import { mediaStyles } from '../lib/media';
 
 export default class MyDocument extends Document {
   static async getInitialProps(ctx) {
+    // This is to prevent a flash of unstyled content on first load
     const sheet = new ServerStyleSheet();
     const originalRenderPage = ctx.renderPage;
 
