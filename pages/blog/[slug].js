@@ -1,10 +1,13 @@
 import * as React from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
+import ReactPlayer from 'react-player/youtube';
 
 import { getMDXComponent } from 'mdx-bundler/client';
 import { getAllPosts, getSinglePost } from '../../lib/mdx';
+
 import Container from '../../components/Container';
+import Spacer from '../../components/Spacer';
 import * as s from '../../styles/Slug.styled';
 
 const headerVariants = {
@@ -34,6 +37,8 @@ const mainVariants = {
     },
   },
 };
+
+const YTPlayer = ({ url }) => <ReactPlayer light url={url} width="100%" height="auto" />;
 
 const CustomLink = ({ children, href }) => {
   if (href.startsWith('/')) {
@@ -81,7 +86,7 @@ const Post = ({ code, frontmatter }) => {
         </s.SummaryTextBlock>
       </s.SingleBlogTextBlock>
       <s.MainBlogTextBlock variants={mainVariants} initial="hidden" animate="visible">
-        <Component components={{ a: CustomLink }} />
+        <Component components={{ a: CustomLink, Spacer, YTPlayer }} />
       </s.MainBlogTextBlock>
       <s.Tags>
         Topics:
