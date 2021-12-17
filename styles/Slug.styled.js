@@ -72,4 +72,8 @@ export const MainBlogTextBlock = styled(motion.div)`
   small {
     color: var(--grey);
   }
+
+  div {
+    aspect-ratio: 16 / 9;
+  }
 `;

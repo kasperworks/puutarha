@@ -202,7 +202,7 @@ const GlobalStyle = createGlobalStyle`
       background: var(--darkgreen);
       opacity: 0.6;
       border: 1px solid var(--accent);
-      background-image: url('/static/images/sokoshotlankatolta_xs.jpg')
+      background-image: url('/static/images/sokoshotlankatolta_xs.jpg');
     }
 
     .skip-nav {
