@@ -196,12 +196,14 @@ const GlobalStyle = createGlobalStyle`
         margin: 0;
       }
     }
-
     
-    @keyframes fadeIn {
-        from { opacity: 0; }
-        to { opacity: 1; }
-      }
+    .react-player__preview {
+      border-radius: 4px;
+      background: var(--darkgreen);
+      opacity: 0.6;
+      border: 1px solid var(--accent);
+      background-image: url('/static/images/sokoshotlankatolta_xs.jpg')
+    }
 
     .skip-nav {
       transform: translateY(-50px);
