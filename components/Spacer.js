@@ -2,7 +2,7 @@ import * as React from 'react';
 import styled from 'styled-components';
 
 const SpacerDiv = styled.div`
-  height: 50px;
+  height: 30px;
   width: 100%;
 `;
 

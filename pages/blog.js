@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 
 import Container from '../components/Container';
 import BlogPost from '../components/BlogPost';
+import Spacer from '../components/Spacer';
 import { getAllPosts } from '../lib/mdx';
 import * as s from '../styles/Layout.styled';
 
@@ -43,6 +44,7 @@ export default function Blog({ posts }) {
             .
           </p>
         </s.TextBlock>
+        <Spacer />
         <s.TextBlock>
           {postsByDate.map((item, index) => {
             const { title, publishedAt, summary } = item.frontmatter;
