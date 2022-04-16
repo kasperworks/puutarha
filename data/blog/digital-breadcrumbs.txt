@@ -1,0 +1,40 @@
+---
+title: Digital Breadcrumbs
+publishedAt: '2022-04-16'
+lastUpdated: ''
+summary: "Some people I'm grateful exist. People who have left a trail of digital breadcrumbs to follow."
+tags: ['career', 'shout-outs', 'life']
+---
+
+Here are some people I don't personally know, but who have
+helped me rediscover some purpose and drive.
+
+The common thread here is that all have a public presence in one way or another,
+to which that you may expose yourself. It could be beneficial.
+
+### The Problem-Solving Spectrum
+
+David Malan
+Colt Steele
+Stephen Grider
+Wes Bos
+Kent C. Dodds
+Dave Ceddia
+Segun Adebayo
+Sarah Drasner
+Charity Majors
+David Farley
+Julia Evans
+Tanya Reilly
+Shawn Wang
+Patrick McKenzie
+Kathy Sierra
+Barbara Oakley
+Ben Hunt
+Tom Morgan
+O'Shaughnessys
+Morgan Housel
+Cedric Chin
+Jonathan Blow
+Bret Victor
+Richard Feynman
