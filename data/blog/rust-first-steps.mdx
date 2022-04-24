@@ -1,0 +1,230 @@
+---
+title: Rust Flakes
+publishedAt: '2022-04-24'
+lastUpdated: ''
+summary: 'An overview and a quick-start guide on getting closer to bare metal. Early notes after a few days of intense practical learning.'
+tags: ['rust', 'programming']
+---
+
+It's in the pipelines and underwater supports, formed into a coating over bare metal.
+It exists on a plane below JavaScript.
+
+Rust, the programming language, is something I've dabbled in recent days out of
+personal fascination.
+
+My motivation for learning Rust is making further inroads into computer science,
+getting a better understanding of hardware operations and systems programming.
+I'm also keen to gain the ability to manipulate microcontrollers and other embedded devices.
+Making lights blink!
+
+I'll illustrate some of the reasons it feels like a worthwhile long-term pursuit
+to me, and hopefully lower any barriers to try it out. The first part is an overview
+of the language as I understand it, followed by a guide on how to get started
+writing Rust.
+
+<small>
+  If you want to skip the overview and get right to coding, that part is
+  [here](#get-rusty).
+</small>
+
+**Part One**
+
+### Why Rust?
+
+Lower-level languages such as C provide closer access to hardware than higher-level languages
+such as Python or JavaScript. You'll decide how your variables are aligned in the computer's memory.
+
+This is an intimidating thought, and much of the fear is justified. Adverse outcomes such as buffer overflows,
+race conditions and memory leaks are a [major source](https://www.zdnet.com/article/microsoft-70-percent-of-all-security-bugs-are-memory-safety-issues/)
+of software crashes and security vulnerabilities affecting people everywhere.
+
+A developer can shield their code from such problems, to some extent, by using more
+modern languages and battle-tested open-source code libraries. It is, however, sometimes necessary
+for programmers to drop down a level, to make things work quicker, fit into a smaller space and
+use less energy.
+
+Rust provides this close access to hardware with guardrails on memory safety.
+
+### In favor
+
+Rust is a practitioner's language, used by many large companies under extreme production loads,
+including [AWS](https://aws.amazon.com/blogs/opensource/sustainability-with-rust/),
+[Discord](https://discord.com/blog/why-discord-is-switching-from-go-to-rust)
+and [Cloudflare](https://news.ycombinator.com/item?id=17077358).
+
+It is particularly good for systems programming, creating databases, operating systems,
+software containers or device drivers.
+
+It's equally suitable for automating a greenhouse or making scientific computations.
+Or creating tiny virtual environments inside a data-center complex
+so that the payment and logistics for your takeaway taco delivery can be arranged faster.
+
+It comes with a modern toolchain: built-in documentation and testing capabilities as well as
+a package manager allowing for easy reuse of battle-tested code.
+
+It's simple to share Rust programs with someone who doesn't know the language — or any programming at all —
+by compiling the source code to an executable.
+
+Rust isn't as widely used as Java or C# or Python, but its trajectory is pointing upward in many
+indicative metrics, from [Stack Overflow](https://insights.stackoverflow.com/trends?tags=rust)
+questions to [Reddit](https://subredditstats.com/r/rust) activity. It is [well liked](https://insights.stackoverflow.com/survey/2021#technology-worked-with-vs-want-to-work-with)
+among developers that have taken the time to learn it.
+
+### Tradeoffs and barriers
+
+A-ha! There are tradeoffs, of course there are.
+
+There's the need to placate the compiler, which will complain and refuse to run your program
+if you're trying to use a variable that's owned by someone else. What?
+
+Someone said it's a language where you get the hangover first.
+
+To use Rust, one needs to learn new concepts and syntax, such as ownership and borrowing,
+references and traits. The language is large, and there is no forgiveness for lazy programming.
+
+It's probably not as good for rapid prototyping as a dynamic language without a lengthy compilation
+step, such as Python or JavaScript.
+
+On the other hand, the compiler is a dance partner, it will tell you every time you step on
+their toes or miss a cue. That will make you a better dancer.
+
+**Part Two**
+
+### Get Rusty
+
+This part is meant for developers keen to dip their toes in Rust. We'll install Rust
+and run your first program, then look at what are the next steps.
+
+First, let's get [rustup](https://rustup.rs/), an installer for the Rust
+language. The command could look like this in a bash/zsh terminal on Mac OS
+or Linux, the site will advise you of a way for your operating system:
+
+```bash
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
+
+After installation, once you've reloaded your PATH environment by either
+opening and closing the terminal window or sourcing the relevant file...
+
+```bash
+source $HOME/.cargo/env
+```
+
+You'll notice you have access to a command called cargo, which refers to
+the package manager of the Rust ecosystem. It handles crates,
+or outside code libraries you can utilize. Let's try it out by installing
+a package called `cargo-edit` you can use to make this experience
+very similar to using npm with yarn.
+
+```bash
+cargo install cargo-edit
+```
+
+Now let's try making a new Rust project.
+
+```bash
+mkdir rust-first-steps
+cd rust-first-steps
+cargo new hello
+```
+
+You'll find a new folder called hello, navigate there and inspect the contents.
+
+```bash
+.
+├── Cargo.toml
+└── src
+   └── main.rs
+```
+
+If you're familiar with modern web development, Cargo.toml is the same thing
+as package.json. You'll find the dependencies of your project there, as well as
+some metadata.
+
+Under the src directory, you'll find the following.
+
+```rust:src/main.rs
+fn main() {
+    println!("Hello, world!");
+}
+```
+
+Here's the same thing in JavaScript.
+
+```js
+function main() {
+  console.log('Hello, world!');
+}
+```
+
+In this comparison, `function` becomes `fn`, and `console.log` becomes `println!`.
+Another small difference you may spot in this example is that Rust uses
+single quotes for characters and double quotes for strings, whereas
+JavaScript doesn't care.
+
+Let's try compiling and running this program.
+
+```bash
+cargo run
+```
+
+You should see something like this:
+
+```
+Compiling hello v0.1.0 (/Users/kasperworks/repos/rust-first-steps/hello)
+    Finished dev [unoptimized + debuginfo] target(s) in 1.54s
+     Running `target/debug/hello`
+Hello, world!
+```
+
+After this step, you'll find there's an automatically generated Cargo.lock, which locks in the
+specific versions of libraries, just like yarn.lock or package-lock.json.
+
+In target/debug/ there's an executable called hello. Try running it.
+
+```bash
+target/debug/hello
+```
+
+You're all set up! For your next steps, take a look at the authoritative manual
+and tutorial for Rust, which now resides right there in your computer,
+ready to access offline.
+
+```bash
+rustup doc
+```
+
+### What next?
+
+There's a wealth of beginner-friendly resources to help get you on your way,
+ky current learning experience involves reading these books in parallel,
+in addition to the one included as a part of the official documentation:
+
+- [Programming Rust](https://www.oreilly.com/library/view/programming-rust-2nd/9781492052586/)
+- [Rust in Action](https://www.manning.com/books/rust-in-action)
+- [Command-Line Rust](https://www.ebooks.com/en-fi/book/210463173/command-line-rust/ken-youens-clark/?_c=1)
+
+I find that being bombarded by the same idea from different angles helps me learn it.
+That includes understanding why it exists, where it came from and how to use it in practice.
+You may benefit from a similar broad focus, or a narrower one, I would recommend
+at least skimming the covers of all those books and seeing if there's a particular hook for you.
+
+There are also many videos on the topic, I found these two talks particularly interesting:
+
+<Spacer />
+
+**Niko Matsakis - Rust: Hack Without Fear!**
+
+<YTPlayer url="https://www.youtube.com/watch?v=lO1z-7cuRYI" />
+
+<Spacer />
+
+**James Munns - Getting Something for Nothing**
+
+<YTPlayer url="https://www.youtube.com/watch?v=t99L3JHhLc0" />
+
+<Spacer />
+
+Hope you've enjoyed this introduction! I'll post some more Rust stuff as I learn
+more, this has been mainly a way for me to document my first few days of getting
+acquainted with Rust and smooth the very beginning for others as much as possible.

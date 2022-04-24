@@ -245,6 +245,8 @@ const GlobalStyle = createGlobalStyle`
 
     .rehype-code-title {
       font-size: 0.9rem;
+      // Tame the code titles, negate video thumbnail setting
+      aspect-ratio: unset !important;
     }
 
     .token.comment,
@@ -277,13 +279,6 @@ const GlobalStyle = createGlobalStyle`
       color: var(--green);
     }
 
-    .token.operator,
-    .token.entity,
-    .token.url,
-    .language-css .token.string,
-    .style .token.string {
-      color: var(--accent);
-    }
 
     .token.atrule,
     .token.attr-value,
@@ -294,6 +289,17 @@ const GlobalStyle = createGlobalStyle`
     .token.function,
     .token.class-name {
       color: var(--green);
+    }
+
+    .token.operator,
+    .token.macro,
+    .token.console,
+    .token.method,
+    .token.entity,
+    .token.url,
+    .language-css .token.string,
+    .style .token.string {
+      color: var(--accent);
     }
 
     .token.regex,
