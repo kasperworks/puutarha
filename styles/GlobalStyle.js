@@ -89,9 +89,6 @@ const GlobalStyle = createGlobalStyle`
       @media (max-width: 700px) {
         font-size: 0.9rem;
       }
-      @media (max-width: 400px) {
-        font-size: 0.7rem;
-      }
     }
 
     abbr {

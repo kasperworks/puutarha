@@ -1,0 +1,50 @@
+---
+title: Engineering and Craft
+publishedAt: '2022-05-05'
+lastUpdated: ''
+summary: 'On building things and writing code for fun. '
+tags: ['career', 'reflections', 'serverless']
+---
+
+I struggle with the term engineer.
+
+As a child of a construction engineer, it's very difficult to think of myself or many of
+my newly found peers in the software industry as engineers. I'm writing code for fun,
+and if it's a good day, I have a very faint clue of what I'm doing.
+
+That makes it very exciting and adventurous, but I'm also happy that when my
+experiments fail, nobody gets buried in a pile of rubble.
+
+### Yeah, but what do you know?
+
+OK fine, I'm new to this, so I guess it's natural that I'm confused about it.
+Then again, here's someone significantly more experienced than me:
+
+> We should recognize and accept that our discipline is a creative design discipline
+> and has no meaningful relationship to production-engineering and instead focus on
+> mastery of the skills of exploration, discovery, and learning.
+
+<small>David Farley, Modern Software Engineering</small>
+
+That's [Dave Farley](https://twitter.com/davefarley77), who wrote about
+continuous delivery more than a decade ago. His [recent book](https://www.davefarley.net/?p=352)
+is brilliant, and resonated with me greatly.
+
+### Mass production, but creative
+
+In a craft-based production system, each item will be unique. There's a beauty to that.
+A lot of people seem willing to go through the trouble of making their own bread,
+or paying through the nose for some artisan bakery produce. I've made some half-decent
+Finnish-style rye bread too, but I wouldn't trust myself to feed more than a few dozen people
+at any given time.
+
+What's missing is precision and scalability. Sometimes I get it right, sometimes I won't.
+I only have a pair of hands and two halves of a brain, which occasionally cooperate.
+
+In my personal experience, what seems to work is quick feedback loops. If my code isn't
+quite right at first, I can adjust, again and again, and it's a lot better if I don't have
+to wait for deployment or a compilation step. Thus it was interesting to see Farley stress
+the same point:
+
+> We are terrible at guessing what our users want. Even when we ask our users,
+> they don't know what they want either. The most effective approach is to iterate.
