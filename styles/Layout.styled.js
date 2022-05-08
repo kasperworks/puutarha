@@ -116,6 +116,9 @@ export const IntroText = styled.div`
   font-size: 1.6rem;
 `;
 
+
+
+
 export const Footer = styled.div`
   display: flex;
   justify-content: center;
@@ -140,3 +143,4 @@ export const WideImageContainer = styled.div`
   justify-content: center;
   margin: 15px 0;
 `;
+

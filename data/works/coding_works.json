@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Mitä jää",
+    "url": "https://yle.fi/uutiset/3-12128632",
+    "what": "An experimental photo layout",
+    "description": "Designed and implemented a layout for a climate-change article shot in Svalbard. The Society of News Design awarded a bronze medal to the story in 2021."
+  },
+  {
+    "title": "Koronavirus lukuina",
+    "url": "https://yle.fi/uutiset/3-11300232",
+    "what": "Data visualization, frontend and backend",
+    "description": "Maintained and developed self-updating Covid-19 data visuals, which have clocked about 30 million page hits. Planned and executed migration to DynamoDB."
+  },
+  {
+    "title": "Nimesi huippuhetket",
+    "url": "https://yle.fi/uutiset/3-11693006",
+    "what": "Dynamic data visualizations",
+    "description": "Displaying the popularity of first names in Finland from 1900–2020. My first published project in my first coding job!"
+  },
+  {
+    "title": "Unelmasta painajaiseksi",
+    "url": "https://yle.fi/urheilu/3-11999560",
+    "what": "Quiz elements and data visualizations",
+    "description": "Visualizing the increasing cost of the Olympics over decades."
+  },
+  {
+    "title": "Kaltoin kohdellut",
+    "url": "https://yle.fi/uutiset/3-12360893",
+    "what": "Data wrangling, interactive elements",
+    "description": "Extracting and analyzing data from five years of court-document PDFs on animal-abuse cases."
+  }
+]
