@@ -1,6 +1,6 @@
 ---
 title: Engineering and Craft
-publishedAt: '2022-05-05'
+publishedAt: '2022-05-11'
 lastUpdated: ''
 summary: 'On building things and writing code for fun. '
 tags: ['career', 'reflections', 'serverless']
@@ -8,17 +8,16 @@ tags: ['career', 'reflections', 'serverless']
 
 I struggle with the term engineer.
 
-As a child of a construction engineer, it's very difficult to think of myself or many of
-my newly found peers in the software industry as engineers. I'm writing code for fun,
-and if it's a good day, I have a very faint clue of what I'm doing.
+It's very difficult to think of myself or many of my newly found peers
+in the software industry as engineers. I'm writing code for fun and
+adventure, and if it's a good day, I have a faint clue what I'm doing.
 
-That makes it very exciting and adventurous, but I'm also happy that when my
-experiments fail, nobody gets buried in a pile of rubble.
+I'm also happy that when my experiments fail, nobody gets buried in a pile of rubble.
 
 ### Yeah, but what do you know?
 
-OK fine, I'm new to this, so I guess it's natural that I'm confused about it.
-Then again, here's someone significantly more experienced than me:
+Fair, I'm new to this. So here's someone significantly more experienced
+than me:
 
 > We should recognize and accept that our discipline is a creative design discipline
 > and has no meaningful relationship to production-engineering and instead focus on
@@ -26,25 +25,62 @@ Then again, here's someone significantly more experienced than me:
 
 <small>David Farley, Modern Software Engineering</small>
 
-That's [Dave Farley](https://twitter.com/davefarley77), who wrote about
-continuous delivery more than a decade ago. His [recent book](https://www.davefarley.net/?p=352)
-is brilliant, and resonated with me greatly.
+That's [Dave Farley](https://twitter.com/davefarley77),
+in a [recent book](https://www.davefarley.net/?p=352) of his. An old-school
+professional who wrote about continuous delivery more than a decade ago.
+
+### Software engineering, then
+
+Not all who program are engineers. Titles in the software industry seem to more
+reliably indicate salary rather than skill or responsibility,
+and the word engineer lends aura of competence.
+
+Should software engineers make an effort to earn that title in good conscience?
+What would that effort look like?
 
 ### Mass production, but creative
 
 In a craft-based production system, each item will be unique. There's a beauty to that.
-A lot of people seem willing to go through the trouble of making their own bread,
-or paying through the nose for some artisan bakery produce. I've made some half-decent
-Finnish-style rye bread too, but I wouldn't trust myself to feed more than a few dozen people
-at any given time.
+Many people are willing to go through the trouble of learning and creating. Others seek
+expensive artisan produce.
+
+I can cook some, but I wouldn't trust myself to feed more than a few dozen people at any given time.
+I can whip up a working web app, but not write code that'll land on the moon safely every time.
 
 What's missing is precision and scalability. Sometimes I get it right, sometimes I won't.
 I only have a pair of hands and two halves of a brain, which occasionally cooperate.
 
-In my personal experience, what seems to work is quick feedback loops. If my code isn't
-quite right at first, I can adjust, again and again, and it's a lot better if I don't have
-to wait for deployment or a compilation step. Thus it was interesting to see Farley stress
-the same point:
+> "Software engineers/data scientists are paid more because
+> we have to study more to keep up to date with this fast-moving industry
+> that changes more than any other field."
 
-> We are terrible at guessing what our users want. Even when we ask our users,
-> they don't know what they want either. The most effective approach is to iterate.
+> Sorry, but this is false: both that we need to study more,
+> or that this is the reason. --Gergely Orosz
+
+// https://twitter.com/GergelyOrosz/status/1523991858728292355
+
+Engineering implies a more rigorous process than most software really gets the benefit of.
+For all the similarities between software developers and, say, electrical engineers or
+construction engineers, there is one significant difference: accountability.
+
+### Things fall apart
+
+There's no seal of quality, things are expected to break regularly everywhere around us.
+From "smart lights" to aeroplane controls to elevators, the lines of code simply
+fall apart mid-process and glitch, sometimes with terrible consequences.
+
+Engineers accept the liability when things go wrong. By placing one's seal on a document,
+literally or figuratively, an engineer takes personal and professional responsibility
+for the accuracy of their best effort. It is much more than credentialism.
+
+### Earn it
+
+Anyone with the aspirations of identifying as a software engineer should remain humble
+and prove themselves in a positive manner. Staying true to the iterative, creative
+learning process of developing software, but improving and setting better standards
+through our own behavior and skill.
+
+Willingly giving less than that would be arrogance.
+
+[Margaret Hamilton](https://www.smithsonianmag.com/smithsonian-institution/margaret-hamilton-led-nasa-software-team-landed-astronauts-moon-180971575/)
+was a software engineer. That's the standard.
