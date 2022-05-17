@@ -1,23 +1,30 @@
 ---
 title: Engineering and Craft
-publishedAt: '2022-05-11'
+publishedAt: '2022-05-17'
 lastUpdated: ''
-summary: 'On building things and writing code for fun. '
+summary: 'On having standards, building things and writing code for fun and profit.'
 tags: ['career', 'reflections', 'serverless']
 ---
 
-I struggle with the term engineer.
+I'd like to be a software engineer, although I struggle with the term.
 
 It's very difficult to think of myself or many of my newly found peers
-in the software industry as engineers. I'm writing code for fun and
-adventure, and if it's a good day, I have a faint clue what I'm doing.
+in the software industry as engineers. Writing code often feels like
+an adventure: only sometimes do I have a faint clue what I'm doing
+or where I'm going.
 
-I'm also happy that when my experiments fail, nobody gets buried in a pile of rubble.
+Looking around, it seems like I'm not alone: things break on a regular basis
+everywhere, from smart lights to airplane controls to elevators.
+Lines of code glitch and fall apart mid-process, sometimes with terrible consequences.
+We've come to expect it.
+
+I'm just happy that when my experiments fail, nobody gets buried in a pile of rubble.
 
 ### Yeah, but what do you know?
 
-Fair, I'm new to this. So here's someone significantly more experienced
-than me:
+Fair, I'm new to this. I [started](/blog/switching-lanes) coding barely two years ago and
+have been doing so professionally just over a year. So here's someone significantly more
+experienced than me:
 
 > We should recognize and accept that our discipline is a creative design discipline
 > and has no meaningful relationship to production-engineering and instead focus on
@@ -26,61 +33,100 @@ than me:
 <small>David Farley, Modern Software Engineering</small>
 
 That's [Dave Farley](https://twitter.com/davefarley77),
-in a [recent book](https://www.davefarley.net/?p=352) of his. An old-school
-professional who wrote about continuous delivery more than a decade ago.
+in a [recent book](https://www.davefarley.net/?p=352) of his, on the topic of software engineering.
+He's an old-school professional whose thoughts are worth a ponder.
 
-### Software engineering, then
+### Titles and credentialism
 
-Not all who program are engineers. Titles in the software industry seem to more
-reliably indicate salary rather than skill or responsibility,
-and the word engineer lends aura of competence.
+The word engineering implies a fairly rigorous process and a high bar of competence.
+Not all who program are engineers in this sense.
 
-Should software engineers make an effort to earn that title in good conscience?
-What would that effort look like?
-
-### Mass production, but creative
-
-In a craft-based production system, each item will be unique. There's a beauty to that.
-Many people are willing to go through the trouble of learning and creating. Others seek
-expensive artisan produce.
-
-I can cook some, but I wouldn't trust myself to feed more than a few dozen people at any given time.
-I can whip up a working web app, but not write code that'll land on the moon safely every time.
-
-What's missing is precision and scalability. Sometimes I get it right, sometimes I won't.
-I only have a pair of hands and two halves of a brain, which occasionally cooperate.
+Titles in the software industry seem to most reliably indicate salary, rather than difficulty of
+the task or burden of responsibility.
 
 > "Software engineers/data scientists are paid more because
 > we have to study more to keep up to date with this fast-moving industry
 > that changes more than any other field."
 
 > Sorry, but this is false: both that we need to study more,
-> or that this is the reason. --Gergely Orosz
+> or that this is the reason.
 
-// https://twitter.com/GergelyOrosz/status/1523991858728292355
+<small>
+  [Gergely Orosz](https://twitter.com/GergelyOrosz/status/1523991858728292355) in a tweet
+  on May 10, 2022
+</small>
 
-Engineering implies a more rigorous process than most software really gets the benefit of.
-For all the similarities between software developers and, say, electrical engineers or
-construction engineers, there is one significant difference: accountability.
+Electrical engineers or construction engineers accept liability when things go wrong.
+By signing off on a document, an engineer takes personal and professional responsibility
+for the accuracy of their best effort. It's more than credentialism, at least that part of it.
 
-### Things fall apart
-
-There's no seal of quality, things are expected to break regularly everywhere around us.
-From "smart lights" to aeroplane controls to elevators, the lines of code simply
-fall apart mid-process and glitch, sometimes with terrible consequences.
-
-Engineers accept the liability when things go wrong. By placing one's seal on a document,
-literally or figuratively, an engineer takes personal and professional responsibility
-for the accuracy of their best effort. It is much more than credentialism.
-
-### Earn it
-
-Anyone with the aspirations of identifying as a software engineer should remain humble
-and prove themselves in a positive manner. Staying true to the iterative, creative
-learning process of developing software, but improving and setting better standards
-through our own behavior and skill.
-
-Willingly giving less than that would be arrogance.
+In software, a seal of quality accompanied by such responsibility seems rare.
 
 [Margaret Hamilton](https://www.smithsonianmag.com/smithsonian-institution/margaret-hamilton-led-nasa-software-team-landed-astronauts-moon-180971575/)
 was a software engineer. That's the standard.
+
+Should developers calling themselves engineers make more of an effort to earn the title?
+If so, what would that effort look like and what are the metrics?
+
+### Stability and throughput
+
+Work done by Nicole Fosgren, Jez Humble, and Gene Kim in the "[State of DevOps](https://cloud.google.com/devops/)"
+reports and their book [Accelerate](https://itrevolution.com/book/accelerate/) suggests that better outcomes
+can be reached by focusing on two measures: stability and throughput. An organization doing well on these measures
+seems to correlate with making more money, for example.
+
+Stability is tracked by two metrics: the change failure rate, or how often a change introduces a defect,
+and recovery failure time -- how long does it take to recover from a failure. In other words,
+how often stuff breaks and stays broken.
+
+Throughput can be distilled to two metrics as well: lead time, or how long does it take to get
+from idea to working software, and frequency of deployments to production. These two metrics
+track the speed that a team can ship code and the number of times it can iterate on ideas.
+
+These measures should guide the selection of tools and help determine whether we're on the right track.
+
+### Creative precision
+
+I consider myself a craftsman, in the sense that things I make are mostly unique. Not
+particularly valuable, just imperfect in varying ways.
+
+I can cook, but I wouldn't trust myself to feed more than a few dozen people. Similarly,
+I can whip up a working web app, but probably not write code that'll land a spacecraft
+on the moon safely every time.
+
+What's missing here is precision and scalability. Sometimes I get it right, sometimes I won't.
+That doesn't seem like engineering.
+
+There may be an idea of a recipe or an experience, some mise en place, some stuff made from scratch,
+some familiar techniques and less familiar patterns. There's a beauty to home cooking.
+
+It's just not a particularly suitable approach to creating durable software that minimizes
+complexity and can be worked on by many people simultaneously and smoothly.
+
+Yet there's also a need to maintain a creative approach while building software. Often we have no clue
+what our users want -- and they don't either. It's best to assume we won't get the design right
+the first time, or catch all the bugs and think of all the edge cases.
+
+Thus mitigating the cost of mistakes and working in iterative steps should be a priority.
+That's also a very practical way of learning.
+
+### Opposite of a good idea
+
+This kind of iterative, creative approach evoked thoughts from a non-technical book:
+[Alchemy](https://www.harperacademic.com/book/9780062388421/alchemy/) by Rory Sutherland,
+who made his career in advertising.
+
+Sutherland talks about the perils of trying to rationalize everything. Sometimes our
+rationalizations have nothing to do with the real reasons we act a certain way.
+
+It's possible to judge whether something works before understanding
+why it works. One may stumble upon useful insights when unburdened by rigid plans,
+particularly when people are involved. A good guess that stands up to empirical observation
+can be a scientific breakthrough.
+
+The opposite of a good idea can also be a good idea, Sutherland says. If it's cheap and easy to
+test that out in your application, why not do it?
+
+Staying true to the iterative, creative learning process of developing software,
+yet setting higher standards and measuring them. That seems like a worthy goal:
+magic that can be reproduced once discovered.
