@@ -1,9 +1,9 @@
 ---
-title: Engineering and Craft
-publishedAt: '2022-05-17'
+title: Engineering and Craft, pt. 1
+publishedAt: '2022-05-20'
 lastUpdated: ''
 summary: 'On having standards, building things and writing code for fun and profit.'
-tags: ['career', 'reflections', 'serverless']
+tags: ['career', 'reflections']
 ---
 
 I'd like to be a software engineer, although I struggle with the term.
@@ -71,10 +71,10 @@ If so, what would that effort look like and what are the metrics?
 
 ### What to measure?
 
-Work done by Nicole Fosgren, Jez Humble, and Gene Kim in the "[State of DevOps](https://cloud.google.com/devops/)"
-reports and their book [Accelerate](https://itrevolution.com/book/accelerate/) suggests that better outcomes
-can be reached by focusing on two measures: **stability** and **throughput**. An organization doing well on these measures
-seems to correlate with making more money, for example.
+There are signals that **stability** and **throughput** are good signals for a software-engineering
+firm or a team to follow. Doing well on these measures seems to correlate with making more money, for example.
+
+You may read more on that here, otherwise I'll give a short summary:
 
 ```bash
 .
@@ -86,24 +86,37 @@ seems to correlate with making more money, for example.
    └── Lead Time
 ```
 
-Stability is tracked by two metrics: the change failure rate, or how often a change introduces a defect,
-and recovery failure time -- how long does it take to recover from a failure. In other words,
-how often stuff breaks and stays broken.
-
-Throughput can be distilled to two metrics as well: lead time, or how long does it take to get
-from idea to working software, and frequency of deployments to production. These two metrics
-track the speed that a team can ship code and the number of times it can iterate on ideas.
+Stability: How often stuff breaks and how long does it stay broken.
+Throughput: How long does it take to get from an idea to an app and how often does a team ship code to production.
 
 These measures should guide the selection of tools and help determine whether we're on the right track.
 
+// Factbox
+Work done by Nicole Fosgren, Jez Humble, and Gene Kim in the "[State of DevOps](https://cloud.google.com/devops/)"
+reports and their book [Accelerate](https://itrevolution.com/book/accelerate/) suggests there's a statistically
+significant correlation on good outcomes and these two measures.
+
+Stability is tracked by two metrics: the change failure rate, or how often a change introduces a defect,
+and recovery failure time -- how long does it take to recover from a failure.
+
+Throughput can be distilled to two metrics as well: lead time, or how long does it take to get
+from idea to working software, and frequency of deployments to production.
+//
+
 ### Simplify
 
-In addition to learning, Farley talks about managing complexity as the second core skill for a software engineer.
-One look at a JavaScript app with its endless subfolders within `node_modules` brings this point home. There's way
-more than any one person can keep in their working memory at any given time.
+David Farley, the guy talking about software engineering as a creative discipline, talks about managing complexity
+as the second core skill for a software engineer.
 
-The dangers of complexity are also brought up by Jonathan Blow in his
-brilliant talk from 2019, Preventing the Collapse of Civilization.
+The way I personally relate to this is taking a quick glance of the source code of any modern JavaScript app.
+The endless subfolders buried under `node_modules`, hundreds of little bundles of code, contributing
+to the functionality of the app in different ways, much too numerous for any one person to keep in their
+working memory at any given time.
+
+There's a reason that's mostly hidden and behind installer scripts. It's great, and it's dangerous.
+
+The dangers of complexity are best articulated by Jonathan Blow in his brilliant talk from 2019,
+Preventing the Collapse of Civilization.
 
 <YTPlayer url="https://www.youtube.com/watch?v=pW-SOdj4Kkk" />
 
@@ -113,19 +126,23 @@ The whole video is very much worth a watch, but in short, here are some conseque
 - A person can know a smaller percentage of what there is to know
 - Good information gets drowned by noise.
 
-The amount of complexity we can sustain over time is less than the amount of complexity a person can deal with at
-a specific moment. There will be knowledge loss at each generational transfer, which leads to a decay in skills
-needed to innovate and maybe even maintain existing systems, in the worst case leading to a loss of capability
-for humankind, with many such precedents in history.
+There will be knowledge loss at each generational transfer, which leads to a decay in skills
+needed to innovate and maybe even maintain existing systems. In the worst case,
+this leads to a loss of capability for humankind, with many such precedents in history,
+ranging from [Byzantine flamethrowers](https://en.wikipedia.org/wiki/Greek_fire)
+to ancient Greek [analogue computers](https://en.wikipedia.org/wiki/Antikythera_mechanism)
+to 1600-year-old [nanotechnology](https://www.smithsonianmag.com/history/this-1600-year-old-goblet-shows-that-the-romans-were-nanotechnology-pioneers-787224/).
 
-One solution could be to simplify at every level: hardware, operating systems, libraries, application code,
-network, compilers, debuggers, distribution, user interfaces. Luckily there are also tools and techniques that help
+One solution to fight this could be to simplify at every level: hardware, operating systems, application code,
+network connections, compilers, user interfaces and so on. Luckily there are also tools and techniques that help
 with the goal of managing complexity, such as modularity, abstraction and separation of concerns.
 
-However, there's also a difference between simplifying and building more layers of abstraction. The latter simply hides
-complexity and can in fact add to it. Working on higher levels of abstraction may be justified and necessary in order
-to give more people a chance to leverage code, but it's a useful conceptual difference to make.
-Lest we all become dependent on low-code tools, without proper understanding of their inner workings.
+Yet there's also an important difference between simplifying and building more layers of abstraction.
+Higher abstraction simply hides complexity and can in fact add to it. Working on higher levels of abstraction
+may be justified and even necessary, not least in order to give more people a chance to leverage code.
+
+It's still a useful conceptual difference to make, lest we all become dependent on low-code tools,
+with no one left to understand their inner workings.
 
 ### Creative precision
 
@@ -133,7 +150,7 @@ I consider myself a craftsman, in the sense that things I make are mostly unique
 particularly valuable, just imperfect in varying ways.
 
 I can cook, but I wouldn't trust myself to feed more than a few dozen people. Similarly,
-I can whip up a working web app, but probably not write code that'll land a spacecraft
+I can whip up a working web app, but I probably could not write code that'll land a spacecraft
 on the moon safely every time.
 
 What's missing here is precision and scalability. Sometimes I get it right, sometimes I won't.
@@ -145,19 +162,21 @@ some familiar techniques and less familiar patterns. There's a beauty to home co
 It's just not a particularly suitable approach to creating durable software that minimizes
 complexity and can be worked on by many people simultaneously and smoothly.
 
-Yet there's also a need to maintain a creative approach while building software. Often we have no clue
+Yet there's also a need to maintain a creative approach to building software. Often we have no clue
 what our users want -- and they don't either. It's best to assume we won't get the design right
 the first time, or catch all the bugs and think of all the edge cases.
 
-Thus mitigating the cost of mistakes and working in iterative steps should be a priority.
-That's also a very practical way of learning.
+Working in iterative steps, correcting course through fast feedback loops should be a priority.
+That requires mitigating the cost of mistakes, of which we're guaranteed to make many.
+
+It's a very practical way of learning.
 
 ### Opposite of a good idea
 
 This kind of iterative, creative approach reminded me of a non-technical writer I've enjoyed:
 Rory Sutherland, who made his career in advertising. Sutherland talks about the perils of trying to
-make sense of everything with verbalized logic. Sometimes our rationalizations have nothing to do with
-the real reasons we act a certain way.
+make sense of everything with verbalized logic. Sometimes our rationalizations
+have nothing to do with the real reasons we act a certain way.
 
 > Logic may be a good way to defend and explain a decision,
 > but it is not always a good way to arrive at one.
@@ -170,15 +189,19 @@ The opposite of a good idea can also be a good idea, he says. If it's cheap and 
 test that out in your application, why not do it?
 
 It's possible to judge whether something works before understanding
-why it works. One may stumble upon useful insights when unburdened by rigid plans,
-particularly when people are involved. A good guess that stands up to empirical observation
-can be a scientific breakthrough.
+why it works. One may stumble upon useful insights when unburdened by rigid plans.
+This is especially true when people are involved. A good guess that withstands
+empirical observation can be a scientific breakthrough.
 
 There's also the question of whether an engineer is simply expected to complete assigned tickets,
-or leverage one's coding skills more broadly, solving problems and making decisions directly impacting
-the business itself. I would think it's much more interesting to be a creative problem solver than a factory worker,
-and it's likely to be better [compensated](https://blog.pragmaticengineer.com/what-silicon-valley-gets-right-on-software-engineers/).
+or leverage one's coding skills more broadly. Solving problems and making decisions directly impacting
+the business itself, or another goal that people are cooperating to accomplish. Being involved
+in a more holistic way with a firm's success is likely more common along the top end of the
+[compensation](https://blog.pragmaticengineer.com/what-silicon-valley-gets-right-on-software-engineers/) scale.
 
 Staying true to the iterative, creative learning process of developing software,
 yet setting clear standards and measuring them. That seems like a worthy goal:
 reproducible magic.
+
+It might even help you get in touch with your subconscious mind. But that's a topic
+for another post.
