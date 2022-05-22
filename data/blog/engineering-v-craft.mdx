@@ -1,8 +1,8 @@
 ---
-title: Engineering and Craft, pt. 1
-publishedAt: '2022-05-20'
+title: Engineering and Craft
+publishedAt: '2022-05-22'
 lastUpdated: ''
-summary: 'On having standards, building things and writing code for fun and profit.'
+summary: 'On having standards, building things in a creative way and writing code for fun.'
 tags: ['career', 'reflections']
 ---
 
@@ -72,51 +72,46 @@ If so, what would that effort look like and what are the metrics?
 ### What to measure?
 
 There are signals that **stability** and **throughput** are good signals for a software-engineering
-firm or a team to follow. Doing well on these measures seems to correlate with making more money, for example.
+firm or a team to follow.
 
-You may read more on that here, otherwise I'll give a short summary:
-
-```bash
-.
-├── Stability
-│  ├── Change Failure Rate
-│  └── Recovery Failure Time
-└── Throughput
-   ├── Frequency of Deployments
-   └── Lead Time
-```
-
-Stability: How often stuff breaks and how long does it stay broken.
-Throughput: How long does it take to get from an idea to an app and how often does a team ship code to production.
-
-These measures should guide the selection of tools and help determine whether we're on the right track.
-
-// Factbox
 Work done by Nicole Fosgren, Jez Humble, and Gene Kim in the "[State of DevOps](https://cloud.google.com/devops/)"
 reports and their book [Accelerate](https://itrevolution.com/book/accelerate/) suggests there's a statistically
-significant correlation on good outcomes and these two measures.
+significant correlation on good outcomes and these two measures. Doing well on these metrics seems to
+coexist with an organization making more money, for example.
 
-Stability is tracked by two metrics: the change failure rate, or how often a change introduces a defect,
-and recovery failure time -- how long does it take to recover from a failure.
+Here's a short summary of those findings:
 
-Throughput can be distilled to two metrics as well: lead time, or how long does it take to get
-from idea to working software, and frequency of deployments to production.
-//
+```plain
+.
+├── Stability
+│  ├── Change failure rate
+│  └── Recovery failure time
+└── Throughput
+   ├── Deployment frequency
+   └── Lead time
+```
+
+Stability is tracked by two metrics. The first one is the change failure rate, or what percentage of changes introduces a defect,
+such as an impaired service, or need immediate correction. How often stuff breaks. The second sub-metric of stability is
+recovery failure time -- how long does it take to recover from an unplanned outage or failure.
+
+Throughput can be distilled to two metrics as well. The lead time, or how long does it take to get
+from idea to working software. Deployment frequency tracks often the team deployes changes to production systems,
+allowing for quicker iteration and, presumably, learning.
 
 ### Simplify
 
-David Farley, the guy talking about software engineering as a creative discipline, talks about managing complexity
-as the second core skill for a software engineer.
+Managing complexity is a core skill for a software engineer.
 
-The way I personally relate to this is taking a quick glance of the source code of any modern JavaScript app.
+The way I most immediately relate to this is by taking a quick glance of the source code of almost any modern JavaScript app.
 The endless subfolders buried under `node_modules`, hundreds of little bundles of code, contributing
-to the functionality of the app in different ways, much too numerous for any one person to keep in their
-working memory at any given time.
+to the functionality of the app in different ways. Much too numerous for any one person to keep in their
+working memory at any given time, mostly kept hidden while working on day-to-day code.
 
-There's a reason that's mostly hidden and behind installer scripts. It's great, and it's dangerous.
+It's great, useful and dangerous.
 
-The dangers of complexity are best articulated by Jonathan Blow in his brilliant talk from 2019,
-Preventing the Collapse of Civilization.
+The dangers of complexity are best articulated by [Jonathan Blow](https://twitter.com/Jonathan_Blow),
+a game designer who created Braid, in his brilliant talk from 2019, Preventing the Collapse of Civilization.
 
 <YTPlayer url="https://www.youtube.com/watch?v=pW-SOdj4Kkk" />
 
@@ -133,16 +128,22 @@ ranging from [Byzantine flamethrowers](https://en.wikipedia.org/wiki/Greek_fire)
 to ancient Greek [analogue computers](https://en.wikipedia.org/wiki/Antikythera_mechanism)
 to 1600-year-old [nanotechnology](https://www.smithsonianmag.com/history/this-1600-year-old-goblet-shows-that-the-romans-were-nanotechnology-pioneers-787224/).
 
-One solution to fight this could be to simplify at every level: hardware, operating systems, application code,
-network connections, compilers, user interfaces and so on. Luckily there are also tools and techniques that help
-with the goal of managing complexity, such as modularity, abstraction and separation of concerns.
+Continuing on the same theme, here's [Samo Burja](https://twitter.com/SamoBurja),
+a sociologist who founded a political risk consulting firm, talking about knowledge transfer:
+
+<YTPlayer url="https://www.youtube.com/watch?v=OiNmTVThNEY" />
+
+A solution to fight this decay over time in software could be to simplify at every level:
+hardware, operating systems, application code, network connections, compilers, user interfaces and so on.
+Luckily there are also tools and techniques that help with the goal of managing complexity, such as modularity,
+abstraction and separation of concerns.
 
 Yet there's also an important difference between simplifying and building more layers of abstraction.
 Higher abstraction simply hides complexity and can in fact add to it. Working on higher levels of abstraction
 may be justified and even necessary, not least in order to give more people a chance to leverage code.
 
-It's still a useful conceptual difference to make, lest we all become dependent on low-code tools,
-with no one left to understand their inner workings.
+It's nevertheless a useful conceptual difference to make between simplifying and abstracting.
+Lest we lose the capability to improve technology.
 
 ### Creative precision
 
@@ -156,15 +157,20 @@ on the moon safely every time.
 What's missing here is precision and scalability. Sometimes I get it right, sometimes I won't.
 That doesn't seem like engineering.
 
-There may be an idea of a recipe or an experience, some mise en place, some stuff made from scratch,
-some familiar techniques and less familiar patterns. There's a beauty to home cooking.
+An idea of a recipe or an experience, some mise en place, some stuff made from scratch,
+some familiar techniques and patterns. Some completely new stuff tried out for the first time.
+There's a beauty to home cooking.
 
-It's just not a particularly suitable approach to creating durable software that minimizes
-complexity and can be worked on by many people simultaneously and smoothly.
+Still, it's not a particularly suitable approach to creating durable software that minimizes
+complexity and can be worked on by many people simultaneously.
 
-Yet there's also a need to maintain a creative approach to building software. Often we have no clue
+### Practical learning
+
+The creative approach to building software is by necessity: often we have no clue
 what our users want -- and they don't either. It's best to assume we won't get the design right
 the first time, or catch all the bugs and think of all the edge cases.
+The [illusion](https://www.javatpoint.com/software-engineering-waterfall-model) we could plan
+for all of that didn't survive contact with reality.
 
 Working in iterative steps, correcting course through fast feedback loops should be a priority.
 That requires mitigating the cost of mistakes, of which we're guaranteed to make many.
@@ -202,6 +208,3 @@ in a more holistic way with a firm's success is likely more common along the top
 Staying true to the iterative, creative learning process of developing software,
 yet setting clear standards and measuring them. That seems like a worthy goal:
 reproducible magic.
-
-It might even help you get in touch with your subconscious mind. But that's a topic
-for another post.
