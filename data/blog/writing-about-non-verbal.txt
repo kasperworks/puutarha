@@ -1,10 +1,20 @@
 ---
 title: Writing About the Non-Verbal
-publishedAt: '2022-05-21'
+publishedAt: '2022-XX-XX'
 lastUpdated: ''
 summary: 'Rambling thoughts on flow, expert intuition, neuroscience, the Tao and charismatic power.'
 tags: ['reflections', 'career']
 ---
+
+// TODO
+- Clean up, simplify
+- Umwelt: humans have evolved to perceive what's most relevant to our survival
+- Intelligence, knowing things, vs awareness, new ways to experience the world
+- Exploratory attention, a guide for direction in life and future growth
+- Simplicity/separation/synthesis: music analogy. Society in the middle stage now?
+- Principles, character, Arnold Van Den Berg
+- Lia DiBello, superstar businesspeople attuned to the early indicators of widespread change
+- Add NDM connection
 
 The posts in this blog always start with hand-written snippets.
 
