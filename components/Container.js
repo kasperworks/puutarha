@@ -28,6 +28,7 @@ export default function Container(props) {
     title: 'kasper.works / Kasper Viita',
     description: `Numbers, words & JS.`,
     image: '/static/images/sokoshotlankatolta_xs.jpg',
+    twitterImage: '/static/images/sokoshotlankatolta_xs.png',
     type: 'website',
     ...customMeta,
   };
@@ -45,16 +46,21 @@ export default function Container(props) {
           <meta content={meta.description} name="description" />
           <meta property="og:url" content={`https://kasper.works${router.asPath}`} />
           <link rel="canonical" href={`https://kasper.works${router.asPath}`} />
+          <link rel="icon" href="/favicon.ico" sizes="any" />
+          <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+          <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+          <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+          <link rel="manifest" href="/site.webmanifest" />
           <meta property="og:type" content={meta.type} />
           <meta property="og:site_name" content="Kasper Viita" />
           <meta property="og:description" content={meta.description} />
           <meta property="og:title" content={meta.title} />
           <meta property="og:image" content={meta.image} />
-          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:card" content="summary" />
           <meta name="twitter:site" content="@kasperviita" />
           <meta name="twitter:title" content={meta.title} />
           <meta name="twitter:description" content={meta.description} />
-          <meta name="twitter:image" content={meta.image} />
+          <meta name="twitter:image" content={meta.twitterImage} />
           {meta.date && <meta property="article:published_time" content={meta.date} />}
         </Head>
         <s.CenterSection>
