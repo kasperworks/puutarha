@@ -12,6 +12,12 @@
     "description": "Maintained and developed self-updating Covid-19 data visuals, which have clocked about 30 million page hits. Planned and executed migration to DynamoDB."
   },
   {
+    "title": "Ilmahälytys!",
+    "url": "https://yle.fi/uutiset/3-12418130",
+    "what": "Lidar-scanned 3D visualization",
+    "description": "Scrollable 3D implementation of a bomb shelter in Lviv, western Ukraine. Made with react-three-fiber."
+  },
+  {
     "title": "Nimesi huippuhetket",
     "url": "https://yle.fi/uutiset/3-11693006",
     "what": "Dynamic data visualizations",
@@ -27,6 +33,6 @@
     "title": "Kaltoin kohdellut",
     "url": "https://yle.fi/uutiset/3-12360893",
     "what": "Data wrangling, interactive elements",
-    "description": "Extracting and analyzing data from five years of court-document PDFs on animal-abuse cases."
+    "description": "Extracting and analyzing data from five years of district-court documents on animal-abuse cases."
   }
 ]
