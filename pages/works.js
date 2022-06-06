@@ -30,23 +30,24 @@ export default function Works() {
           Works
         </motion.h1>
         <s.TextBlock>
-          <blockquote>
-            If you&apos;re curious about the implementation of this site, have a look at
-            the{' '}
-            <Link href="https://github.com/kasperworks/puutarha">
-              <a target="_blank" rel="noopener noreferrer">
-                repo
-              </a>
-            </Link>
-            . The key tools are React, Next.js, MDX, Styled Components and Framer Motion.
-          </blockquote>
-        </s.TextBlock>
-        <s.TextBlock>
           A few picks among published code output, baked into news stories. Mostly in
           Finnish:
         </s.TextBlock>
       </div>
       <WorksCards cards={codingWorks} />
+
+      <s.TextBlock>
+        <blockquote>
+          If you&apos;re curious about the implementation of this site, have a look at the{' '}
+          <Link href="https://github.com/kasperworks/puutarha">
+            <a target="_blank" rel="noopener noreferrer">
+              repo
+            </a>
+          </Link>
+          . The key tools are React, Next.js, MDX, Styled Components and Framer Motion.
+        </blockquote>
+      </s.TextBlock>
+
       <s.TextBlock>
         Stories written as a reporter can be found{' '}
         <Link href="https://muckrack.com/kasper-viita/portfolio">
