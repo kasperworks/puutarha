@@ -82,6 +82,12 @@ const GlobalStyle = createGlobalStyle`
       overflow: auto;
     }
 
+    pre, blockquote {
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 2px 2px;
+      border-radius: 4px;
+
+    }
+
     code {
       font-family: source-code-pro, Menlo, Consolas, monospace;
       font-size: 1rem;

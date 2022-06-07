@@ -1,0 +1,39 @@
+---
+title: Make the Sauce, Buy the Pasta
+publishedAt: '2022-06-08'
+lastUpdated: ''
+summary: 'Focus on what you like, what differentiates you and what you enjoy.'
+tags: ['programming', 'reflections', 'business']
+---
+
+A main character in one of my favorite books often cooks pasta by himself.
+
+When I first read it, I was a student living in a shared flat in the Netherlands,
+and oftentimes I fed myself the same way.
+
+> When the phone rang I was in the kitchen, boiling a potful of spaghetti and
+> whistling along to an FM broadcast of the overture to Rossini's The Thieving Magpie,
+> which has to be the perfect music for cooking pasta.
+
+<small>The Wind-Up Bird Chronicle by Haruki Murakami</small>
+
+I took great care plucking some basil leaves for the tomato sauce,
+or folding the eggs into a carbonara, and just generally thought about pasta sauces
+more than most people around me.
+
+As for the sauce vehicle, I never thought about it too much, just taking care to not 
+boil it soggy. I think about internet businesses this way too.
+
+### APIs
+
+- Frontend is the sauce, backend is the pasta
+- Up until when, what is the right abstraction level and primitives?
+- Heavy lifting on the backend is commoditized
+- Supabase vs AWS in serverless, not an easy choice
+- Full control in everything or limited and abstracted somewhere?
+- How do you want to do stuff?
+- Lego blocks, primitives
+- APIs all the way down
+- Books are APIs
+- Focus on the differentiator, the stuff you enjoy
+- UI / DB / Functions / Storage / Auth

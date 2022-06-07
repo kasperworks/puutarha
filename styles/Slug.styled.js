@@ -31,6 +31,7 @@ export const SummaryTextBlock = styled.div`
   margin: 0 -20px;
   font-size: 1.35rem;
   border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 2px 2px;
 `;
 
 export const Tags = styled.div`
@@ -44,18 +45,28 @@ export const PostFooter = styled.div`
   padding: 10px;
   margin: 50px 0 30px;
   background-color: var(--codeblock);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 2px 2px;
+  border-radius: 4px;
 
   a {
     display: flex;
     justify-content: center;
     width: 100%;
     text-decoration: none;
+
+    @media (hover: hover) {
+      &:hover {
+        color: var(--accent);
+      }
+    }
   }
 `;
 
 export const SingleTag = styled.span`
   background-color: var(--codeblock);
   padding: 0 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 2px 2px;
+  border-radius: 4px;
 `;
 
 export const MainBlogTextBlock = styled(motion.div)`
