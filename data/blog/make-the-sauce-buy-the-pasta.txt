@@ -1,32 +1,32 @@
 ---
 title: Make the Sauce, Buy the Pasta
-publishedAt: '2022-06-08'
+publishedAt: '2022-06-14'
 lastUpdated: ''
-summary: 'Focus on what you like, what differentiates you and what you enjoy.'
+summary: 'Focus on the differentiator. What are you good at, what do you enjoy, 
+what is good enough off-the-shelf?'
 tags: ['programming', 'reflections', 'business']
 ---
 
-A main character in one of my favorite books often cooks pasta by himself.
+There's a pattern in how I cook.
 
-When I first read it, I was a student living in a shared flat in the Netherlands,
-and oftentimes I fed myself the same way.
+When making a plate of pasta, I tend to take great care plucking
+basil leaves for the tomato sauce, or really focus on folding the raw eggs into
+a carbonara. As for the spaghetti, whatever, as long as it's not boiled soggy.
 
-> When the phone rang I was in the kitchen, boiling a potful of spaghetti and
-> whistling along to an FM broadcast of the overture to Rossini's The Thieving Magpie,
-> which has to be the perfect music for cooking pasta.
+I'm not much of a baker, and the quality of the factory-made pasta I can buy is steady.
+I'm fairly sure I wouldn't miss any single brand of carbohydrate goodness for very long,
+as the one next to it on the shelf is in all likelihood 95% as good.
 
-<small>The Wind-Up Bird Chronicle by Haruki Murakami</small>
+A good sauce I remember for a long time.
 
-I took great care plucking some basil leaves for the tomato sauce,
-or folding the eggs into a carbonara, and just generally thought about pasta sauces
-more than most people around me.
+###
 
-As for the sauce vehicle, I never thought about it too much, just taking care to not 
-boil it soggy. I think about internet businesses this way too.
+It's unlikely that any one person is going to have an edge in 10 different things.
+The good news is that one or two is enough, given full attention.
 
-### APIs
+Trade money for time to be able to focus on what you're amazing at.
 
-- Frontend is the sauce, backend is the pasta
+- Frontend is the sauce, backend is the pasta -- for me
 - Up until when, what is the right abstraction level and primitives?
 - Heavy lifting on the backend is commoditized
 - Supabase vs AWS in serverless, not an easy choice
@@ -35,5 +35,14 @@ boil it soggy. I think about internet businesses this way too.
 - Lego blocks, primitives
 - APIs all the way down
 - Books are APIs
-- Focus on the differentiator, the stuff you enjoy
 - UI / DB / Functions / Storage / Auth
+
+###
+
+One of my favorite books starts like this:
+
+> When the phone rang I was in the kitchen, boiling a potful of spaghetti and
+> whistling along to an FM broadcast of the overture to Rossini's The Thieving Magpie,
+> which has to be the perfect music for cooking pasta.
+
+<small>The Wind-Up Bird Chronicle by Haruki Murakami</small>
