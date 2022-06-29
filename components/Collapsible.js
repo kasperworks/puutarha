@@ -2,7 +2,7 @@ import { useState } from 'react';
 import styled from 'styled-components';
 import * as CollapsiblePrimitive from '@radix-ui/react-collapsible';
 
-const Collapsible = ({ children, buttonText }) => {
+const Collapsible = ({ children }) => {
   const [open, setOpen] = useState(false);
 
   return (
