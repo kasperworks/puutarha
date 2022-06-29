@@ -10,6 +10,8 @@ const GlobalStyle = createGlobalStyle`
       --darkgreen: #235353;
       --green: #93c763;
       --accent: #FFF96B;
+      --accenthover: #EDE759;
+      --accentshadow: #D8D24D;
       --brightgreen: #78FF93;
       --purple: #8745EA;
       --darkpurple: #5D4384;

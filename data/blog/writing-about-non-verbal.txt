@@ -7,6 +7,7 @@ tags: ['reflections', 'career']
 ---
 
 // TODO
+
 - Clean up, simplify
 - Umwelt: humans have evolved to perceive what's most relevant to our survival
 - Intelligence, knowing things, vs awareness, new ways to experience the world
@@ -141,8 +142,10 @@ People in [wu wei](https://en.wikipedia.org/wiki/Wu_wei) have [de](https://www.b
 a radiance that others can detect, an outward signal that one is in wu wei. Because spontaneity is hard to fake,
 we intuit that people with de are trustworthy and authentic.
 
-David Foster Wallace perfectly captured this sort of natural leadership in words:
+David Foster Wallace perfectly captured this sort of natural leadership in words. You can read it by clicking the
+button below.
 
+<Collapsible>
 > The weird thing is that the word “leader” itself is cliché and boring,
 > but when you come across somebody who actually is a real leader,
 > that person isn't cliché or boring at all; in fact he's sort of the opposite of cliché and boring.
@@ -180,6 +183,8 @@ David Foster Wallace perfectly captured this sort of natural leadership in words
   Anticandidate”.
 </small>
 
+</Collapsible>
+
 ### Slack
 
 The spontaneous effortlessness in a social context ties together neuroscience and culture,
@@ -192,9 +197,15 @@ and grace are not easily optimized.
 > A genius is the one most like himself.
 
 <small>
-  [Thelonious Monk's](https://genius.com/Thelonious-monk-monks-advice-1960-annotated)
-  advice, 1960.
+  Jazz pianist [Thelonious
+  Monk's](https://genius.com/Thelonious-monk-monks-advice-1960-annotated) advice, 1960.
 </small>
 
 I don't know what it all means, but I'm determined to pursue it. The stuff that sticks
 with you is trying to tell you something. Better to dance than fight against it.
+
+> I think we're all capable of being big fish. I don't think that there are special people. I don't think it's like that.
+
+<small>Nusic producer Rick Rubin. Probably a Taoist sage too.</small>
+
+<YTPlayer url="https://www.youtube.com/watch?v=H_szemxPcTI" />

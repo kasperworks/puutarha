@@ -1,6 +1,6 @@
 {
   "name": "puutarha",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@artsy/fresnel": "^3.1.0",
+    "@radix-ui/react-collapsible": "^0.1.6",
     "date-fns": "^2.26.0",
     "framer-motion": "^5.3.3",
     "gray-matter": "^4.0.3",

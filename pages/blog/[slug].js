@@ -8,6 +8,7 @@ import { getAllPosts, getSinglePost } from '../../lib/mdx';
 
 import Container from '../../components/Container';
 import Spacer from '../../components/Spacer';
+import Collapsible from '../../components/Collapsible';
 import * as s from '../../styles/Slug.styled';
 
 const headerVariants = {
@@ -86,7 +87,7 @@ const Post = ({ code, frontmatter }) => {
         </s.SummaryTextBlock>
       </s.SingleBlogTextBlock>
       <s.MainBlogTextBlock variants={mainVariants} initial="hidden" animate="visible">
-        <Component components={{ a: CustomLink, Spacer, YTPlayer }} />
+        <Component components={{ a: CustomLink, Spacer, YTPlayer, Collapsible }} />
       </s.MainBlogTextBlock>
       <s.Tags>
         Topics:
