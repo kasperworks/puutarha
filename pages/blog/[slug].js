@@ -98,9 +98,7 @@ const Post = ({ code, frontmatter }) => {
       </s.Tags>
       <s.PostFooter>
         <Link href="/blog">
-          <a>
-            <em>More notes</em>
-          </a>
+          <a>More notes</a>
         </Link>
       </s.PostFooter>
     </Container>
