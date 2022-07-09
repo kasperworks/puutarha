@@ -1,7 +1,15 @@
 import Link from 'next/link';
 import * as s from '../styles/Layout.styled';
 
-const BlogPost = ({ title, publishedAt, summary, slug, index, amountOfPosts }) => {
+const BlogPost = ({
+  title,
+  publishedAt,
+  lastUpdated,
+  summary,
+  slug,
+  index,
+  amountOfPosts,
+}) => {
   const lastPost = index - amountOfPosts === -1;
 
   return (
@@ -11,7 +19,10 @@ const BlogPost = ({ title, publishedAt, summary, slug, index, amountOfPosts }) =
           <a>
             <div>
               <h4>{title}</h4>
-              <small>{publishedAt}</small>
+              <small>
+                {publishedAt}
+                {lastUpdated ? <span> Updated: {lastUpdated}</span> : null}
+              </small>
             </div>
             <p>{summary}</p>
           </a>

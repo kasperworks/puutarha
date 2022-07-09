@@ -47,12 +47,13 @@ export default function Blog({ posts }) {
         <Spacer />
         <s.TextBlock>
           {postsByDate.map((item, index) => {
-            const { title, publishedAt, summary } = item.frontmatter;
+            const { title, publishedAt, summary, lastUpdated } = item.frontmatter;
             const { slug } = item;
             return (
               <BlogPost
                 title={title}
                 publishedAt={publishedAt}
+                lastUpdated={lastUpdated}
                 summary={summary}
                 slug={slug}
                 key={slug}

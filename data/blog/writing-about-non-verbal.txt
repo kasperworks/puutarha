@@ -142,10 +142,11 @@ People in [wu wei](https://en.wikipedia.org/wiki/Wu_wei) have [de](https://www.b
 a radiance that others can detect, an outward signal that one is in wu wei. Because spontaneity is hard to fake,
 we intuit that people with de are trustworthy and authentic.
 
-David Foster Wallace perfectly captured this sort of natural leadership in words. You can read it by clicking the
-button below.
+David Foster Wallace perfectly captured this sort of natural leadership in an essay. 
+You can read the relevant snippet by clicking the button below.
 
 <Collapsible>
+
 > The weird thing is that the word “leader” itself is cliché and boring,
 > but when you come across somebody who actually is a real leader,
 > that person isn't cliché or boring at all; in fact he's sort of the opposite of cliché and boring.
