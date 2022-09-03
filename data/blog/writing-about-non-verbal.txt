@@ -1,149 +1,13 @@
 ---
 title: Writing About the Non-Verbal
-publishedAt: '2022-XX-XX'
+publishedAt: '2022-09-03'
 lastUpdated: ''
-summary: 'Rambling thoughts on flow, expert intuition, neuroscience, the Tao and charismatic power.'
-tags: ['reflections', 'career']
+summary: 'Rambling thoughts on social flow, expert intuition, neuroscience and the Tao.'
+tags: ['reflections', 'career', 'tao']
 ---
 
-// TODO
-
-- Clean up, simplify
-- Umwelt: humans have evolved to perceive what's most relevant to our survival
-- Intelligence, knowing things, vs awareness, new ways to experience the world
-- Exploratory attention, a guide for direction in life and future growth
-- Simplicity/separation/synthesis: music analogy. Society in the middle stage now?
-- Principles, character, Arnold Van Den Berg
-- Lia DiBello, superstar businesspeople attuned to the early indicators of widespread change
-- Add NDM connection
-
-The posts in this blog always start with hand-written snippets.
-
-I later collect the notebook scribblings and hastily torn-up pieces of paper,
-type them up into [Notion](https://www.notion.so/product) with some light editing,
-linking and combining things that seem related. Some of the notes start forming a narrative,
-and I try to let that happen. Repetition, pictures and stories help me remember the important bits.
-
-This is especially true of the sort of heavily synthesized all-encompassing things
-I'm trying to express in this post. They're very difficult to put into words,
-because such things aren't primarily verbal in nature.
-
-This is then probably a doomed effort, but it is my best attempt of catching that lightning in a bottle.
-
-### Flow
-
-[Flow](https://www.sciencedirect.com/topics/psychology/flow-theory) is a state of consciousness
-where one is completely absorbed in an activity, especially something involving creative abilities.
-For me, it is an aid to connect with a greater sense of meaning in life, learn important skills
-faster and improve expert intuition.
-
-Programming and writing are two activities that take me to a flow state every now and then.
-When it happens, it sometimes seems to boost completely unrelated things:
-an acute observation about a relationship, a mental block disappearing,
-a keen sense of direction.
-
-An [insight cascade](https://www.meaningcrisis.co/episode-2-flow-metaphor-and-the-axial-revolution/)
-triggered by the mental state of flow. To happen, it requires clear information,
-tightly coupled feedback loops, and an environment where errors matter. A resistance of
-some sort seems essential, the task needs to be difficult enough.
-
-I've experienced the same phenomenon playing sports as well. This is wonderful, but it has its limits.
-
-> Ultimately, flow is not a virtue but a form of pleasure.
-> While flow is a desirable state of mind, promoting it might not lead to desirable qualities
-> of character; just as likely it could yield an atomised society of sophisticated hedonists
-> with gaming addictions and virtual-reality sickness.
-
-<small>
-  Jonathan Rowson in [an essay on
-  chess](https://aeon.co/essays/playing-chess-is-an-essential-life-lesson-in-concentration).
-</small>
-
-For example, difficult video games can invoke a flow state, but they won't get a person very far
-in terms of overall satisfaction in life. It's helpful to learn to flow where meaning is being made.
-
-Preferably dealing with living things.
-
-### Intuition
-
-> There is information in your life, if you're looking for transformation,
-> but you have to teach yourself to attune to it.
-
-<small>
-  Boyd Varty in [an interview](https://tim.blog/2022/02/18/boyd-varty-transcript/) with
-  Tim Ferriss, Feb. 18, 2022
-</small>
-
-The [period](/blog/switching-lanes) in my life I've felt the most lost and despairing is also the time I consciously
-suppressed intuition I couldn't explain in logical terms and reason about. Equally,
-many of the best decisions I've ever made were driven by a strong innate desire, even if I couldn't
-explain it at the time. Or still.
-
-It seems to me the [Western thought](https://www.britannica.com/event/Enlightenment-European-history)
-I have been immersed in since childhood has a false dualism between intuition and intellect,
-emotion and rationality. The body and the mind are not separate, Descartes had it wrong.
-[Neuroscience](https://scitechconnect.elsevier.com/brief-history-explanation/) seems to support that stance.
-
-The main problem here is that the narrow focus of verbalized rationality has come to dominate absolutely everything.
-The left hemisphere of the brain has taken over, leaving us poorer for it.
-
-Here's psychiatrist and writer Iain McGilchrist on the topic:
-
-<YTPlayer url="https://www.youtube.com/watch?v=dFs9WO2B8uI" />
-
-Forget the pop-psychology caricature where the right side of the brain is the creative and emotional one,
-and the left hemisphere the one in charge of logical thinking. It's not about which realms each
-side of the brain controls, but how they approach things: the right side figures out the whole,
-the left side provides precision on specific issues.
-
-The right hemisphere of the brain can include observations of the left side in its insights,
-but the left side cannot see what the right one is doing. The left hemisphere
-controls language, but it cannot grasp metaphors or jokes. The left hemisphere lies,
-the right one does not. The right hemisphere is connected to the world, the left one abstracts it.
-
-It doesn't mean that operating by vibes is desireable, it's important to do the work
-and understand the environment and variables within. Without the narrow focus of the left hemisphere,
-one cannot have useful categories of things. We need both. It's just that verbalized reasoning is
-limited and can easily lead people astray.
-
-An ideal model could be to experience the world with the right hemisphere,
-send leftward for processing, then back to the right for synthesis and context.
-Follow the intuition on what seems promising, make a sanity check to see if it makes any sense at all,
-then leave the decision-making to intuition.
-
-I highly recommend McGilchrist's book [The Master and his Emissary](https://en.wikipedia.org/wiki/The_Master_and_His_Emissary)
-for a thorough exploration of these themes.
-
-We can also go back a couple of thousand of years to find similar insights.
-
-### Tao
-
-> The ideal person in early China is more like a well-trained athlete or
-> a cultivated artist, rather than a dispassionate cost-benefit analyzer.
-> The ideal person in Western philosophy is not only disembodied but also radically alone.
-
-<small>
-  Edward Slingerland in his book [Trying Not to
-  Try](https://www.themarginalian.org/2014/04/21/trying-not-to-try-slingerland/).
-</small>
-
-There's probably something to using myths, quotes and stories as tools to
-realign ourselves with what's meaningful and durable. What has stood the test of time
-is likely to contain something valuable.
-
-This something is what people in ancient China called the Tao, the way of the universe.
-Everything is connected and nothing makes sense by itself.
-
-If this sounds a bit out there, bear with me, I'll keep it short. The two key concepts
-to understand are **wu wei** and **de**.
-
-Wu wei is an ability to move through the physical and social world in a completely spontaneous manner.
-People in [wu wei](https://en.wikipedia.org/wiki/Wu_wei) have [de](https://www.britannica.com/topic/de),
-a radiance that others can detect, an outward signal that one is in wu wei. Because spontaneity is hard to fake,
-we intuit that people with de are trustworthy and authentic.
-
-David Foster Wallace perfectly captured this sort of natural leadership in an essay. 
-You can read the relevant snippet by clicking the button below.
+David Foster Wallace wrote the best description of leadership I've come across.
+It's pretty long so it's behind this pretty button.
 
 <Collapsible>
 
@@ -186,27 +50,146 @@ You can read the relevant snippet by clicking the button below.
 
 </Collapsible>
 
-### Slack
+This isn't a post about leadership specifically, but that above snippet encapsulates a lot of good stuff that's relevant
+to the themes I want to explore here.
 
-The spontaneous effortlessness in a social context ties together neuroscience and culture,
-situational awareness and a mastered skill.
+It's about spontaneous effortlessness in a social context, braiding together neuroscience and culture,
+situational awareness and mastered skills. It's a distillation of a few of the most important books, articles and
+conversations I've enjoyed over the past year and a half. Much of it has emerged from personal turmoil.
 
-For such things to happen, it seems to be beneficial to have some slack, some inefficiency in the system.
-If there's none, there's little space for insights emerging from intuition. Creativity
-and grace are not easily optimized.
+It's peppered with links for further exploration.
 
-> A genius is the one most like himself.
+### Let's consider flow
+
+[Flow](https://www.sciencedirect.com/topics/psychology/flow-theory) is a state of consciousness
+where one is completely absorbed in an activity, especially something involving creative abilities.
+For me, it is an aid to connect with a greater sense of meaning in life, learn important skills
+faster and improve expert intuition.
+
+Programming and writing are two activities that take me to a flow state every now and then.
+When it happens, it sometimes seems to boost completely unrelated things:
+an acute observation about a relationship, a mental block disappearing,
+a keen sense of direction.
+
+An [insight cascade](https://www.meaningcrisis.co/episode-2-flow-metaphor-and-the-axial-revolution/)
+triggered by the mental state.
+
+Prerequisites for the flow state are an ability to continuously and quickly adjust to feedback,
+and an environment where errors matter. A resistance of some sort also seems essential,
+the task needs to be difficult enough.
+
+I've experienced the same phenomenon playing amateur sports too. This is wonderful, but it has its limits.
+
+> Ultimately, flow is not a virtue but a form of pleasure. While flow is a desirable state of mind,
+> promoting it might not lead to desirable qualities of character; just as likely it could yield
+> an atomised society of sophisticated hedonists with gaming addictions and virtual-reality sickness.
 
 <small>
-  Jazz pianist [Thelonious
-  Monk's](https://genius.com/Thelonious-monk-monks-advice-1960-annotated) advice, 1960.
+  Jonathan Rowson in [an essay on
+  chess](https://aeon.co/essays/playing-chess-is-an-essential-life-lesson-in-concentration).
 </small>
 
-I don't know what it all means, but I'm determined to pursue it. The stuff that sticks
-with you is trying to tell you something. Better to dance than fight against it.
+For example, difficult video games can invoke a flow state, but they won't get a person very far
+in terms of overall satisfaction in life. It's helpful to learn to flow where meaning is being made.
 
-> I think we're all capable of being big fish. I don't think that there are special people. I don't think it's like that.
+Preferably dealing with living things.
 
-<small>Nusic producer Rick Rubin. Probably a Taoist sage too.</small>
+### Intuition
 
-<YTPlayer url="https://www.youtube.com/watch?v=H_szemxPcTI" />
+The [period](/blog/switching-lanes) in my life I've felt the most lost and despairing is also the time I consciously
+suppressed intuition I couldn't explain in logical terms and reason about. Equally,
+many of the best decisions I've ever made were driven by a strong innate desire, even if I couldn't
+explain it at the time. Or still.
+
+> There is information in your life, if you're looking for transformation,
+> but you have to teach yourself to attune to it.
+
+<small>
+  Boyd Varty in [an interview](https://tim.blog/2022/02/18/boyd-varty-transcript/) with
+  Tim Ferriss, Feb. 18, 2022
+</small>
+
+It seems to me the [Western thought](https://www.britannica.com/event/Enlightenment-European-history)
+I have been immersed in since childhood has a false dualism between intuition and intellect,
+emotion and rationality. The body and the mind are not separate, Descartes had it wrong.
+[Neuroscience](https://scitechconnect.elsevier.com/brief-history-explanation/) seems to support that stance.
+
+The main problem here is that the narrow focus of verbalized rationality has come to dominate absolutely everything.
+The left hemisphere of the brain has taken over, leaving us poorer for it.
+
+### Hemispheres
+
+Forget the pop-psychology caricature where the right side of the brain is the creative and emotional one,
+and the left hemisphere the one in charge of logical thinking. It's not about which realms each
+side of the brain controls, but how they approach things: the right side figures out the whole,
+the left side provides precision on specific issues.
+
+Here's psychiatrist and writer Iain McGilchrist:
+
+<YTPlayer url="https://www.youtube.com/watch?v=dFs9WO2B8uI" />
+
+The right hemisphere of the brain can include observations of the left side in its insights,
+but the left side cannot see what the right one is doing. The left hemisphere
+controls language, but it cannot grasp metaphors or jokes. The left hemisphere lies,
+the right one does not. The right hemisphere is connected to the world, the left one abstracts it.
+
+Yet operating by vibes is not desireable, it's important to do the work and understand the environment
+and variables within. Without the narrow focus of the left hemisphere, one cannot have useful categories of things.
+We need both.
+
+I highly recommend McGilchrist's book [The Master and his Emissary](https://en.wikipedia.org/wiki/The_Master_and_His_Emissary)
+for a thorough exploration of these themes. A newer one called [The Matter With Things](https://en.wikipedia.org/wiki/The_Matter_with_Things)
+looks even more promising in terms of increasing our understanding of the world.
+
+An ideal model could be to experience the world with the right hemisphere,
+send leftward for processing, then back to the right for synthesis and context.
+Follow the intuition on what seems promising, make a sanity check to see if it makes any sense at all,
+then leave the decision-making to intuition.
+
+> Rigor alone is paralytic death, but imagination alone is insanity.
+
+<small>Gregory Bateson, Mind and Nature</small>
+
+The goal is not to ditch reason, but to boost intuitions we don't fully understand yet. We can also
+go back a couple of thousand of years to find similar insights.
+
+### Tao
+
+> The ideal person in early China is more like a well-trained athlete or
+> a cultivated artist, rather than a dispassionate cost-benefit analyzer.
+> The ideal person in Western philosophy is not only disembodied but also radically alone.
+
+<small>
+  Edward Slingerland, [Trying Not to
+  Try](https://www.themarginalian.org/2014/04/21/trying-not-to-try-slingerland/).
+</small>
+
+There's probably something to using myths, quotes and stories as tools to
+realign ourselves with what's meaningful and durable. What has stood the test of time
+is likely to contain something valuable. [Time probability](https://medium.com/incerto/the-logic-of-risk-taking-107bf41029d3)
+over ensemble probability. [Lindy](https://en.wikipedia.org/wiki/Lindy_effect).
+
+One of the things that has survived comes from ancient China: Tao, the way of the universe.
+Everything is connected and nothing makes sense by itself.
+
+If this sounds a bit out there, bear with me, I'll keep it short. The two key concepts
+to understand are **wu wei** and **de**.
+
+Wu wei is an ability to move through the physical and social world in a completely spontaneous manner.
+People in [wu wei](https://en.wikipedia.org/wiki/Wu_wei) have [de](https://www.britannica.com/topic/de),
+a radiance that others can detect, an outward signal that one is in wu wei. Because spontaneity is hard to fake,
+we intuit that people with de are trustworthy and authentic.
+
+These concepts tie very deeply to the opening snippet on leadership from David Foster Wallace. A social effortlessness,
+we know when it's there.
+
+This sort of charismatic power seems to me like a social manifestation of the flow state,
+perhaps a higher form of it.
+
+### Stepping stones
+
+These are things that have deeply resonated with me and I feel are extremely important for human thriving, both on an individual
+and systemic level. I see them as stepping stones, hopefully leading to a higher plane.
+
+Odds are that the stuff that sticks with you is trying to tell you something. It's better to dance than fight against it.
+Let me know if any of this evoked any thoughts: I'd love to spar with more people on these topics and hear further recommendations.

@@ -194,7 +194,7 @@ const GlobalStyle = createGlobalStyle`
     border-left-color: var(--accent);
     border-left-width: 6px;
     border-left-style: solid;
-    padding: 8px 8px 8px 14px;
+    padding: 8px 14px;
     background-color: var(--codeblock);
       p {
         margin: 0;

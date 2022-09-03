@@ -9,7 +9,7 @@ const Collapsible = ({ children }) => {
     <CollapsibleRoot>
       <CollapsibleTrigger asChild>
         <StyledRevealButton type="button" onClick={() => setOpen(!open)}>
-          {open ? 'Close' : 'Expand'}
+          {open ? 'Hide' : 'Reveal'}
         </StyledRevealButton>
       </CollapsibleTrigger>
       <CollapsibleContent>{children}</CollapsibleContent>
@@ -33,7 +33,7 @@ const StyledRevealButton = styled.button`
   color: black;
   font-weight: 700;
   padding: 10px 50px;
-  margin-bottom: 15px;
+  margin: 15px 0;
   border-radius: 4px;
   box-shadow: 0 5px 0 var(--accentshadow);
   &:active {
