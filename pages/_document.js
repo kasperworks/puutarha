@@ -33,6 +33,11 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
+          <script
+            defer
+            data-domain="kasper.works"
+            src="https://plausible.io/js/plausible.js"
+          />
           <link
             rel="preload"
             href="/fonts/josefin-sans-v17-latin-regular.woff2"
