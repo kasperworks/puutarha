@@ -34,6 +34,7 @@ const StyledRevealButton = styled.button`
   font-weight: 700;
   padding: 10px 50px;
   margin: 15px 0;
+  width: 150px;
   border-radius: 4px;
   box-shadow: 0 5px 0 var(--accentshadow);
   &:active {
