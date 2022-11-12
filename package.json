@@ -11,6 +11,7 @@
   "dependencies": {
     "@artsy/fresnel": "^3.1.0",
     "@radix-ui/react-collapsible": "^0.1.6",
+    "@vercel/analytics": "^0.1.4",
     "date-fns": "^2.26.0",
     "framer-motion": "^5.3.3",
     "gray-matter": "^4.0.3",
