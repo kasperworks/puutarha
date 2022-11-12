@@ -1,4 +1,3 @@
-import { Analytics } from '@vercel/analytics';
 import GlobalStyle from '../styles/GlobalStyle';
 
 function MyApp({ Component, pageProps }) {
@@ -6,7 +5,6 @@ function MyApp({ Component, pageProps }) {
     <>
       <GlobalStyle />
       <Component {...pageProps} />
-      <Analytics />
     </>
   );
 }
