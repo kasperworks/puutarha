@@ -16,16 +16,14 @@ const BlogPost = ({
     <>
       <s.BlogPostDisplay>
         <Link href={`/blog/${slug}`}>
-          <a>
-            <div>
-              <h4>{title}</h4>
-              <small>
-                {publishedAt}
-                {lastUpdated ? <span> Updated: {lastUpdated}</span> : null}
-              </small>
-            </div>
-            <p>{summary}</p>
-          </a>
+          <div>
+            <h4>{title}</h4>
+            <small>
+              {publishedAt}
+              {lastUpdated ? <span> Updated: {lastUpdated}</span> : null}
+            </small>
+          </div>
+          <p>{summary}</p>
         </Link>
       </s.BlogPostDisplay>
       {lastPost ? null : <hr />}

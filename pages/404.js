@@ -6,9 +6,7 @@ export default function NotFound() {
     <Container title="404 / Kasper Viita">
       <h1>404</h1>
       <p>Nope, nothing here!</p>
-      <Link href="/">
-        <a>Go to front page</a>
-      </Link>
+      <Link href="/">Go to front page</Link>
     </Container>
   );
 }

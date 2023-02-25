@@ -39,10 +39,11 @@ export default function Works() {
       <s.TextBlock>
         <blockquote>
           If you&apos;re curious about the implementation of this site, have a look at the{' '}
-          <Link href="https://github.com/kasperworks/puutarha">
-            <a target="_blank" rel="noopener noreferrer">
-              repo
-            </a>
+          <Link
+            href="https://github.com/kasperworks/puutarha"
+            target="_blank"
+            rel="noopener noreferrer">
+            repo
           </Link>
           . The key tools are React, Next.js, MDX, Styled Components and Framer Motion.
         </blockquote>
@@ -50,10 +51,11 @@ export default function Works() {
 
       <s.TextBlock>
         Stories written as a reporter can be found{' '}
-        <Link href="https://muckrack.com/kasper-viita/portfolio">
-          <a target="_blank" rel="noopener noreferrer">
-            here
-          </a>
+        <Link
+          href="https://muckrack.com/kasper-viita/portfolio"
+          target="_blank"
+          rel="noopener noreferrer">
+          here
         </Link>
         .
       </s.TextBlock>

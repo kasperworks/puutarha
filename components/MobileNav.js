@@ -1,14 +1,14 @@
 import * as React from 'react';
-import NextLink from 'next/link';
+import Link from 'next/link';
 import * as s from '../styles/Layout.styled';
 import BurgerMenu from './BurgerMenu';
 
 const MobileNav = () => (
   <s.NavBar>
     <div>
-      <NextLink href="/">
-        <a className="internal-link">Kasper Viita</a>
-      </NextLink>
+      <Link href="/" className="internal-link">
+        Kasper Viita
+      </Link>
     </div>
     <BurgerMenu />
   </s.NavBar>

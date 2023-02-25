@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { useState } from 'react';
-import NextLink from 'next/link';
+import Link from 'next/link';
 import { slide as Menu } from 'react-burger-menu';
 import styled from 'styled-components';
 
@@ -19,15 +19,15 @@ const BurgerMenu = () => {
       width="100%"
       customBurgerIcon={isMenuOpen ? <Cross /> : <Burger />}
       customCrossIcon={false}>
-      <NextLink href="/blog">
-        <a className="internal-link">Notes</a>
-      </NextLink>
-      <NextLink href="/works">
-        <a className="internal-link">Works</a>
-      </NextLink>
-      <NextLink href="/about">
-        <a className="internal-link">About</a>
-      </NextLink>
+      <Link href="/blog" className="internal-link">
+        Notes
+      </Link>
+      <Link href="/works" className="internal-link">
+        Works
+      </Link>
+      <Link href="/about" className="internal-link">
+        About
+      </Link>
     </Menu>
   );
 };

@@ -36,10 +36,8 @@ export default function Blog({ posts }) {
           <p>
             {`I've written ${posts.length} public notes thus far. `}
             If you&apos;re looking to read one thing, I would recommend{' '}
-            <Link href="/blog/switching-lanes">
-              <a className="internal-link">
-                <em>this one</em>
-              </a>
+            <Link href="/blog/switching-lanes" className="internal-link">
+              <em>this one</em>
             </Link>
             .
           </p>
