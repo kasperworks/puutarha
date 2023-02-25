@@ -1,3 +1,5 @@
+import '@fontsource/josefin-sans';
+import '@fontsource/lato';
 import GlobalStyle from '../styles/GlobalStyle';
 
 function MyApp({ Component, pageProps }) {
