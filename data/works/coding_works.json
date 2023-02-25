@@ -9,7 +9,7 @@
     "title": "Koronavirus lukuina",
     "url": "https://yle.fi/uutiset/3-11300232",
     "what": "Data visualization, frontend and backend",
-    "description": "Maintained and developed self-updating Covid-19 data visuals, which have clocked about 30 million page hits. Planned and executed migration to DynamoDB."
+    "description": "Maintained and developed self-updating Covid-19 data visuals, totaling more than 100 million page views among all its parts and iterations. Planned and executed migration to DynamoDB."
   },
   {
     "title": "Ilmahälytys!",
@@ -18,10 +18,10 @@
     "description": "Scrollable 3D implementation of a bomb shelter in Lviv, western Ukraine. Made with react-three-fiber."
   },
   {
-    "title": "Nimesi huippuhetket",
-    "url": "https://yle.fi/uutiset/3-11693006",
-    "what": "Dynamic data visualizations",
-    "description": "Displaying the popularity of first names in Finland from 1900–2020. My first published project in my first coding job!"
+    "title": "Plus Desk",
+    "url": "http://plus.yle.fi/",
+    "what": "Showcase website",
+    "description": "A site for our team, with an updating article list. Made with Astro, SolidJS, Tailwind CSS and TypeScript."
   },
   {
     "title": "Unelmasta painajaiseksi",
