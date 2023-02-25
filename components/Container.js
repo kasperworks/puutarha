@@ -67,7 +67,7 @@ export default function Container(props) {
           <a href="#skip" className="skip-nav">
             Skip to content
           </a>
-          <MediaContextProvider>
+          <MediaContextProvider disableDynamicMediaQueries>
             <Media at="sm">
               <MobileNav />
             </Media>
