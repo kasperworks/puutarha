@@ -234,7 +234,6 @@ const GlobalStyle = createGlobalStyle`
       display: none;
     }
 
-    #menu-button,
     #menu-button::before,
     #menu-button::after {
       display: block;
@@ -242,18 +241,23 @@ const GlobalStyle = createGlobalStyle`
       position: absolute;
       height: 4px;
       width: 30px;
-      transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+      transition: transform 500ms cubic-bezier(0.23, 1, 0.32, 1);
       border-radius: 2px;
     }
 
     #menu-button {
-      right: 25px;
-      top: 39px;
+      position: absolute;
+      display: block;
+      height: 30px;
+      width: 30px;
+      right: 20px;
+      top: 35px;
+      background-color: transparent
     }
 
     #menu-button::before {
       content: '';
-      margin-top: -8px;
+      margin-top: -4px;
     }
 
     #menu-button::after {
@@ -263,7 +267,7 @@ const GlobalStyle = createGlobalStyle`
 
     #menu-toggle:checked + #menu-button-container #menu-button::before {
       margin-top: 0px;
-      transform: rotate(45deg);
+      transform: rotateZ(-45deg) scaleX(1.15);
     }
 
     #menu-toggle:checked + #menu-button-container #menu-button {
@@ -272,7 +276,7 @@ const GlobalStyle = createGlobalStyle`
 
     #menu-toggle:checked + #menu-button-container #menu-button::after {
       margin-top: 0px;
-      transform: rotate(-45deg);
+      transform: rotateZ(45deg) scaleX(1.15);
     }
 
     #menu-button-container {
@@ -296,8 +300,11 @@ const GlobalStyle = createGlobalStyle`
       opacity: 1;
       transition: opacity 300ms ease-in-out;
     }
-    #menu > a {
+    #menu-toggle:checked ~ #menu > a {
       display: flex;
+    }
+    #menu > a {
+      display: none;
       justify-content: center;
       margin: 0;
       padding: 0.5em 0;
