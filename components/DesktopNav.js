@@ -1,24 +1,17 @@
 import * as React from 'react';
 import Link from 'next/link';
 import * as s from '../styles/Layout.styled';
+import NavMenuItems from './NavMenuItems';
 
 const DesktopNav = () => (
-  <s.NavBar>
+  <s.NavBar className="desktop-nav">
     <div>
       <Link href="/" className="internal-link">
         Kasper Viita
       </Link>
     </div>
     <div>
-      <Link href="/blog" className="internal-link">
-        Notes
-      </Link>
-      <Link href="/works" className="internal-link">
-        Works
-      </Link>
-      <Link href="/about" className="internal-link">
-        About
-      </Link>
+      <NavMenuItems />
     </div>
   </s.NavBar>
 );

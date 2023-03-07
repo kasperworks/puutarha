@@ -69,6 +69,17 @@ export const NavBar = styled.nav`
   div:nth-child(2) {
     justify-content: flex-end;
   }
+  &.mobile-nav {
+    @media (min-width: 640px) {
+      display: none;
+    }
+  }
+  &.desktop-nav {
+    display: none;
+    @media (min-width: 640px) {
+      display: flex;
+    }
+  }
 `;
 
 export const TextBlock = styled.div`

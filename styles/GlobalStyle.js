@@ -242,7 +242,110 @@ const GlobalStyle = createGlobalStyle`
     }
 
     .bm-item {
-      color: var(--codeblock);
+      color: white;
+    }
+
+    // CSS burger
+
+    #menu > a {
+      margin: 0 1rem;
+      overflow: hidden;
+    }
+
+    #menu-button-container {
+      display: none;
+      height: 100%;
+      width: 30px;
+      cursor: pointer;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #menu-toggle {
+      display: none;
+    }
+
+    #menu-button,
+    #menu-button::before,
+    #menu-button::after {
+      display: block;
+      background-color: white;
+      position: absolute;
+      height: 4px;
+      width: 30px;
+      transition: transform 200ms cubic-bezier(0.23, 1, 0.32, 1);
+      border-radius: 2px;
+    }
+
+    #menu-button {
+      right: 25px;
+      top: 39px;
+    }
+
+    #menu-button::before {
+      content: '';
+      margin-top: -8px;
+    }
+
+    #menu-button::after {
+      content: '';
+      margin-top: 8px;
+    }
+
+    #menu-toggle:checked + #menu-button-container #menu-button::before {
+      margin-top: 0px;
+      transform: rotate(45deg);
+    }
+
+    #menu-toggle:checked + #menu-button-container #menu-button {
+      background: transparent;
+    }
+
+    #menu-toggle:checked + #menu-button-container #menu-button::after {
+      margin-top: 0px;
+      transform: rotate(-45deg);
+    }
+
+    #menu-button-container {
+      display: flex;
+    }
+
+    #menu {
+      position: absolute;
+      top: 0;
+      margin-top: 75px;
+      left: 0;
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+      z-index: 10;
+    }
+    #menu-toggle:checked ~ #menu {
+      background-color: var(--codeblock);
+      height: 100vh;
+    }
+    #menu-toggle ~ #menu a {
+      height: 0;
+      width: 0
+      margin: 0;
+      padding: 0;
+      border: 0;
+      transition: height 200ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    #menu-toggle:checked ~ #menu a {
+      height: 2.5em;
+      padding: 0.5em;
+      transition: height 200ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    #menu > a {
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0.5em 0;
+      width: 100%;
+      color: white;
+      background-color: var(--codeblock);
     }
 
     // Code block styling

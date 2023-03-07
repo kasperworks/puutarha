@@ -3,7 +3,6 @@ import { useRouter } from 'next/router';
 import { motion } from 'framer-motion';
 
 import * as s from '../styles/Layout.styled';
-import { Media, MediaContextProvider } from '../lib/media';
 import MobileNav from './MobileNav';
 import DesktopNav from './DesktopNav';
 
@@ -67,14 +66,16 @@ export default function Container(props) {
           <a href="#skip" className="skip-nav">
             Skip to content
           </a>
-          <MediaContextProvider disableDynamicMediaQueries>
+          <DesktopNav />
+          <MobileNav />
+          {/* <MediaContextProvider disableDynamicMediaQueries>
             <Media at="sm">
               <MobileNav />
             </Media>
             <Media greaterThanOrEqual="md">
               <DesktopNav />
             </Media>
-          </MediaContextProvider>
+          </MediaContextProvider> */}
           <motion.main
             // Key from path needed for transitioning between blog posts using [slug]
             key={router.asPath}
