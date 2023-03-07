@@ -12,7 +12,9 @@ const MobileNav = () => (
     </div>
     <div>
       <input id="menu-toggle" type="checkbox" />
+      {/* eslint-disable-next-line */}
       <label htmlFor="menu-toggle" id="menu-button-container">
+        {/* eslint-disable-next-line */}
         <div id="menu-button"></div>
       </label>
       <div id="menu">
