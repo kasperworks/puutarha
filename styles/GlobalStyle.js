@@ -213,38 +213,6 @@ const GlobalStyle = createGlobalStyle`
       transform: translateY(-50px);
     }
 
-    // Burger menu styling
-
-    .bm-burger-button {
-      position: absolute;
-      right: 25px;
-      top: 25px;
-    }
-
-    .bm-menu-wrap {
-      background: var(--codeblock);
-      position: fixed;
-      opacity: 0.985;
-      margin-top: 25px;
-    }
-
-    .bm-menu {
-      background: var(--codeblock);
-      padding: 1.5em 0;
-      font-size: 1.15em;
-    }
-
-    .bm-item-list {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 1em;
-    }
-
-    .bm-item {
-      color: white;
-    }
-
     // CSS burger
 
     #menu > a {
@@ -274,7 +242,7 @@ const GlobalStyle = createGlobalStyle`
       position: absolute;
       height: 4px;
       width: 30px;
-      transition: transform 200ms cubic-bezier(0.23, 1, 0.32, 1);
+      transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
       border-radius: 2px;
     }
 
@@ -312,31 +280,21 @@ const GlobalStyle = createGlobalStyle`
     }
 
     #menu {
-      position: absolute;
+      position: fixed;
       top: 0;
       margin-top: 75px;
       left: 0;
+      height: 100vh;
       flex-direction: column;
       width: 100%;
       align-items: center;
       z-index: 10;
+      opacity: 0;
     }
     #menu-toggle:checked ~ #menu {
       background-color: var(--codeblock);
-      height: 100vh;
-    }
-    #menu-toggle ~ #menu a {
-      height: 0;
-      width: 0
-      margin: 0;
-      padding: 0;
-      border: 0;
-      transition: height 200ms cubic-bezier(0.23, 1, 0.32, 1);
-    }
-    #menu-toggle:checked ~ #menu a {
-      height: 2.5em;
-      padding: 0.5em;
-      transition: height 200ms cubic-bezier(0.23, 1, 0.32, 1);
+      opacity: 1;
+      transition: opacity 300ms ease-in-out;
     }
     #menu > a {
       display: flex;
