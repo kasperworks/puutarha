@@ -38,12 +38,15 @@ export default function About() {
             newsroom.
           </p>
         </s.TextBlock>
-        <Image
-          alt="GitHub screenshot after joining Yle, Finland's national public-service broadcasting company"
-          src={GHYle}
-          className="wide-image"
-          placeholder="blur"
-        />
+        <div style={{ position: 'relative', overflow: 'hidden' }}>
+          <Image
+            alt="GitHub screenshot after joining Yle, Finland's national public-service broadcasting company"
+            src={GHYle}
+            className="wide-image"
+            placeholder="blur"
+            style={{ maxWidth: '100%', height: 'auto' }}
+          />
+        </div>
         <s.TextBlock>
           <p>
             In the past, you might have caught me on Bloomberg TV or radio, talking about
@@ -52,21 +55,27 @@ export default function About() {
             Helsinki and London.
           </p>
         </s.TextBlock>
-        <Image
-          alt="Picture of Kasper speaking on Bloomberg TV"
-          src={TVPic}
-          className="wide-image"
-          placeholder="blur"
-        />
+        <div style={{ position: 'relative', overflow: 'hidden' }}>
+          <Image
+            alt="Picture of Kasper speaking on Bloomberg TV"
+            src={TVPic}
+            className="wide-image"
+            placeholder="blur"
+            style={{ maxWidth: '100%', height: 'auto' }}
+          />
+        </div>
         <s.TextBlock>
           <p>Before that, I used to DJ, write record reviews and design flyers.</p>
         </s.TextBlock>
-        <Image
-          alt="A self-designed club-night poster with a space shuttle flying over a cassette tape"
-          src={ClubSnare}
-          className="wide-image"
-          placeholder="blur"
-        />
+        <div style={{ position: 'relative', overflow: 'hidden' }}>
+          <Image
+            alt="A self-designed club-night poster with a space shuttle flying over a cassette tape"
+            src={ClubSnare}
+            className="wide-image"
+            placeholder="blur"
+            style={{ maxWidth: '100%', height: 'auto' }}
+          />
+        </div>
         <Spacer />
       </div>
     </Container>
