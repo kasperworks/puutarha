@@ -68,14 +68,6 @@ export default function Container(props) {
           </a>
           <DesktopNav />
           <MobileNav />
-          {/* <MediaContextProvider disableDynamicMediaQueries>
-            <Media at="sm">
-              <MobileNav />
-            </Media>
-            <Media greaterThanOrEqual="md">
-              <DesktopNav />
-            </Media>
-          </MediaContextProvider> */}
           <motion.main
             // Key from path needed for transitioning between blog posts using [slug]
             key={router.asPath}

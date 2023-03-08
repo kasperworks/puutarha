@@ -21,14 +21,6 @@ of each post.
 This metadata is used by `pages/blog` component in an overview, while the complete contents of
 an individual post are laid out for display by `pages/blog/[slug]`.
 
-## Under the hood notes
-
-`@artsy/fresnel` handles media queries, which are trickier than usual due to certain
-pages generated at build time. The solution is to create both desktop and mobile views
-while the library handles which one to show, namely the full navbar or one with a burger menu.
-The key part is located in `lib/media`, which is connected to
-`components/Container`, a shared frame around most pages.
-
 ## Hosting
 
 The site is hosted on Vercel, DNS handled by Cloudflare.

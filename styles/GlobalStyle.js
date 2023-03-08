@@ -288,17 +288,17 @@ const GlobalStyle = createGlobalStyle`
       top: 0;
       margin-top: 75px;
       left: 0;
-      height: 100vh;
       flex-direction: column;
       width: 100%;
       align-items: center;
-      z-index: 10;
       opacity: 0;
     }
     #menu-toggle:checked ~ #menu {
       background-color: var(--codeblock);
       opacity: 1;
       transition: opacity 300ms ease-in-out;
+      height: 100vh;
+      z-index: 10;
     }
     #menu-toggle:checked ~ #menu > a {
       display: flex;
