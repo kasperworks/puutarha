@@ -6,6 +6,7 @@ export const NavBar = styled.nav`
   min-width: 250px;
   font-size: 1.4rem;
   align-items: baseline;
+  padding-top: 16px;
   a {
     @media (hover: hover) {
       &:hover {
