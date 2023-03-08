@@ -2,7 +2,6 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { motion } from 'framer-motion';
 
-import * as s from '../styles/Layout.styled';
 import MobileNav from './MobileNav';
 import DesktopNav from './DesktopNav';
 
@@ -36,7 +35,7 @@ export default function Container(props) {
 
   return (
     <>
-      <s.SiteBorderStyles>
+      <div className="bg-background site-wrapper flex flex-col items-center max-w-[1232px] w-full shadow-[0_0_5px_3px_rgba(0,0,0,0.45)] min-h-screen mt-0 mb-8 mx-auto p-2">
         <Head>
           <title>{meta.title}</title>
           <meta name="robots" content="follow, index" />
@@ -62,8 +61,8 @@ export default function Container(props) {
           <meta name="twitter:image" content={meta.twitterImage} />
           {meta.date && <meta property="article:published_time" content={meta.date} />}
         </Head>
-        <s.CenterSection>
-          <a href="#skip" className="skip-nav">
+        <div className=" w-full max-w-[780px] px-4 py-0">
+          <a href="#skip" className="absolute top-[-50px] text-xs">
             Skip to content
           </a>
           <DesktopNav />
@@ -77,11 +76,11 @@ export default function Container(props) {
             id="skip">
             {children}
           </motion.main>
-        </s.CenterSection>
-      </s.SiteBorderStyles>
+        </div>
+      </div>
 
-      <s.Footer>
-        <small>
+      <div className="flex justify-center items-baseline text-grey mt-0 mb-4 mx-4">
+        <small className="block">
           <abbr
             title="This site and all its content are licensed under a Creative Commons Attribution-NonCommercial 4.0 International License."
             style={{ cursor: 'help' }}>
@@ -89,7 +88,7 @@ export default function Container(props) {
           </abbr>{' '}
           <time>{year}</time> Kasper Viita
         </small>
-      </s.Footer>
+      </div>
     </>
   );
 }

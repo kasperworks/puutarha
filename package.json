@@ -26,6 +26,7 @@
     "styled-components": "^5.3.8"
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.13",
     "babel-plugin-styled-components": "^2.0.7",
     "esbuild": "^0.17.11",
     "eslint": "^8.35.0",
@@ -36,11 +37,13 @@
     "eslint-plugin-jsx-a11y": "^6.7.1",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "postcss": "^8.4.21",
     "prettier": "^2.8.4",
     "rehype": "^12.0.1",
     "rehype-code-titles": "^1.2.0",
     "rehype-prism-plus": "^1.5.1",
     "rehype-slug": "^5.1.0",
-    "remark-gfm": "^3.0.1"
+    "remark-gfm": "^3.0.1",
+    "tailwindcss": "^3.2.7"
   }
 }

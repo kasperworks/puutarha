@@ -54,7 +54,7 @@ const GlobalStyle = createGlobalStyle`
       font-size: 125%;
       font-family: Lato, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif,
         "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-        scrollbar-width: thin;
+      scrollbar-width: thin;
       scrollbar-color: var(--darkgreen) var(--codeblock);
     }
 

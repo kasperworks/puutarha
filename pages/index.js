@@ -51,7 +51,7 @@ export default function Introduction() {
           I switched careers in 2021, mid-pandemic, after nearly a decade in financial
           journalism. Following about a year of determined self-study, I{' '}
           <Link href="/blog/switching-lanes" className="internal-link">
-            <em>crossed over</em>
+            <em className="hover:text-accent">crossed over</em>
           </Link>{' '}
           to a professional programming role, changing employers and countries in the
           process.
@@ -63,7 +63,7 @@ export default function Introduction() {
           software, and would like to contribute in turn. If you are new to web
           development or coding in general, I&apos;ve curated a{' '}
           <Link href="/blog/starter-pack" className="internal-link">
-            <em>starter pack</em>
+            <em className="hover:text-accent">starter pack</em>
           </Link>{' '}
           of assets based on what worked for me. It comes with a few pointers.
         </p>

@@ -37,7 +37,7 @@ export default function Blog({ posts }) {
             {`I've written ${posts.length} public notes thus far. `}
             If you&apos;re looking to read one thing, I would recommend{' '}
             <Link href="/blog/switching-lanes" className="internal-link">
-              <em>this one</em>
+              <em className="hover:text-accent">this one</em>
             </Link>
             .
           </p>
