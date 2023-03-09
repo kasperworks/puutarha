@@ -251,7 +251,7 @@ const GlobalStyle = createGlobalStyle`
       height: 30px;
       width: 30px;
       right: 20px;
-      top: 35px;
+      top: 30px;
       background-color: transparent
     }
 
@@ -290,10 +290,11 @@ const GlobalStyle = createGlobalStyle`
       margin-top: 75px;
       flex-direction: column;
       width: 100%;
-      height: 100%;
+      height: calc(100vh - 100px);
       align-items: center;
       transition: transform 400ms cubic-bezier(0.87, 0, 0.13, 1);
-      transform: translate(100%, 0)
+      transform: translate(120%, 0);
+      
     }
     #menu-toggle:checked ~ #menu {
       transform: none;

@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const NavBar = styled.nav`
   display: flex;
+  position: relative;
   width: 100%;
   min-width: 250px;
   font-size: 1.4rem;

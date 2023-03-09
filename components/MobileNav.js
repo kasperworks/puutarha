@@ -10,16 +10,13 @@ const MobileNav = () => (
         Kasper Viita
       </Link>
     </div>
-    <div>
-      <input id="menu-toggle" type="checkbox" />
-      {/* eslint-disable-next-line */}
-      <label htmlFor="menu-toggle" id="menu-button-container">
-        {/* eslint-disable-next-line */}
-        <div id="menu-button"></div>
-      </label>
-      <div id="menu" className="bg-codeblock z-10">
-        <NavMenuItems />
-      </div>
+    <input id="menu-toggle" type="checkbox" />
+    {/* eslint-disable-next-line */}
+    <label htmlFor="menu-toggle" id="menu-button-container">
+      <div id="menu-button" />
+    </label>
+    <div id="menu" className="bg-codeblock z-10 rounded shadow-monolith">
+      <NavMenuItems />
     </div>
   </s.NavBar>
 );

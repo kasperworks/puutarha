@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      boxShadow: {
+        monolith: '0 15px 80px -20px #D8D24D',
+      },
       colors: {
         black: '#0E1111',
         white: '#FBFBFB',

@@ -35,7 +35,7 @@ export default function Container(props) {
 
   return (
     <>
-      <div className="bg-background site-wrapper flex flex-col items-center max-w-[1232px] w-full shadow-[0_0_5px_3px_rgba(0,0,0,0.45)] min-h-screen mt-0 mb-8 mx-auto p-2">
+      <div className="bg-background site-wrapper flex flex-col items-center max-w-[1232px] w-full shadow-[0_0_5px_3px_rgba(0,0,0,0.45)] min-h-screen mt-0 mb-8 mx-auto py-2">
         <Head>
           <title>{meta.title}</title>
           <meta name="robots" content="follow, index" />
@@ -61,7 +61,7 @@ export default function Container(props) {
           <meta name="twitter:image" content={meta.twitterImage} />
           {meta.date && <meta property="article:published_time" content={meta.date} />}
         </Head>
-        <div className="w-full max-w-[780px] px-4 py-0 overflow-x-hidden">
+        <div className="w-full max-w-[780px] px-6 py-0 overflow-x-hidden">
           <a href="#skip" className="absolute top-[-50px] text-xs">
             Skip to content
           </a>
