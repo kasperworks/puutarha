@@ -17,7 +17,7 @@ const MobileNav = () => (
         {/* eslint-disable-next-line */}
         <div id="menu-button"></div>
       </label>
-      <div id="menu">
+      <div id="menu" className="bg-codeblock z-10">
         <NavMenuItems />
       </div>
     </div>

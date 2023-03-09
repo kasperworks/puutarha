@@ -284,33 +284,26 @@ const GlobalStyle = createGlobalStyle`
     }
 
     #menu {
-      position: fixed;
+      position: absolute;
       top: 0;
-      margin-top: 75px;
       left: 0;
+      margin-top: 75px;
       flex-direction: column;
       width: 100%;
+      height: 100%;
       align-items: center;
-      opacity: 0;
+      transition: transform 400ms cubic-bezier(0.87, 0, 0.13, 1);
+      transform: translate(100%, 0)
     }
     #menu-toggle:checked ~ #menu {
-      background-color: var(--codeblock);
-      opacity: 1;
-      transition: opacity 300ms ease-in-out;
-      height: 100vh;
-      z-index: 10;
-    }
-    #menu-toggle:checked ~ #menu > a {
-      display: flex;
+      transform: none;
     }
     #menu > a {
-      display: none;
-      justify-content: center;
+      text-align: center;
       margin: 0;
       padding: 0.5em 0;
       width: 100%;
       color: white;
-      background-color: var(--codeblock);
     }
 
     // Code block styling

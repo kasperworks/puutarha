@@ -61,7 +61,7 @@ export default function Container(props) {
           <meta name="twitter:image" content={meta.twitterImage} />
           {meta.date && <meta property="article:published_time" content={meta.date} />}
         </Head>
-        <div className=" w-full max-w-[780px] px-4 py-0">
+        <div className="w-full max-w-[780px] px-4 py-0 overflow-x-hidden">
           <a href="#skip" className="absolute top-[-50px] text-xs">
             Skip to content
           </a>
