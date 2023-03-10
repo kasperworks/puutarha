@@ -4,9 +4,11 @@ This is my personal site, [kasper.works](https://kasper.works).
 
 ## Tooling
 
-The site is built with Next.js, Styled Components, Framer Motion
+The site is built with Next.js, Framer Motion
 and a few other libraries. All blog posts are in MDX form,
 which allows using React components inside Markdown files.
+
+Styling is currently done by Styled Components, in the process of migrating to Tailwind CSS.
 
 ## Blog structure
 
