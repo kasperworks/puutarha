@@ -26,6 +26,7 @@ module.exports = {
         darkpurple: '#5D4384',
         lightgrey: '#EBEEF1',
         brightred: '#d5102e',
+        obelisk: '#16191F',
       },
       fontFamily: {
         sans: [

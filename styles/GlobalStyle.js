@@ -248,11 +248,11 @@ const GlobalStyle = createGlobalStyle`
     #menu-button {
       position: absolute;
       display: block;
-      height: 30px;
-      width: 30px;
-      right: 20px;
+      height: 50px;
+      width: 50px;
+      right: 0;
       top: 30px;
-      background-color: transparent
+      background-color: transparent;
     }
 
     #menu-button::before {

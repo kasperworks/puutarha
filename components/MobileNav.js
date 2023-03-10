@@ -15,7 +15,7 @@ const MobileNav = () => (
     <label htmlFor="menu-toggle" id="menu-button-container">
       <div id="menu-button" />
     </label>
-    <div id="menu" className="bg-codeblock z-10 rounded shadow-monolith">
+    <div id="menu" className="bg-obelisk z-10 rounded shadow-monolith pt-8">
       <NavMenuItems />
     </div>
   </s.NavBar>
