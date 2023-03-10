@@ -34,5 +34,11 @@
     "url": "https://yle.fi/uutiset/3-12360893",
     "what": "Data wrangling, interactive elements",
     "description": "Extracting and analyzing data from five years of district-court documents on animal-abuse cases."
+  },
+  {
+    "title": "Student loan calculator",
+    "url": "https://yle.fi/a/74-20014600",
+    "what": "Taking input, producing output",
+    "description": "A widget to calculate and visualize the effect of interest and government subsidies on student loan repayments."
   }
 ]

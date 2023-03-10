@@ -1,11 +1,11 @@
-import Link from 'next/link';
-import { motion } from 'framer-motion';
+import Link from "next/link";
+import { motion } from "framer-motion";
 
-import Container from '../components/Container';
-import BlogPost from '../components/BlogPost';
-import Spacer from '../components/Spacer';
-import { getAllPosts } from '../lib/mdx';
-import * as s from '../styles/Layout.styled';
+import Container from "../components/Container";
+import BlogPost from "../components/BlogPost";
+import Spacer from "../components/Spacer";
+import { getAllPosts } from "../lib/mdx";
+import * as s from "../styles/Layout.styled";
 
 const headerVariants = {
   hidden: {
@@ -16,7 +16,7 @@ const headerVariants = {
     opacity: 1,
     rotate: 0,
     transition: {
-      type: 'tween',
+      type: "tween",
       duration: 0.5,
     },
   },
@@ -24,7 +24,8 @@ const headerVariants = {
 
 export default function Blog({ posts }) {
   const postsByDate = posts.sort(
-    (a, b) => new Date(b.frontmatter.publishedAt) - new Date(a.frontmatter.publishedAt),
+    (a, b) =>
+      new Date(b.frontmatter.publishedAt) - new Date(a.frontmatter.publishedAt)
   );
   return (
     <Container title="Blog / Kasper Viita" description="Assorted notes">
@@ -35,11 +36,9 @@ export default function Blog({ posts }) {
         <s.TextBlock>
           <p>
             {`I've written ${posts.length} public notes thus far. `}
-            If you&apos;re looking to read one thing, I would recommend{' '}
-            <Link href="/blog/switching-lanes">
-              <a className="internal-link">
-                <em>this one</em>
-              </a>
+            If you&apos;re looking to read one thing, I would recommend{" "}
+            <Link href="/blog/switching-lanes" className="internal-link">
+              <em className="hover:text-accent">this one</em>
             </Link>
             .
           </p>
@@ -47,7 +46,8 @@ export default function Blog({ posts }) {
         <Spacer />
         <s.TextBlock>
           {postsByDate.map((item, index) => {
-            const { title, publishedAt, summary, lastUpdated } = item.frontmatter;
+            const { title, publishedAt, summary, lastUpdated } =
+              item.frontmatter;
             const { slug } = item;
             return (
               <BlogPost
@@ -69,7 +69,7 @@ export default function Blog({ posts }) {
 }
 
 export async function getStaticProps() {
-  const posts = await getAllPosts('blog');
+  const posts = await getAllPosts("blog");
 
   return { props: { posts } };
 }

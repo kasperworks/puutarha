@@ -54,7 +54,7 @@ const GlobalStyle = createGlobalStyle`
       font-size: 125%;
       font-family: Lato, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif,
         "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-        scrollbar-width: thin;
+      scrollbar-width: thin;
       scrollbar-color: var(--darkgreen) var(--codeblock);
     }
 
@@ -213,36 +213,98 @@ const GlobalStyle = createGlobalStyle`
       transform: translateY(-50px);
     }
 
-    // Burger menu styling
+    // CSS burger
 
-    .bm-burger-button {
-      position: absolute;
-      right: 25px;
-      top: 25px;
+    #menu > a {
+      margin: 0 1rem;
+      overflow: hidden;
     }
 
-    .bm-menu-wrap {
-      background: var(--codeblock);
-      position: fixed;
-      opacity: 0.985;
-      margin-top: 25px;
-    }
-
-    .bm-menu {
-      background: var(--codeblock);
-      padding: 1.5em 0;
-      font-size: 1.15em;
-    }
-
-    .bm-item-list {
-      display: flex;
+    #menu-button-container {
+      display: none;
+      height: 100%;
+      width: 30px;
+      cursor: pointer;
       flex-direction: column;
+      justify-content: center;
       align-items: center;
-      gap: 1em;
     }
 
-    .bm-item {
-      color: var(--codeblock);
+    #menu-toggle {
+      display: none;
+    }
+
+    #menu-button::before,
+    #menu-button::after {
+      display: block;
+      background-color: white;
+      position: absolute;
+      height: 4px;
+      width: 30px;
+      transition: transform 500ms cubic-bezier(0.23, 1, 0.32, 1);
+      border-radius: 2px;
+    }
+
+    #menu-button {
+      position: absolute;
+      display: block;
+      height: 50px;
+      width: 50px;
+      right: 0;
+      top: 30px;
+      background-color: transparent;
+    }
+
+    #menu-button::before {
+      content: '';
+      margin-top: -4px;
+    }
+
+    #menu-button::after {
+      content: '';
+      margin-top: 8px;
+    }
+
+    #menu-toggle:checked + #menu-button-container #menu-button::before {
+      margin-top: 0px;
+      transform: rotateZ(-45deg) scaleX(1.15);
+    }
+
+    #menu-toggle:checked + #menu-button-container #menu-button {
+      background: transparent;
+    }
+
+    #menu-toggle:checked + #menu-button-container #menu-button::after {
+      margin-top: 0px;
+      transform: rotateZ(45deg) scaleX(1.15);
+    }
+
+    #menu-button-container {
+      display: flex;
+    }
+
+    #menu {
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin-top: 75px;
+      flex-direction: column;
+      width: 100%;
+      height: calc(100vh - 100px);
+      align-items: center;
+      transition: transform 400ms cubic-bezier(0.87, 0, 0.13, 1);
+      transform: translate(120%, 0);
+      
+    }
+    #menu-toggle:checked ~ #menu {
+      transform: none;
+    }
+    #menu > a {
+      text-align: center;
+      margin: 0;
+      padding: 0.5em 0;
+      width: 100%;
+      color: white;
     }
 
     // Code block styling

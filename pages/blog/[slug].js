@@ -44,10 +44,8 @@ const YTPlayer = ({ url }) => <ReactPlayer light url={url} width="100%" height="
 const CustomLink = ({ children, href }) => {
   if (href.startsWith('/')) {
     return (
-      <Link href={href}>
-        <a className="internal-link">
-          <em>{children}</em>
-        </a>
+      <Link href={href} className="internal-link">
+        <em>{children}</em>
       </Link>
     );
   }
@@ -97,9 +95,7 @@ const Post = ({ code, frontmatter }) => {
           ))}
       </s.Tags>
       <s.PostFooter>
-        <Link href="/blog">
-          <a>More notes</a>
-        </Link>
+        <Link href="/blog">More notes</Link>
       </s.PostFooter>
     </Container>
   );

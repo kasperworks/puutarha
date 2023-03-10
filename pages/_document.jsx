@@ -1,6 +1,5 @@
-import Document, { Html, Head, NextScript, Main } from 'next/document';
-import { ServerStyleSheet } from 'styled-components';
-import { mediaStyles } from '../lib/media';
+import Document, { Html, Head, NextScript, Main } from "next/document";
+import { ServerStyleSheet } from "styled-components";
 
 export default class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -11,7 +10,8 @@ export default class MyDocument extends Document {
     try {
       ctx.renderPage = () =>
         originalRenderPage({
-          enhanceApp: (App) => (props) => sheet.collectStyles(<App {...props} />),
+          enhanceApp: (App) => (props) =>
+            sheet.collectStyles(<App {...props} />),
         });
 
       const initialProps = await Document.getInitialProps(ctx);
@@ -32,11 +32,8 @@ export default class MyDocument extends Document {
   render() {
     return (
       <Html lang="en">
-        <Head>
-          {/* eslint-disable-next-line react/no-danger */}
-          <style type="text/css" dangerouslySetInnerHTML={{ __html: mediaStyles }} />
-        </Head>
-        <body>
+        <Head />
+        <body className="overflow-x-hidden">
           <Main />
           <NextScript />
         </body>
