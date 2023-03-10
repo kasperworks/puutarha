@@ -19,7 +19,7 @@ const BlogPost = ({
             <h4 className="text-shadow text-2xl font-bold hover:text-accent active:text-accent">
               {title}
             </h4>
-            <small className="text-grey">
+            <small className="flex justify-between text-grey">
               {publishedAt}
               {lastUpdated ? <span> Updated: {lastUpdated}</span> : null}
             </small>
