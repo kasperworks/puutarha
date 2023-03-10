@@ -1,5 +1,4 @@
-import Link from 'next/link';
-import * as s from '../styles/Layout.styled';
+import Link from "next/link";
 
 const BlogPost = ({
   title,
@@ -14,18 +13,20 @@ const BlogPost = ({
 
   return (
     <>
-      <s.BlogPostDisplay>
+      <div className="my-4">
         <Link href={`/blog/${slug}`}>
           <div>
-            <h4>{title}</h4>
-            <small>
+            <h4 className="text-shadow text-2xl font-bold hover:text-accent active:text-accent">
+              {title}
+            </h4>
+            <small className="text-grey">
               {publishedAt}
               {lastUpdated ? <span> Updated: {lastUpdated}</span> : null}
             </small>
           </div>
           <p>{summary}</p>
         </Link>
-      </s.BlogPostDisplay>
+      </div>
       {lastPost ? null : <hr />}
     </>
   );

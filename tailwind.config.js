@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 module.exports = {
   content: [
     './app/**/*.{js,ts,jsx,tsx}',
@@ -29,30 +31,12 @@ module.exports = {
         obelisk: '#16191F',
       },
       fontFamily: {
-        sans: [
-          'Lato',
-          '-apple-system',
-          'BlinkMacSystemFont',
-          'Segoe UI',
-          'Helvetica',
-          'Arial',
-          'sans-serif',
-          'Apple Color Emoji',
-          'Segoe UI Emoji',
-          'Segoe UI Symbol',
-        ],
-        josefin: [
-          'Josefin Sans',
-          '-apple-system',
-          'BlinkMacSystemFont',
-          'Segoe UI',
-          'Helvetica',
-          'Arial',
-          'sans-serif',
-          'Apple Color Emoji',
-          'Segoe UI Emoji',
-          'Segoe UI Symbol',
-        ],
+        sans: ['Lato', ...defaultTheme.fontFamily.sans],
+        josefin: ['Josefin Sans', ...defaultTheme.fontFamily.sans],
+      },
+      textShadow: {
+        DEFAULT:
+          '2px 6px 6px rgba(0, 0, 0, 0.1), 0px -5px 35px rgba(255, 255, 255, 0.12)',
       },
     },
   },

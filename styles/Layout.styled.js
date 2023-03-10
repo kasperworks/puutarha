@@ -51,37 +51,6 @@ export const TextBlock = styled.div`
   margin: 1.4rem 0;
 `;
 
-export const BlogPostDisplay = styled.div`
-  border-radius: 0.5rem;
-  margin: 15px 0;
-  h4 {
-    font-size: 1.5rem;
-    text-shadow: 2px 6px 6px rgba(0, 0, 0, 0.1), 0px -5px 35px rgba(255, 255, 255, 0.12);
-  }
-  small {
-    color: var(--grey);
-    display: flex;
-    justify-content: space-between;
-  }
-  a {
-    text-decoration: none;
-  }
-  @media (hover: hover) {
-    &:hover {
-      h4 {
-        color: var(--accent);
-      }
-    }
-  }
-  @media (hover: none) {
-    &:active {
-      h4 {
-        color: var(--accent);
-      }
-    }
-  }
-`;
-
 export const ImageCredit = styled.div`
   display: flex;
   justify-content: flex-end;

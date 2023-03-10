@@ -1,4 +1,4 @@
-import * as s from '../styles/WorksCard.styled';
+import * as s from "../styles/WorksCard.styled";
 
 const WorksCards = ({ cards }) => (
   <s.CardsWrapper>

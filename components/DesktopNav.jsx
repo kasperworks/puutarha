@@ -1,7 +1,7 @@
-import * as React from 'react';
-import Link from 'next/link';
-import * as s from '../styles/Layout.styled';
-import NavMenuItems from './NavMenuItems';
+import * as React from "react";
+import Link from "next/link";
+import * as s from "../styles/Layout.styled";
+import NavMenuItems from "./NavMenuItems";
 
 const DesktopNav = () => (
   <s.NavBar className="desktop-nav">

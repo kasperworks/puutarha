@@ -1,6 +1,6 @@
-import { useState } from 'react';
-import styled from 'styled-components';
-import * as CollapsiblePrimitive from '@radix-ui/react-collapsible';
+import { useState } from "react";
+import styled from "styled-components";
+import * as CollapsiblePrimitive from "@radix-ui/react-collapsible";
 
 const Collapsible = ({ children }) => {
   const [open, setOpen] = useState(false);
@@ -9,7 +9,7 @@ const Collapsible = ({ children }) => {
     <CollapsibleRoot>
       <CollapsibleTrigger asChild>
         <StyledRevealButton type="button" onClick={() => setOpen(!open)}>
-          {open ? 'Hide' : 'Reveal'}
+          {open ? "Hide" : "Reveal"}
         </StyledRevealButton>
       </CollapsibleTrigger>
       <CollapsibleContent>{children}</CollapsibleContent>

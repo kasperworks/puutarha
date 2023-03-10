@@ -1,7 +1,7 @@
-import * as React from 'react';
-import Link from 'next/link';
-import * as s from '../styles/Layout.styled';
-import NavMenuItems from './NavMenuItems';
+import * as React from "react";
+import Link from "next/link";
+import * as s from "../styles/Layout.styled";
+import NavMenuItems from "./NavMenuItems";
 
 const MobileNav = () => (
   <s.NavBar className="mobile-nav">
@@ -15,7 +15,7 @@ const MobileNav = () => (
     <label htmlFor="menu-toggle" id="menu-button-container">
       <div id="menu-button" />
     </label>
-    <div id="menu" className="bg-obelisk z-10 rounded shadow-monolith pt-8">
+    <div id="menu" className="z-10 rounded bg-obelisk pt-8 shadow-monolith">
       <NavMenuItems />
     </div>
   </s.NavBar>

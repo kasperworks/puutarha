@@ -1,9 +1,9 @@
-import Head from 'next/head';
-import { useRouter } from 'next/router';
-import { motion } from 'framer-motion';
+import Head from "next/head";
+import { useRouter } from "next/router";
+import { motion } from "framer-motion";
 
-import MobileNav from './MobileNav';
-import DesktopNav from './DesktopNav';
+import MobileNav from "./MobileNav";
+import DesktopNav from "./DesktopNav";
 
 const mainVariants = {
   hidden: {
@@ -23,11 +23,11 @@ export default function Container(props) {
   const { children, ...customMeta } = props;
   const router = useRouter();
   const meta = {
-    title: 'kasper.works / Kasper Viita',
+    title: "kasper.works / Kasper Viita",
     description: `Numbers, words & JS.`,
-    image: '/static/images/sokoshotlankatolta_xs.jpg',
-    twitterImage: '/static/images/sokoshotlankatolta_xs.png',
-    type: 'website',
+    image: "/static/images/sokoshotlankatolta_xs.jpg",
+    twitterImage: "/static/images/sokoshotlankatolta_xs.png",
+    type: "website",
     ...customMeta,
   };
 
@@ -35,18 +35,31 @@ export default function Container(props) {
 
   return (
     <>
-      <div className="bg-background site-wrapper flex flex-col items-center max-w-[1232px] w-full shadow-[0_0_5px_3px_rgba(0,0,0,0.45)] min-h-screen mt-0 mb-8 mx-auto py-2">
+      <div className="site-wrapper mx-auto mt-0 mb-8 flex min-h-screen w-full max-w-[1232px] flex-col items-center bg-background py-2 shadow-[0_0_5px_3px_rgba(0,0,0,0.45)]">
         <Head>
           <title>{meta.title}</title>
           <meta name="robots" content="follow, index" />
           {/* <meta name="robots" content="noindex" /> */}
           <meta name="theme-color" content="#235353" />
           <meta content={meta.description} name="description" />
-          <meta property="og:url" content={`https://kasper.works${router.asPath}`} />
+          <meta
+            property="og:url"
+            content={`https://kasper.works${router.asPath}`}
+          />
           <link rel="canonical" href={`https://kasper.works${router.asPath}`} />
           <link rel="icon" href="/favicon.ico" sizes="any" />
-          <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-          <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+          <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="/favicon-32x32.png"
+          />
+          <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/favicon-16x16.png"
+          />
           <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
           <link rel="manifest" href="/site.webmanifest" />
           <meta property="og:type" content={meta.type} />
@@ -59,9 +72,11 @@ export default function Container(props) {
           <meta name="twitter:title" content={meta.title} />
           <meta name="twitter:description" content={meta.description} />
           <meta name="twitter:image" content={meta.twitterImage} />
-          {meta.date && <meta property="article:published_time" content={meta.date} />}
+          {meta.date && (
+            <meta property="article:published_time" content={meta.date} />
+          )}
         </Head>
-        <div className="w-full max-w-[780px] px-6 py-0 overflow-x-hidden">
+        <div className="w-full max-w-[780px] overflow-x-hidden px-6  py-0">
           <a href="#skip" className="absolute top-[-50px] text-xs">
             Skip to content
           </a>
@@ -73,19 +88,21 @@ export default function Container(props) {
             variants={mainVariants}
             initial="hidden"
             animate="visible"
-            id="skip">
+            id="skip"
+          >
             {children}
           </motion.main>
         </div>
       </div>
 
-      <div className="flex justify-center items-baseline text-grey mt-0 mb-4 mx-4">
+      <div className="mx-4 mt-0 mb-4 flex items-baseline justify-center text-grey">
         <small className="block">
           <abbr
             title="This site and all its content are licensed under a Creative Commons Attribution-NonCommercial 4.0 International License."
-            style={{ cursor: 'help' }}>
+            style={{ cursor: "help" }}
+          >
             CC BY-NC 4.0
-          </abbr>{' '}
+          </abbr>{" "}
           <time>{year}</time> Kasper Viita
         </small>
       </div>
