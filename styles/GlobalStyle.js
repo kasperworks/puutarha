@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
     :root {
@@ -167,11 +167,6 @@ const GlobalStyle = createGlobalStyle`
     ol[class] {
       list-style: none;
       padding: 0;
-    }
-
-    a:not([class]) {
-      text-decoration-skip-ink: auto;
-      text-decoration-style: dotted;
     }
 
     a {
