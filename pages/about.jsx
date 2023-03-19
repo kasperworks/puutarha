@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
-
 import TVPic from "../public/static/images/KVBBGTV_small.png";
 import GHYle from "../public/static/images/github_yle.png";
 import ClubSnare from "../public/static/images/club_snare_medium.jpg";

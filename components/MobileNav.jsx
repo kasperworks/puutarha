@@ -1,12 +1,14 @@
 import * as React from "react";
 import Link from "next/link";
-import * as s from "../styles/Layout.styled";
 import NavMenuItems from "./NavMenuItems";
 
 const MobileNav = () => (
-  <s.NavBar className="mobile-nav">
+  <div className="relative flex w-full min-w-[250px] items-baseline pt-4 text-[1.4rem] sm:hidden">
     <div>
-      <Link href="/" className="internal-link">
+      <Link
+        href="/"
+        className="internal-link font-josefin hover:text-accent active:text-accent"
+      >
         Kasper Viita
       </Link>
     </div>
@@ -15,10 +17,13 @@ const MobileNav = () => (
     <label htmlFor="menu-toggle" id="menu-button-container">
       <div id="menu-button" />
     </label>
-    <div id="menu" className="z-10 rounded bg-obelisk pt-8 shadow-monolith">
+    <div
+      id="menu"
+      className="z-10 flex flex-col rounded bg-obelisk pt-8 shadow-monolith"
+    >
       <NavMenuItems />
     </div>
-  </s.NavBar>
+  </div>
 );
 
 export default MobileNav;
