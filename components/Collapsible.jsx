@@ -1,52 +1,25 @@
 import { useState } from "react";
-import styled from "styled-components";
 import * as CollapsiblePrimitive from "@radix-ui/react-collapsible";
 
 const Collapsible = ({ children }) => {
   const [open, setOpen] = useState(false);
 
   return (
-    <CollapsibleRoot>
-      <CollapsibleTrigger asChild>
-        <StyledRevealButton type="button" onClick={() => setOpen(!open)}>
+    <CollapsiblePrimitive.Root style={{ aspectRatio: "auto !important" }}>
+      <CollapsiblePrimitive.Trigger asChild>
+        <button
+          className="mx-0 my-[15px] w-[150px] rounded border-[none] bg-accent px-[50px] py-2.5 font-bold text-black shadow-[0_5px_0_var(--accentshadow)] hover:bg-accenthover active:translate-y-1 active:shadow-none"
+          type="button"
+          onClick={() => setOpen(!open)}
+        >
           {open ? "Hide" : "Reveal"}
-        </StyledRevealButton>
-      </CollapsibleTrigger>
-      <CollapsibleContent>{children}</CollapsibleContent>
-    </CollapsibleRoot>
+        </button>
+      </CollapsiblePrimitive.Trigger>
+      <CollapsiblePrimitive.Content className="[&>small>p]:my-5 [&>small]:text-grey">
+        {children}
+      </CollapsiblePrimitive.Content>
+    </CollapsiblePrimitive.Root>
   );
 };
-
-// Reset global style used for video container aspect ratio
-const StyledCollapsible = styled(CollapsiblePrimitive.Root)`
-  aspect-ratio: auto !important;
-`;
-
-// Radix primitives in shorter form
-const CollapsibleRoot = StyledCollapsible;
-const CollapsibleTrigger = CollapsiblePrimitive.Trigger;
-const CollapsibleContent = CollapsiblePrimitive.Content;
-
-const StyledRevealButton = styled.button`
-  background-color: var(--accent);
-  border: none;
-  color: black;
-  font-weight: 700;
-  padding: 10px 50px;
-  margin: 15px 0;
-  width: 150px;
-  border-radius: 4px;
-  box-shadow: 0 5px 0 var(--accentshadow);
-  &:active {
-    box-shadow: none;
-    transform: translateY(0.25rem);
-  }
-  @media (hover: hover) {
-    &:hover {
-      background-color: var(--accenthover);
-      color: black;
-    }
-  }
-`;
 
 export default Collapsible;

@@ -8,8 +8,8 @@
   {
     "title": "Koronavirus lukuina",
     "url": "https://yle.fi/uutiset/3-11300232",
-    "what": "Data visualization, frontend and backend",
-    "description": "Maintained and developed self-updating Covid-19 data visuals, totaling more than 100 million page views among all its parts and iterations. Planned and executed migration to DynamoDB."
+    "what": "Data visualization, DynamoDB migration",
+    "description": "Frontend and backend development for self-updating Covid-19 data dashboard, totaling more than 100 million page views among all its parts and iterations."
   },
   {
     "title": "Ilmahälytys!",

@@ -11,7 +11,7 @@ import Spacer from "../../components/Spacer";
 import Collapsible from "../../components/Collapsible";
 
 const dateBlockStyles = `text-sm pointer-events-none cursor-default -ml-2.5 mt-[3px] -mb-px pl-2.5 pr-[17px] pt-[3px] pb-px`;
-const mainBlogTextStyles = `[&>p]:my-5 [&>a]:font-bold [&>small]:text-grey [&>small>p]:my-5 [&>h5]:text-grey [&>div]:aspect-video`;
+const mainBlogTextStyles = `[&>p]:my-5 [&>a]:font-bold [&>small]:text-grey [&>small>p]:my-5 [&>h5]:text-grey`;
 
 const headerVariants = {
   hidden: {
