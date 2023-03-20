@@ -1,5 +1,3 @@
-import * as s from "../styles/WorksCard.styled";
-
 const WorksCards = ({ cards }) => (
   <div className="mx-auto my-0 mb-[30px] flex h-auto max-w-[750px] flex-col flex-wrap justify-start gap-[15px] md:flex-row">
     {cards.map((card) => {
