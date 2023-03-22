@@ -5,7 +5,6 @@ import Container from "../components/Container";
 import BlogPost from "../components/BlogPost";
 import Spacer from "../components/Spacer";
 import { getAllPosts } from "../lib/mdx";
-import * as s from "../styles/Layout.styled";
 
 const headerVariants = {
   hidden: {
@@ -33,7 +32,7 @@ export default function Blog({ posts }) {
         <motion.h1 variants={headerVariants} initial="hidden" animate="visible">
           Notes
         </motion.h1>
-        <s.TextBlock>
+        <div className="mx-0 my-[1.4rem] no-underline">
           <p>
             {`I've written ${posts.length} public notes thus far. `}
             If you&apos;re looking to read one thing, I would recommend{" "}
@@ -42,9 +41,9 @@ export default function Blog({ posts }) {
             </Link>
             .
           </p>
-        </s.TextBlock>
+        </div>
         <Spacer />
-        <s.TextBlock>
+        <div className="mx-0 my-[1.4rem] no-underline">
           {postsByDate.map((item, index) => {
             const { title, publishedAt, summary, lastUpdated } =
               item.frontmatter;
@@ -62,7 +61,7 @@ export default function Blog({ posts }) {
               />
             );
           })}
-        </s.TextBlock>
+        </div>
       </div>
     </Container>
   );

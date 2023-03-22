@@ -3,7 +3,6 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import Container from "../components/Container";
 import WorksCards from "../components/WorksCards";
-import * as s from "../styles/Layout.styled";
 
 import codingWorks from "../data/works/coding_works.json";
 
@@ -32,30 +31,32 @@ export default function Works() {
         <motion.h1 variants={headerVariants} initial="hidden" animate="visible">
           Works
         </motion.h1>
-        <s.TextBlock>
+        <div className="mx-0 my-[1.4rem] no-underline">
           A few picks among published code output, baked into news stories.
           Mostly in Finnish:
-        </s.TextBlock>
+        </div>
       </div>
       <WorksCards cards={codingWorks} />
 
-      <s.TextBlock>
+      <div className="mx-0 my-[1.4rem] no-underline">
         <blockquote>
           If you&apos;re curious about the implementation of this site, have a
           look at the{" "}
           <Link
+            className="underline decoration-dotted"
             href="https://github.com/kasperworks/puutarha"
             target="_blank"
             rel="noopener noreferrer"
           >
             repo
           </Link>
-          . The key tools are React, Next.js, MDX, Styled Components and Framer
-          Motion. Tailwind CSS migration is underway.
+          . The key tools are React, Next.js, MDX, Tailwind CSS and Framer
+          Motion. A migration from Styled Components was completed in March
+          2023.
         </blockquote>
-      </s.TextBlock>
+      </div>
 
-      <s.TextBlock>
+      <div className="mx-0 my-[1.4rem] no-underline">
         Stories written as a reporter can be found{" "}
         <Link
           href="https://muckrack.com/kasper-viita/portfolio"
@@ -65,7 +66,7 @@ export default function Works() {
           here
         </Link>
         .
-      </s.TextBlock>
+      </div>
     </Container>
   );
 }

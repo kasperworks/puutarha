@@ -1,7 +1,7 @@
 import Link from "next/link";
+import { motion } from "framer-motion";
 import Container from "../components/Container";
 import { getAllPosts } from "../lib/mdx";
-import * as s from "../styles/Index.styled";
 
 const headerVariants = {
   hidden: {
@@ -27,27 +27,28 @@ const headerVariants = {
 export default function Introduction() {
   return (
     <Container>
-      <s.HeaderEmoji
+      <motion.h1
+        className="text-shadow w-1/5 cursor-grab font-normal hue-rotate-[340deg] sepia-[45%]"
         variants={headerVariants}
         whileTap="tap"
         initial="hidden"
         animate="visible"
       >
         👋
-      </s.HeaderEmoji>
+      </motion.h1>
 
-      <s.IndexTextBlock>
+      <div className="mx-0 my-[1.4rem] no-underline">
         <p>Hi! I&apos;m Kasper, a journalist and a programmer.</p>
-      </s.IndexTextBlock>
+      </div>
 
-      <s.IndexTextBlock>
+      <div className="mx-0 my-[1.4rem] no-underline">
         <p>
           This is a workshop with an open door. My digital garden. You&apos;ll
           find some scattered notes and links here, loosely related to my
           efforts to master the skills of a software engineer.
         </p>
-      </s.IndexTextBlock>
-      <s.IndexTextBlock>
+      </div>
+      <div className="mx-0 my-[1.4rem] no-underline">
         <p>
           I switched careers in 2021, mid-pandemic, after nearly a decade in
           financial journalism. Following about a year of determined self-study,
@@ -58,8 +59,8 @@ export default function Introduction() {
           to a professional programming role, changing employers and countries
           in the process.
         </p>
-      </s.IndexTextBlock>
-      <s.IndexTextBlock>
+      </div>
+      <div className="mx-0 my-[1.4rem] no-underline">
         <p>
           I&apos;ve benefited greatly from a wealth of free resources and
           open-source software, and would like to contribute in turn. If you are
@@ -69,13 +70,13 @@ export default function Introduction() {
           </Link>{" "}
           of assets based on what worked for me. It comes with a few pointers.
         </p>
-      </s.IndexTextBlock>
-      <s.IndexTextBlock>
+      </div>
+      <div className="mx-0 my-[1.4rem] no-underline">
         <p>
           Have a look around, any tools or useful thoughts you come across are
           yours to keep.
         </p>
-      </s.IndexTextBlock>
+      </div>
     </Container>
   );
 }

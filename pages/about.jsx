@@ -4,7 +4,6 @@ import TVPic from "../public/static/images/KVBBGTV_small.png";
 import GHYle from "../public/static/images/github_yle.png";
 import ClubSnare from "../public/static/images/club_snare_medium.jpg";
 import Container from "../components/Container";
-import * as s from "../styles/Layout.styled";
 import Spacer from "../components/Spacer";
 
 const headerVariants = {
@@ -29,14 +28,14 @@ export default function About() {
         <motion.h1 variants={headerVariants} initial="hidden" animate="visible">
           About Me
         </motion.h1>
-        <s.TextBlock>
+        <div className="mx-0 my-[1.4rem] no-underline">
           <p>
             I wrote about financial markets and related topics for nine years
             before pivoting to programming. These days, I can be found designing
             an interactive data visualization or tinkering with a cloud-service
             script for the Yle newsroom.
           </p>
-        </s.TextBlock>
+        </div>
         <div style={{ position: "relative", overflow: "hidden" }}>
           <Image
             alt="GitHub screenshot after joining Yle, Finland's national public-service broadcasting company"
@@ -46,14 +45,14 @@ export default function About() {
             style={{ maxWidth: "100%", height: "auto" }}
           />
         </div>
-        <s.TextBlock>
+        <div className="mx-0 my-[1.4rem] no-underline">
           <p>
             In the past, you might have caught me on Bloomberg TV or radio,
             talking about the latest earnings season, an industry trend or an
             acquisition announced earlier that morning. I also wrote a lot about
             such topics during my stints in Helsinki and London.
           </p>
-        </s.TextBlock>
+        </div>
         <div style={{ position: "relative", overflow: "hidden" }}>
           <Image
             alt="Picture of Kasper speaking on Bloomberg TV"
@@ -63,11 +62,11 @@ export default function About() {
             style={{ maxWidth: "100%", height: "auto" }}
           />
         </div>
-        <s.TextBlock>
+        <div className="mx-0 my-[1.4rem] no-underline">
           <p>
             Before that, I used to DJ, write record reviews and design flyers.
           </p>
-        </s.TextBlock>
+        </div>
         <div style={{ position: "relative", overflow: "hidden" }}>
           <Image
             alt="A self-designed club-night poster with a space shuttle flying over a cassette tape"
