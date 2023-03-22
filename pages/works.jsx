@@ -51,8 +51,16 @@ export default function Works() {
             repo
           </Link>
           . The key tools are React, Next.js, MDX, Tailwind CSS and Framer
-          Motion. A migration from Styled Components was completed in March
-          2023.
+          Motion. A{" "}
+          <Link
+            className="underline decoration-dotted"
+            href="https://github.com/kasperworks/puutarha/commit/7f40dff34f015d9db8e554a1aeb724a38e7a5e47"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            migration
+          </Link>{" "}
+          from Styled Components was completed in March 2023.
         </blockquote>
       </div>
 
