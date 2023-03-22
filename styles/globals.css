@@ -59,6 +59,7 @@ body {
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   scrollbar-width: thin;
   scrollbar-color: var(--darkgreen) var(--codeblock);
+  overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {

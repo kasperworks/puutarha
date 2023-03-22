@@ -11,4 +11,8 @@ module.exports = {
     // Allow production builds to successfully complete even with ESLint errors.
     ignoreDuringBuilds: true,
   },
+  i18n: {
+    locales: ["en"],
+    defaultLocale: "en",
+  },
 };
