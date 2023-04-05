@@ -70,6 +70,7 @@ export default function Works() {
           href="https://muckrack.com/kasper-viita/portfolio"
           target="_blank"
           rel="noopener noreferrer"
+          className="underline decoration-dotted"
         >
           here
         </Link>

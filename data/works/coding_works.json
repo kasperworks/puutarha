@@ -18,6 +18,12 @@
     "description": "Scrollable 3D implementation of a bomb shelter in Lviv, western Ukraine. Made with react-three-fiber."
   },
   {
+    "title": "Hallituspeli",
+    "url": "https://yle.fi/a/74-20024776",
+    "what": "Create your own government",
+    "description": "A game to explore party coalitions after the Finnish parliamentary election of spring 2023."
+  },
+  {
     "title": "Student loan calculator",
     "url": "https://yle.fi/a/74-20014600",
     "what": "Taking input, producing output",
