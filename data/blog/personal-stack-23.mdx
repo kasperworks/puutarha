@@ -44,6 +44,7 @@ From bundling to UI frameworks to backend infrastructure, the all-star team to b
 
 - [**`Planetscale`**](#planetscale)
 - [**`tRPC`**](#trpc)
+- [**`Auth.js`**](#authjs)
 
 [Eyeing](#eyeing)
 
@@ -108,9 +109,10 @@ It is one abstraction level higher from AWS Cloud Development Kit (CDK), which a
 That means setting up a database and directing authorized traffic to it via backend functions, as well as tearing it all down with a single shell command.
 
 As with other IaC tools, the main idea is that all the resources are defined with code and then created on the platform.
-In this case the vast, nigh-impenetrable jungle that is Amazon Web Services. With a serverless approach, even a small application is a compound of multiple resources. SST makes managing all this
-very pleasant. I've shipped serverless backends to production for millions of users with the SST beta version as well as v1, and I'm looking forward to doing more
-of that with the recent v2 update. There's support for Vite, Astro, Next.js and much more.
+The platform, in this case, is the vast, nigh-impenetrable jungle that is Amazon Web Services. With a serverless approach, even a small application is a compound of multiple resources.
+
+SST makes managing all this very pleasant. I've shipped serverless backends to production that served data seen by millions, first with the SST beta version, then the v1,
+and I'm looking forward to doing more of that with the recent v2 update. There's support for Vite, Astro, Next.js and much more.
 
 ### **Vercel/Netlify**
 
@@ -130,6 +132,11 @@ looks particularly interesting combined with [Drizzle ORM](https://github.com/dr
 
 [This](https://trpc.io/docs/) is one of those things that really opened my eyes on the possibilities of TypeScript. Having IDE validation between
 the frontend and the backend? Wow. Plays well with Next.js.
+
+### **Auth.js**
+
+[Auth.js](https://authjs.dev/) looks like a very nice way to solve recurring authentication problems. Pluggable into DynamoDB,
+Fauna, Supabase, Sveltekit, SolidStart and so on. I'm curious to see how SST's auth solution matches up.
 
 ## Eyeing
 
