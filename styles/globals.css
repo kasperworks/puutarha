@@ -184,6 +184,7 @@ em {
 
 li {
   list-style: square;
+  margin-left: 1.2rem;
 }
 
 strong {
