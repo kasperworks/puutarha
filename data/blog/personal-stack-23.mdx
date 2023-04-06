@@ -1,0 +1,125 @@
+---
+title: My Tech Stack in 2023
+publishedAt: "2023-04-06"
+summary: "Current tools, future tools: an opinionated overview of the JavaScript ecosystem. Not an AI post."
+tags: ["resources", "js", "programming", "career"]
+---
+
+Programming has been my main source of income for two years now.
+
+My biggest meta bet as a programmer is on the browser, and these tools are meant for building things that run in web browsers for years to come.
+
+I'm fortunate enough to have a working environment where I'm encouraged to push small, experimental things to production,
+and constantly explore new ways of doing things. That makes for a rapid feedback cycle, or an [OODA loop](https://en.wikipedia.org/wiki/OODA_loop),
+or what [Bret Victor](https://www.youtube.com/watch?v=EGqwXt90ZqA) was talking about. Quick iteration, taking cues on how what you're doing impacts where it arrives.
+Optimizing flow and [sharpening intuition](/blog/insight-cascades-pt-1).
+
+I'm not going to talk about AI or large language models here, that's a whole topic in itself. ChatGPT is a tool I like using
+to help me learn and reduce boilerplate code, but it's yet to transform how I ship code every day.
+I assume this will change in the near future, but that future will probably involve these tools in some way. I'm also writing my own blog posts,
+for better and for worse.
+
+This is an opinioned list of tools I enjoy using in personal and professional projects right now, followed by what I'm learning as the next step.
+
+- [**`Vite`**](#vite)
+- [**`TypeScript`**](#typescript)
+- [**`Tailwind CSS`**](#tailwind-css)
+- [**`shadcn/ui`**](#shadcn-ui)
+- [**`Next.js`**](#nextjs)
+- [**`react-three-fiber`**](#react-three-fiber)
+- [**`SolidJS`**](#solidjs)
+- [**`Astro`**](#astro)
+- [**`zod`**](#zod)
+- [**`SST`**](#sst)
+- [**`Vercel/Netlify`**](#vercelnetlify)
+
+- [**`Planetscale`**](#planetscale)
+- [**`tRPC`**](#trpc)
+- [**`Bling`**](#bling)
+
+## Shipping
+
+### **`Vite`**
+
+Most of the things I publish in my day-to-day work run on [Vite](https://vitejs.dev/). Whether it's a React or a SolidJS app, last year I built templates internally to migrate away from Webpack
+and it's been a very positive change. Everything is a bit snappier and easier to configure. An absolute cornerstone of my coding work.
+
+### **`TypeScript`**
+
+I'm a recent convert. Typed API calls with autocomplete directly in the code editor? Yes please! I still sometimes write a cheeky prototype in JavaScript, and I'm certainly not an expert in [TypeScript](https://www.typescriptlang.org/docs/),
+but that's the beauty of it: you can go all-out or use just a little bit where you need. It makes collaboration easier, but it's sometimes very much worth it even solo.
+
+### **`Tailwind CSS`**
+
+Effortless prototyping. Almost everything I do is a prototype in some sense, and [Tailwind](https://tailwindcss.com/) allows me to implement styles quicker than any other way I've tried.
+I can read the HTML and see the page in my head, that feels amazing. I recently converted this site from Styled Components to Tailwind,
+and I think that makes maintenance easier going forward, not to mention lightens the JS burden.
+
+### **`shadcn/ui`**
+
+A beautiful [combination](https://ui.shadcn.com/) of Radix UI and Tailwind, providing source code for accessible and good-looking components that you can style as you please.
+Makes recurring UI patterns like modals and accordions so easy and nice to implement and customize.
+
+### **`Next.js`**
+
+This blog is built on [Next.js](https://nextjs.org/docs). It could be on Astro as well, and maybe someday I'll convert it. But I like Next.js, especially for apps that need a little bit of
+backend functionality. It's pleasant to use and performant, it abstracts away a lot of little things that I'd prefer not to focus on when looking to build something new.
+
+I'm not yet sold on the App Router or React Server Components, but I don't think anyone should hold back on adopting Next.js because of that. The Next 12 way of doing things works just fine in
+Next 13. It does a lot of things really well, and now there's a handy way to deploy Next apps outside of Vercel too. More on that later in this list...
+
+### **`react-three-fiber`**
+
+I still like working with React, especially when doing 3D stuff! [React-three-fiber](https://docs.pmnd.rs/react-three-fiber) is such a wonderful library wrapping Three.js inside React.
+Poimandres is one of the best open-source collectives around and they deserve all praises and support coming their way.
+
+### **`SolidJS`**
+
+However, in 2022, I gradually started migrating from React toward [SolidJS](https://www.solidjs.com/). During the second half of 2022, the majority of apps I wrote for a variety of news articles
+and services were in SolidJS. From little games to calculators to data visualizations, it's a joy to build stuff with.
+The supporting libraries are getting better all the time, too. A special shout-out to [`solid-js/primitives`](https://github.com/solidjs-community/solid-primitives).
+
+### **`Astro`**
+
+[Astro](https://astro.build/) is another tool I've only recently started shipping stuff with, and it's been a similar revelation to SolidJS. Everything is just easy, and performant,
+and lightweight. I'd still pick Next.js for more complex apps, but Astro is a clear winner when it comes to static sites. Works so nicely with SolidJS too.
+Here's [a recent example](http://plus.yle.fi/) I did -- in Finnish only at this point I'm afraid!
+
+### **`zod`**
+
+[Zod](https://github.com/colinhacks/zod) is an easy and understandable validation library. Works best with TypeScript, but I've used it with JavaScript too. Simple and wonderful.
+
+### **`SST`**
+
+[SST](https://docs.sst.dev/) is the easiest way to build serverless infrastructure on AWS. It's the most approachable toolkit, yet one of the most powerful ones.
+It is one abstraction level higher from AWS Cloud Development Kit (CDK), which allows writing infrastructure as code (IaC).
+That means setting up a database and directing authorized traffic to it via backend functions, as well as tearing it all down with a single shell command.
+
+As with other IaC tools, the main idea is that all the resources are defined with code and then created on the platform.
+In this case the vast, nigh-impenetrable jungle that is Amazon Web Services. With a serverless approach, even a small application is a compound of multiple resources. SST makes managing all this
+very pleasant. I've shipped serverless backends to production for millions of users with the SST beta version as well as v1, and I'm looking forward to doing more
+of that with the recent v2 update. There's support for Vite, Astro, Next.js and much more.
+
+### **`Vercel/Netlify`**
+
+Easy hosting. If it's a personal project that I want to try out quickly, I usually initialize the repo, get it on GitHub and plug the repo into one of these two services.
+That way you get immediate feedback on each commit, and whether your code actually works in its intended environment. I don't see a huge difference in these, both are sterling options
+and largely up to personal taste.
+
+## Exploring
+
+### **`Planetscale`**
+
+DynamoDB on AWS is a nice database that I've used with success in the past, but there's a bit of a learning curve.
+[Planetscale](https://planetscale.com/) looks like the optimal SQL database for serverless applications. My initial impressions are very positive,
+looks particularly interesting combined with [Drizzle ORM](https://github.com/drizzle-team/drizzle-orm).
+
+### **`tRPC`**
+
+[This](https://trpc.io/docs/) is one of those things that really opened my eyes on the possibilities of TypeScript. Having IDE validation between
+the frontend and the backend? Wow. Plays well with Next.js.
+
+### **`Bling`**
+
+I'm keeping a close eye on [Bling](https://github.com/TanStack/bling), not least because everything made by Tanner Linsley tends to be great. A framework-agnostic
+way to bring together server-side and client-side code.
