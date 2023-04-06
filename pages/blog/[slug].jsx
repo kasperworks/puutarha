@@ -42,7 +42,9 @@ const mainVariants = {
 };
 
 const YTPlayer = ({ url }) => (
-  <ReactPlayer light url={url} width="100%" height="auto" />
+  <div className="aspect-video">
+    <ReactPlayer light url={url} width="100%" height="100%" />
+  </div>
 );
 
 const CustomLink = ({ children, href }) => {
