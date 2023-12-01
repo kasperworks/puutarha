@@ -45,5 +45,11 @@
     "title": "Mitä jää",
     "what": "An experimental photo layout",
     "description": "Designed and implemented a layout for a climate-change article shot in Svalbard. The Society of News Design awarded a bronze medal to the story in 2021."
+  },
+  {
+    "title": "Nimesi huippuhetket",
+    "url": "https://yle.fi/uutiset/3-11693006",
+    "what": "Dynamic data visualizations",
+    "description": "Visualizing first names in Finland from 1900–2020, a variety of widgets and interactive graphics. The very first thing I got paid to code!"
   }
 ]
