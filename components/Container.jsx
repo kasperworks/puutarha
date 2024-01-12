@@ -35,7 +35,7 @@ export default function Container(props) {
 
   return (
     <>
-      <div className="site-wrapper mx-auto mt-0 mb-8 flex min-h-screen w-full max-w-[1232px] flex-col items-center bg-background py-2 shadow-[0_0_5px_3px_rgba(0,0,0,0.45)]">
+      <div className="site-wrapper mx-auto mb-8 mt-0 flex min-h-screen w-full max-w-[1232px] flex-col items-center bg-background py-2 shadow-[0_0_5px_3px_rgba(0,0,0,0.45)]">
         <Head>
           <title>{meta.title}</title>
           <meta name="robots" content="follow, index" />
@@ -95,7 +95,7 @@ export default function Container(props) {
         </div>
       </div>
 
-      <div className="mx-4 mt-0 mb-4 flex items-baseline justify-center text-grey">
+      <div className="mx-4 mb-4 mt-0 flex items-baseline justify-center text-grey">
         <small className="block">
           <abbr
             title="This site and all its content are licensed under a Creative Commons Attribution-NonCommercial 4.0 International License."
