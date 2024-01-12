@@ -70,16 +70,11 @@ const CustomLink = ({ children, href }) => {
   );
 };
 
-/* const MAX_IMAGE_WIDTH = 780;
- */
 const Post = ({ code, frontmatter }) => {
   const Component = React.useMemo(() => getMDXComponent(code), [code]);
 
   return (
-    <Container
-      title={`${frontmatter.title} / Kasper Viita`}
-      description={frontmatter.summary}
-    >
+    <Container title={frontmatter.title} description={frontmatter.summary}>
       <div>
         <motion.h1
           variants={headerVariants}
