@@ -38,14 +38,18 @@ export default function Introduction() {
       </motion.h1>
 
       <div className="mx-0 my-[1.4rem] no-underline">
-        <p>Hi! I&apos;m Kasper, a journalist and a programmer.</p>
+        <p>
+          Hi! I&apos;m Kasper, a journalist and a programmer, a father and a
+          writer.
+        </p>
       </div>
 
       <div className="mx-0 my-[1.4rem] no-underline">
         <p>
           This is a workshop with an open door. My digital garden. You&apos;ll
-          find some scattered notes and links here, loosely related to my
-          efforts to master the skills of a software engineer.
+          find some scattered notes and links here, some of them are related to
+          my efforts to master the skills of a software engineer. Others are
+          more general musings about life.
         </p>
       </div>
       <div className="mx-0 my-[1.4rem] no-underline">
