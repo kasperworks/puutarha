@@ -6,16 +6,33 @@
     "description": "A site for our team, with an updating article list, including mine. Made with Astro, SolidJS, Tailwind CSS and TypeScript."
   },
   {
+    "title": "U.S. elections 2024",
+    "url": "https://yle.fi/a/74-20126215",
+    "what": "Backend and frontend development",
+    "description": "Designed and implemented a serverless backend on AWS powering live coverage on web and broadcast TV."
+  },
+  {
     "title": "Koronavirus lukuina",
     "url": "https://yle.fi/uutiset/3-11300232",
     "what": "Data visualization, DynamoDB migration",
     "description": "Frontend and backend development for self-updating Covid-19 data dashboard, totaling more than 100 million page views among all its parts and iterations."
   },
   {
-    "title": "Ilmahälytys!",
-    "url": "https://yle.fi/uutiset/3-12418130",
-    "what": "Lidar-scanned 3D visualization",
-    "description": "Scrollable 3D implementation of a bomb shelter in Lviv, western Ukraine. Made with react-three-fiber."
+    "title": "Musapeli",
+    "url": "https://yle.fi/a/74-20064902",
+    "what": "A game to test your musicality",
+    "description": "Can you tell the difference between a major and a minor chord, pitches and instruments? A game to test your musical ear. Uses Tone.js."
+  },
+  {
+    "title": "Kadonnut linnoitus",
+    "url": "https://yle.fi/a/74-20048961",
+    "what": "Photogrammetry, 3D visualization",
+    "description": "A 3D model of a fortification in the Helsinki capital region. Made with Polycam, Blender and react-three-fiber."
+  },
+  {
+    "title": "Mitä jää",
+    "what": "An experimental photo layout",
+    "description": "Designed and implemented a layout for a climate-change article shot in Svalbard. The Society of News Design awarded a bronze medal to the story in 2021."
   },
   {
     "title": "Hallituspeli",
@@ -24,27 +41,10 @@
     "description": "A game to explore party coalitions after the Finnish parliamentary election of spring 2023."
   },
   {
-    "title": "Student loan calculator",
-    "url": "https://yle.fi/a/74-20014600",
-    "what": "Taking input, producing output",
-    "description": "A widget to calculate and visualize the effect of interest and government subsidies on student loan repayments."
-  },
-  {
-    "title": "Unelmasta painajaiseksi",
-    "url": "https://yle.fi/urheilu/3-11999560",
-    "what": "Quiz elements and data visualizations",
-    "description": "Visualizing the increasing cost of the Olympics over decades."
-  },
-  {
     "title": "Kaltoin kohdellut",
     "url": "https://yle.fi/uutiset/3-12360893",
     "what": "Data wrangling, interactive elements",
-    "description": "Extracting and analyzing data from five years of district-court documents on animal-abuse cases."
-  },
-  {
-    "title": "Mitä jää",
-    "what": "An experimental photo layout",
-    "description": "Designed and implemented a layout for a climate-change article shot in Svalbard. The Society of News Design awarded a bronze medal to the story in 2021."
+    "description": "Extracting and analyzing data from five years of district-court documents on animal-abuse cases. Utilized OCR tools."
   },
   {
     "title": "Nimesi huippuhetket",
