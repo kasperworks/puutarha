@@ -92,6 +92,20 @@ body::-webkit-scrollbar-thumb {
     0px -5px 35px rgba(255, 255, 255, 0.12);
 }
 
+.navbar {
+  font-family:
+    "Josefin Sans",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Helvetica,
+    Arial,
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol";
+}
+
 h1 {
   margin: 0.9375em 0 0 0;
   font-size: 2.25rem;
@@ -208,7 +222,7 @@ strong {
   color: var(--accent);
 }
 
-.react-player__preview {
+.youtube-player__preview {
   aspect-ratio: 16 / 9;
   border-radius: 4px;
   background: var(--darkgreen);

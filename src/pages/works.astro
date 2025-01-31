@@ -2,10 +2,7 @@
 import Document from '../layouts/Document.astro';
 import WorksCards from '../components/WorksCards.astro';
 import type { WorkCard } from '../types';
-import codingWorks from '../content/works/coding_works.json' assert { type: 'json' };
-
-// Type assertion for the imported JSON
-const typedCodingWorks = codingWorks as WorkCard[];
+import codingWorks from '../content/works/coding_works.json';
 ---
 
 <Document
@@ -18,7 +15,7 @@ const typedCodingWorks = codingWorks as WorkCard[];
     </div>
   </div>
 
-  <WorksCards cards={typedCodingWorks} />
+  <WorksCards cards={codingWorks} />
 
   <div class="mx-0 my-[1.4rem] no-underline">
     <blockquote>

@@ -2,6 +2,8 @@
 import { type CollectionEntry, getCollection } from 'astro:content';
 import BlogPost from '../../layouts/BlogPost.astro';
 import { render } from 'astro:content';
+import YTPlayer from '../../components/YTPlayer';
+import Spacer from '../../components/Spacer.astro';
 
 export async function getStaticPaths() {
 	const posts = await getCollection('blog');
@@ -14,8 +16,14 @@ type Props = CollectionEntry<'blog'>;
 
 const post = Astro.props;
 const { Content } = await render(post);
+
+// Custom components for MDX
+const components = {
+	YTPlayer: YTPlayer,
+  Spacer: Spacer
+};
 ---
 
 <BlogPost {...post.data}>
-	<Content />
+	<Content components={components} />
 </BlogPost>

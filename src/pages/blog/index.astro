@@ -28,7 +28,7 @@ const postsByDate = posts.sort(
 				<BlogPostLink
 					title={post.data.title}
 					publishedAt={post.data.publishedAt}
-					lastUpdated={post.data.lastUpdated ? new Date(post.data.lastUpdated) : undefined}
+					lastUpdated={post.data.lastUpdated ? post.data.lastUpdated : undefined}
 					summary={post.data.summary}
 					slug={post.id}
 					index={index}

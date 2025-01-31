@@ -1,11 +1,12 @@
 ---
-import { type WorkCard } from "../types"
+import type { WorkCard } from '../types';
 
 type Props = {
   cards: WorkCard[];
 }
 
 const { cards } = Astro.props;
+console.log("🛠 ~ cards:", cards)
 ---
 
 <div class="mx-auto my-0 mb-[30px] flex h-auto max-w-[750px] flex-col flex-wrap justify-start gap-[15px] md:flex-row">
