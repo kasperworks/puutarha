@@ -1,0 +1,54 @@
+---
+import Document from '../layouts/Document.astro';
+import WorksCards from '../components/WorksCards.astro';
+import type { WorkCard } from '../types';
+import codingWorks from '../content/works/coding_works.json' assert { type: 'json' };
+
+// Type assertion for the imported JSON
+const typedCodingWorks = codingWorks as WorkCard[];
+---
+
+<Document
+>
+  <div>
+    <h1 class="fade-in">Works</h1>
+    <div class="mx-0 my-[1.4rem] no-underline">
+      A few picks among published code output, baked into news stories.
+      Mostly in Finnish:
+    </div>
+  </div>
+
+  <WorksCards cards={typedCodingWorks} />
+
+  <div class="mx-0 my-[1.4rem] no-underline">
+    <blockquote>
+      If you're curious about the implementation of this site, have a
+      look at the <a
+        class="underline decoration-dotted"
+        href="https://github.com/kasperworks/puutarha"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        repo
+      </a>. The key tools are Astro, SolidJS, Tailwind CSS and TypeScript. A <a
+        class="underline decoration-dotted"
+        href="https://github.com/kasperworks/puutarha/commit/7f40dff34f015d9db8e554a1aeb724a38e7a5e47"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        migration
+      </a> from Next.js was completed in 2024.
+    </blockquote>
+  </div>
+
+  <div class="mx-0 my-[1.4rem] no-underline">
+    Stories written as a reporter can be found <a
+      href="https://muckrack.com/kasper-viita/portfolio"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="underline decoration-dotted"
+    >
+      here
+    </a>.
+  </div>
+</Document> 
