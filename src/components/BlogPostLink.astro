@@ -1,8 +1,8 @@
 ---
 interface Props {
   title: string;
-  publishedAt: Date;
-  lastUpdated?: Date;
+  publishedAt: string;
+  lastUpdated?: string;
   summary: string;
   slug: string;
   index: number;
@@ -20,8 +20,8 @@ const lastPost = index - amountOfPosts === -1;
         {title}
       </h4>
       <small class="flex justify-between text-grey">
-        {publishedAt.toLocaleDateString()}
-        {lastUpdated && <span> Updated: {lastUpdated.toLocaleDateString()}</span>}
+        {publishedAt}
+        {lastUpdated && <span> Updated: {lastUpdated}</span>}
       </small>
     </div>
     <p>{summary}</p>

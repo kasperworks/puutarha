@@ -11,7 +11,7 @@ const postsByDate = posts.sort(
 
 <Document title="Blog / Kasper Viita" description="Assorted notes">
 	<div>
-		<h1>Notes</h1>
+		<h1 class="fade-in">Notes</h1>
 		<div class="mx-0 my-[1.4rem] no-underline">
 			<p>
 				{`I've written ${posts.length} public notes thus far. `}
@@ -27,7 +27,7 @@ const postsByDate = posts.sort(
 			{postsByDate.map((post, index) => (
 				<BlogPostLink
 					title={post.data.title}
-					publishedAt={new Date(post.data.publishedAt)}
+					publishedAt={post.data.publishedAt}
 					lastUpdated={post.data.lastUpdated ? new Date(post.data.lastUpdated) : undefined}
 					summary={post.data.summary}
 					slug={post.id}
