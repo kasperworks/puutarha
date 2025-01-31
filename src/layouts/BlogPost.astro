@@ -4,82 +4,72 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
+import Document from './Document.astro';
 
 type Props = CollectionEntry<'blog'>['data'];
 
-const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+const { title, summary, publishedAt, lastUpdated, tags } = Astro.props;
+
+
+/* class={mainBlogTextStyles}
+    variants={mainVariants}
+    initial="hidden"
+    animate="visible" 
+    
+    
+      variants={headerVariants}
+      initial="hidden"
+      animate="visible"*/
+
+const dateBlockStyles = `text-sm pointer-events-none cursor-default -ml-2.5 mt-[3px] -mb-px pl-2.5 pr-[17px] pt-[3px] pb-px`;
+const mainBlogTextStyles = `[&>p]:my-5 [&>a]:font-bold [&>small]:text-grey [&>small>p]:my-5 [&>h5]:text-grey`;
+
 ---
+<Document>
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <div>
+    <h1
+      class="mx-0 mt-[0.9375em] pb-5 font-josefin text-4xl leading-[1.33em] text-[color:var(--accent)]"
+    >
+      {title}
+    </h1>
+  </div>
 
-<html lang="en">
-	<head>
-		<BaseHead title={title} description={description} />
-		<style>
-			main {
-				width: calc(100% - 2em);
-				max-width: 100%;
-				margin: 0;
-			}
-			.hero-image {
-				width: 100%;
-			}
-			.hero-image img {
-				display: block;
-				margin: 0 auto;
-				border-radius: 12px;
-				box-shadow: var(--box-shadow);
-			}
-			.prose {
-				width: 720px;
-				max-width: calc(100% - 2em);
-				margin: auto;
-				padding: 1em;
-				color: rgb(var(--gray-dark));
-			}
-			.title {
-				margin-bottom: 1em;
-				padding: 1em 0;
-				text-align: center;
-				line-height: 1;
-			}
-			.title h1 {
-				margin: 0 0 0.5em 0;
-			}
-			.date {
-				margin-bottom: 0.5em;
-				color: rgb(var(--gray));
-			}
-			.last-updated-on {
-				font-style: italic;
-			}
-		</style>
-	</head>
-
-	<body>
-		<Header />
-		<main>
-			<article>
-				<div class="hero-image">
-					{heroImage && <img width={1020} height={510} src={heroImage} alt="" />}
-				</div>
-				<div class="prose">
-					<div class="title">
-						<div class="date">
-							<FormattedDate date={pubDate} />
-							{
-								updatedDate && (
-									<div class="last-updated-on">
-										Last updated on <FormattedDate date={updatedDate} />
-									</div>
-								)
-							}
-						</div>
-						<h1>{title}</h1>
-						<hr />
-					</div>
-					<slot />
-				</div>
-			</article>
-		</main>
-		<Footer />
-	</body>
-</html>
+  <div class="pb-2">
+    <div class="pb-4">
+      <em class={`${dateBlockStyles} mr-3`}>
+        Published: {publishedAt}
+      </em>
+      {lastUpdated && (
+        <em class={`${dateBlockStyles} text-green`}>
+          Updated: {lastUpdated}
+        </em>
+      )}
+    </div>
+    <div class="ml-[-20px]  rounded bg-codeblock p-5 text-2xl shadow-md">
+      <p>{summary}</p>
+    </div>
+  </div>
+  <div
+  >
+  <slot />
+  </div>
+  <div class="mt-10 flex gap-2.5 text-base">
+    Topics:
+    {tags &&
+      tags.map((item) => (
+        <span
+          class="rounded bg-codeblock px-2 py-0 shadow-md"
+        >
+          {item}
+        </span>
+      ))}
+  </div>
+  <div class="mx-0 mb-8 mt-14 flex w-full justify-center rounded bg-codeblock p-3 no-underline shadow">
+    <a class="hover:text-accent" href="/blog">
+      More notes
+    </a>
+  </div>
+</Document>

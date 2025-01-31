@@ -1,0 +1,30 @@
+---
+interface Props {
+  title: string;
+  publishedAt: Date;
+  lastUpdated?: Date;
+  summary: string;
+  slug: string;
+  index: number;
+  amountOfPosts: number;
+}
+
+const { title, publishedAt, lastUpdated, summary, slug, index, amountOfPosts } = Astro.props;
+const lastPost = index - amountOfPosts === -1;
+---
+
+<div class="my-4">
+  <a href={`/blog/${slug}`}>
+    <div>
+      <h4 class="text-shadow text-2xl font-bold hover:text-accent active:text-accent">
+        {title}
+      </h4>
+      <small class="flex justify-between text-grey">
+        {publishedAt.toLocaleDateString()}
+        {lastUpdated && <span> Updated: {lastUpdated.toLocaleDateString()}</span>}
+      </small>
+    </div>
+    <p>{summary}</p>
+  </a>
+</div>
+{!lastPost && <hr />} 
