@@ -1,0 +1,18 @@
+---
+const menuItems = [
+  { href: "/blog", text: "Notes" },
+  { href: "/works", text: "Works" },
+  { href: "/about", text: "About" },
+];
+---
+
+{
+  menuItems.map((item) => (
+    <a
+      href={item.href}
+      class="internal-link font-josefin hover:text-accent active:text-accent"
+    >
+      {item.text}
+    </a>
+  ))
+} 

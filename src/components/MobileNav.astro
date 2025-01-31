@@ -1,0 +1,24 @@
+---
+import NavMenuItems from "./NavMenuItems.astro";
+---
+
+<div class="relative flex w-full min-w-[250px] items-baseline pt-4 text-[1.4rem] sm:hidden">
+  <div>
+    <a
+      href="/"
+      class="internal-link font-josefin hover:text-accent active:text-accent"
+    >
+      Kasper Viita
+    </a>
+  </div>
+  <input id="menu-toggle" type="checkbox" />
+  <label for="menu-toggle" id="menu-button-container">
+    <div id="menu-button"></div>
+  </label>
+  <div
+    id="menu"
+    class="z-10 flex flex-col rounded bg-obelisk pt-8 shadow-monolith"
+  >
+    <NavMenuItems />
+  </div>
+</div> 
