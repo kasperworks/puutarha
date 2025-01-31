@@ -4,6 +4,8 @@ This is my personal site, [kasper.works](https://kasper.works).
 
 ## Tooling
 
+_This branch is for Astro migration_
+
 The site is built with Next.js, Tailwind CSS, Framer Motion
 and a few other libraries. All blog posts are in MDX form,
 which allows using React components inside Markdown files.
@@ -26,8 +28,11 @@ The site is hosted on Vercel, DNS handled by Cloudflare.
 
 ## Other
 
-A migration from Styled Components was completed in March 2023.
+The blog was first built in Next.js, my first real project on that framework, thus it's almost certainly
+not a showcase of best practices.
 
-This is my first real project on Next.js, thus it's almost certainly
-not a showcase of best practices. However, it is functional and it looks good.
-Most importantly, it provides me a platform to write on.
+Most importantly, it provided me a platform to write on.
+
+A migration from Styled Components to TailwindCSS was completed in March 2023.
+
+I started an Astro migration in early 2025, also converting to SolidJS and TypeScript, which had become my tools of choice at work, too. Tailwind v4 upgrade too, because why not.

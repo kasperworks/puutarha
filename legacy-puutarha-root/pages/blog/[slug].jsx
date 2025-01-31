@@ -123,7 +123,7 @@ const Post = ({ code, frontmatter }) => {
             </span>
           ))}
       </div>
-      <div className="mx-0 mb-8 mt-14 flex w-full justify-center rounded bg-codeblock p-3 no-underline shadow-sm">
+      <div className="mx-0 mb-8 mt-14 flex w-full justify-center rounded bg-codeblock p-3 no-underline shadow">
         <Link className="hover:text-accent" href="/blog">
           More notes
         </Link>
