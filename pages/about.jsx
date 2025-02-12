@@ -31,15 +31,26 @@ export default function About() {
         <div className="mx-0 my-[1.4rem] no-underline">
           <p>
             I wrote about financial markets and related topics for nine years
-            before pivoting to programming. These days, I can be found designing
-            an interactive data visualization or tinkering with a cloud-service
-            script for the Yle newsroom.
+            before pivoting to programming. After that, I implemented interactive
+            data visualizations and full-stack dashboards as a part of the Yle newsroom
+            for four years. These days, I can be found developing applications 
+            on top of foundation models, such as LLMs.
           </p>
         </div>
-        <div style={{ position: "relative", overflow: "hidden" }}>
+       {/*  <div style={{ position: "relative", overflow: "hidden" }}>
           <Image
             alt="GitHub screenshot after joining Yle, Finland's national public-service broadcasting company"
             src={GHYle}
+            className="wide-image"
+            placeholder="blur"
+            style={{ maxWidth: "100%", height: "auto" }}
+          />
+        </div> */}
+
+        <div style={{ position: "relative", overflow: "hidden" }}>
+          <Image
+            alt="Picture of Kasper speaking on Bloomberg TV"
+            src={TVPic}
             className="wide-image"
             placeholder="blur"
             style={{ maxWidth: "100%", height: "auto" }}
@@ -55,8 +66,8 @@ export default function About() {
         </div>
         <div style={{ position: "relative", overflow: "hidden" }}>
           <Image
-            alt="Picture of Kasper speaking on Bloomberg TV"
-            src={TVPic}
+            alt="A self-designed club-night poster with a space shuttle flying over a cassette tape"
+            src={ClubSnare}
             className="wide-image"
             placeholder="blur"
             style={{ maxWidth: "100%", height: "auto" }}
@@ -66,15 +77,6 @@ export default function About() {
           <p>
             Before that, I used to DJ, write record reviews and design flyers.
           </p>
-        </div>
-        <div style={{ position: "relative", overflow: "hidden" }}>
-          <Image
-            alt="A self-designed club-night poster with a space shuttle flying over a cassette tape"
-            src={ClubSnare}
-            className="wide-image"
-            placeholder="blur"
-            style={{ maxWidth: "100%", height: "auto" }}
-          />
         </div>
         <Spacer />
       </div>

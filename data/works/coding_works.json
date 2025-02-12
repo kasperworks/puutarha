@@ -1,9 +1,9 @@
 [
   {
-    "title": "Plus Desk",
-    "url": "http://plus.yle.fi/",
-    "what": "Showcase website",
-    "description": "A site for our team, with an updating article list, including mine. Made with Astro, SolidJS, Tailwind CSS and TypeScript."
+    "title": "Vaatteet myrkkytestissä",
+    "url": "https://yle.fi/a/74-20081856",
+    "what": "Investigative journalism, visualized",
+    "description": "Implemented the visual language and generative HTML elements for a story on toxins found in Chinese fast fashion."
   },
   {
     "title": "U.S. elections 2024",
